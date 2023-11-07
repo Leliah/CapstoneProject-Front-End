@@ -1,0 +1,70 @@
+/* SignUp.css */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30vh;
+    background-color: #fae8ca;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .signup-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .signup-button {
+    padding: 10px 25px;
+    margin: 20px;
+    background-color: #055B49;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .signup-button:hover {
+    background-color: #86b649;
+  }
+  
+  .password-container {
+    display: flex; /* Add display:flex to align items horizontally */
+    align-items: center; /* Vertically align items to center */
+    gap: 10px; /* Adjust the gap between the password input and the toggle button */
+  }
+  
+  .password-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1; /* Allow the password input to expand and fill available space */
+  }
+  
+  .password-toggle {
+    padding: 10px 15px; /* Adjust padding as needed */
+    background-color: #ccc; /* Style the toggle button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .password-toggle:hover {
+    background-color: #999; /* Style the toggle button on hover */
+  }
+  
