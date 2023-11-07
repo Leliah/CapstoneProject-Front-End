@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@1,300&display=swap');
+
+/* Navbar.css */
+.navbar {
+  background-color: #055b4e;
+  padding: 20px 30px;
+  display: flex;
+  justify-content:space-between; /* Adjusted alignment to place logo and links */
+  align-items:center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  position: fixed; /* Fixed position for the Navbar */
+  width: 100%; /* Occupy the full width of the viewport */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1; /* Ensure it's above other content */
+  transition: background-color 0.3s ease;
+   /* Add transition for background color */
+}
+
+.logo {
+  color: #ffffff; /* Color for the logo text */
+  font-size: 35px; /* Font size for the logo */
+  text-decoration: none; /* Remove underlines for the logo */
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0; /* Add some padding to the logo */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 20px;
+  font-size: 30px; /* Slightly reduced font size for links */
+  transition: color 0.3s ease;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:hover {
+  color: #86b649;
+}
+
+/* Style the active link */
+.nav-link.active {
+  color: #fff6e7;
+  font-weight: bold;
+}
+
+/* Change background color on scroll (optional) */
+.navbar.scrolled {
+  background-color: #0e7194;
+}
