@@ -1,12 +1,30 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for routing
 import './Signup.css'; // Import the CSS file for styling
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState('');
+  const [isUser, setIsUser] = useState(false); // Flag to check if the user has an account
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleSignUp = () => {
+    // Implement your sign-up logic here
+    // For demonstration purposes, simply set the isUser flag to true
+    setIsUser(true);
+  };
+
+  const handleForgotPassword = () => {
+    // Implement your forgot password logic here
+  };
+
+  const handleLogin = () => {
+    // Implement your login logic here
   };
 
   return (
@@ -24,14 +42,27 @@ function SignUp() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button
-            className={`password-toggle ${showPassword ? 'show' : ''}`}
+            className="password-toggle"
             onClick={togglePasswordVisibility}
             type="button"
           >
-            {showPassword ? 'Hide' : 'Show'}
+            {showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
           </button>
         </div>
-        <button className="signup-button">Sign up</button>
+        <button className="signup-button" onClick={handleSignUp}>
+          Sign up
+        </button>
+        {!isUser && <p>You are not a user. Please sign up.</p>}
+
+        <div className="signup-links">
+          <Link to="/forgot-password" className="forgot-password" onClick={handleForgotPassword}>
+            Forgot Password?
+          </Link>
+          <span className="separator"> | </span>
+          <Link to="/login" className="login" onClick={handleLogin}>
+            Log In
+          </Link>
+        </div>
       </form>
     </div>
   );

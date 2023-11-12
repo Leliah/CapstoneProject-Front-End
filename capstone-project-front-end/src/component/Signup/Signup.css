@@ -6,10 +6,36 @@
     padding: 30vh;
     background-color: #fae8ca;
   }
+
+  .signup-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .forgot-password,
+.login {
+  text-decoration: none;
+  color: #055B49;
+  font-size: 16px;
+}
+
+.forgot-password:hover,
+.login:hover {
+  text-decoration: underline;
+  color: #86b649;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
   
   h1 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #055B49;
   }
   
   .signup-form {
