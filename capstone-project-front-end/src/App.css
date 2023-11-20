@@ -5,17 +5,18 @@ body {
   font-family: 'Pacifico', cursive;
   font-family: 'Roboto', sans-serif;
   color: #eaecef;
-  overflow: hidden;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
-.App{
-  overflow:scroll;
+.App {
+  overflow: hidden;
 }
 
 header {
   display: flex;
   align-items: center; /* Align items vertically in the center */
-  padding: 30px;
+  padding: 40px;
   background: #fae8ca;
   height: 2vh;
 }
@@ -23,21 +24,57 @@ header {
 .logo {
   width: 350px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add margin to separate from the menu button */
+  margin-right: 10px;
+  padding-top: ; /* Add margin to separate from the menu button */
 }
 
-.menu {
+.menu-container {
+  display: flex;
+  align-items: center; /* Align items vertically in the menu container */
+}
+
+.menu svg {
+  width: 50px; /* Adjusted width for the menu icon */
+  height: auto; /* Maintain aspect ratio */
   color: black;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add shadow on hover */
+  border-radius: 30px;
+}
+
+.menu:hover svg {
+  color: green; /* Change color to green on hover */
 }
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   .logo {
-    width: 350px; /* Adjusted size for mobile */
-    margin-right: 5px; /* Adjusted margin for mobile */
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin to separate from the menu button */
   }
 
-  .App-header {
-    font-size: 2.2vmax; /* Adjusted font size for mobile */
+  .menu-container {
+    position: fixed;
+    left: 5px; /* Adjust the value to move the menu to the left */
+    top: 30px; /* Adjusted top position */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    z-index: 1000; /* Adjust z-index to make sure it's above other elements */
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Align items vertically in the menu container */
   }
+
+  .menu svg {
+    width: 30px; /* Adjusted width for the menu icon */
+    height: auto; /* Maintain aspect ratio */
+    color: black;
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add shadow on hover */
+    border-radius: 30px;
+    /* Add space between the logo and the menu icon */
+  }
+
+  /* Rest of your existing styles... */
 }

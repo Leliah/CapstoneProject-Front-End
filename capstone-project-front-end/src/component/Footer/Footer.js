@@ -27,10 +27,6 @@ function Footer() {
           </Link>
         </li>
       </ul>
-
-      <p>123 Main Street, Cityville, Country</p>
-      <p>Email: info@example.com</p>
-
       © 2023 MindfulMe
     </footer>
   );

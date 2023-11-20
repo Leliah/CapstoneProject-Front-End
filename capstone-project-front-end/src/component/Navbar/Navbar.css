@@ -1,68 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@1,300&display=swap');
+/* Adjusted styles for mobile version */
+/* Media Query for Mobile */
+@media (max-width: 375px) { /* Adjusted max-width to match iPhone X width */
+  .sidenav {
+    /* Mobile styles */
+    width: 85%;
+    background: #2c3e50;
+    height: 10%;
+    padding: 1px 20px;
+    left: -110%;
+    top: 13.5%;
+    transform: translateY(0);
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1;
+  }
 
-.sidenav {
-  width: 55px;
-  background: rgba(5, 91, 73, 0.7); /* Adjust the alpha value (0.0 to 1.0) for transparency */
-  margin: 16px;
-  margin-top: 20%;
-  position: fixed;
-  height: 37vh;
-  padding: 5 40px;
-  left: -100%;
-  transition: all 0.5s;
-  border-radius: 20px;
+  .sidenav.active {
+    left: 0;
+  }
+
+  .sidenav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #34495e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidenav a:last-child {
+    border-bottom: none;
+  }
+
+  .sidenav a:hover {
+    background-color: #3498db;
+  }
+
+  header svg {
+    font-size: 30px;
+  }
+
+  .main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: margin-left 0.5s;
+    margin-left: 0;
+  }
+
+  .sidenav.active + .main {
+    margin-left: 70%;
+  }
+
+  .navbar {
+    background-color: #2c3e50;
+    padding: 10px;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-list li {
+    margin: 0;
+  }
+  
+  .navbar-list a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 10px;
+  }
+  
+  .navbar-list a:hover {
+    background-color: #3498db;
+  }
 }
 
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+  .sidenav {
+    /* Desktop styles */
+    width: 250px;
+    left: 0;
+    transition: none;
+  }
 
-.sidenav.active {
-   left: 0;
-}
+  .sidenav.active {
+    left: 0;
+  }
 
-.sidenav a:hover {
-  background-color: #86b649; /* Hover color for the menu item */
-  color: #fff; /* Text color for the hovered menu item */
-}
+  .sidenav a {
+    font-size: 18px;
+    padding: 15px 20px;
+  }
 
+  .sidenav a:hover {
+    background-color: #3498db;
+  }
 
-.logo1{
-  width: 60px;
-}
+  header svg {
+    font-size: 40px;
+  }
 
-ul{
-  padding: 0;
-}
+  .main {
+    margin-left: 250px;
+  }
 
-ul li{
-  list-style-type: none;
-  margin: 10px 0;
-}
+  .navbar {
+    padding: 20px;
+  }
 
-ul li a{
-  color: #000000;
-  text-decoration: none;
-  font-size: 20px;
-  display: block;
-  padding: 10px 15px;
-  border-radius: 50px;
-}
+  .navbar-list a {
+    padding: 15px 20px;
+  }
 
-ul li a:hover,
-ul li a.active{
-  background-color: #86b649 ;
-}
-
-ul li a svg {
-  margin-right: 10px;
-}
-
-header svg{
-  font-size: 40px;
-}
-
-.main {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
+  .navbar-list a:hover {
+    background-color: #3498db;
+  }
 }

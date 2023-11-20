@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./About.css"; // Import the CSS file
 
 
 const developers = [
@@ -29,11 +30,10 @@ const developers = [
   // Add more developers as needed
 ];
 
-function AboutPage() {
+function About() {
   const [currentDeveloperIndex, setCurrentDeveloperIndex] = useState(0);
 
   const handleNextDeveloper = () => {
-    // Increment the index to move to the next developer
     setCurrentDeveloperIndex((prevIndex) =>
       prevIndex === developers.length - 1 ? 0 : prevIndex + 1
     );
@@ -57,4 +57,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default About;

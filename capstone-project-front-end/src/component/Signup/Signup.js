@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for routing
-import './Signup.css'; // Import the CSS file for styling
+import { Link } from 'react-router-dom';
+import './Signup.css';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isUser, setIsUser] = useState(false); // Flag to check if the user has an account
+  const [isUser, setIsUser] = useState(false);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -31,13 +33,25 @@ function SignUp() {
     <div className="signup-container">
       <h1>Start Your Journey</h1>
       <form className="signup-form">
-        <input type="text" placeholder="Name" className="signup-input" />
-        <input type="email" placeholder="Email" className="signup-input" />
+        <input
+          type="text"
+          placeholder="Full Name"
+          className="signup-input"
+          value={fullName}
+          onChange={(e) => setFullName(e.target.value)}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          className="signup-input"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
         <div className="password-container">
           <input
             type={showPassword ? 'text' : 'password'}
             placeholder="Password"
-            className="password-input" // Add a specific class for the password input
+            className="password-input"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -55,7 +69,11 @@ function SignUp() {
         {!isUser && <p>You are not a user. Please sign up.</p>}
 
         <div className="signup-links">
-          <Link to="/forgot-password" className="forgot-password" onClick={handleForgotPassword}>
+          <Link
+            to="/forgot-password"
+            className="forgot-password"
+            onClick={handleForgotPassword}
+          >
             Forgot Password?
           </Link>
           <span className="separator"> | </span>
