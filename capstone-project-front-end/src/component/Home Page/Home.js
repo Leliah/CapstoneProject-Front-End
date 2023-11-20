@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Import the CSS file
 
+
 function Home() {
   const [showHello, setShowHello] = useState(false);
   const languages = ['Hello', 'Bonjour', 'Hola', 'مرحبًا', 'Merhaba', '你好'];
@@ -11,7 +12,7 @@ function Home() {
     // Use a setTimeout to show the greeting after a delay (e.g., 2 seconds)
     const timer = setTimeout(() => {
       setShowHello(true);
-    }, );
+    }, 2000);
 
     return () => {
       clearTimeout(timer);
@@ -33,6 +34,7 @@ function Home() {
 
   return (
     <div className="hello-container">
+     
       {showHello && <div className="hello-text">{languages[currentLanguageIndex]}</div>}
       <div className="button-container">
         <button className="login-button">Log in</button>

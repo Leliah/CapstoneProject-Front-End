@@ -4,9 +4,9 @@
 .hello-container {
   font-family: 'Pacifico', cursive;
   background-color: #fae8ca;
-  text-align: center; /* Center text on all screen sizes */
+  text-align: center;
   display: flex;
-  flex-direction: column; /* Change to a column layout */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -17,32 +17,40 @@
 .hello-text {
   opacity: 0;
   animation: fadeInAndFloat 3s ease-in-out infinite;
-  font-size: 15vmax; /* Adjusted font size for responsiveness */
+  font-size: 8vmax; /* Adjusted font size for responsiveness */
   color: #055B49;
+  padding: 5%;
+  margin-top: 20%;
 }
 
 /* Buttons */
 .button-container {
   text-align: center;
-  opacity: 0; /* Initially set to transparent */
-  animation: fadeIn 1s ease-in forwards; /* Apply fade-in animation */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
 
+/* Add this to your Home.css file */
 .login-button,
 .signup-button {
-  padding: 10px 25px; /* Adjust the padding to match the Log in button */
+  padding: 10px 25px;
   margin: 20px;
-  background-color: #055B49;
+  background-color: #055b49;
   color: #fff;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
-  font-size: 30px; /* Adjust the font size to match the Log in button */
+  font-size: 30px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth color and shadow change */
 }
 
 .login-button:hover,
 .signup-button:hover {
   background-color: #86b649;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add shadow on hover */
 }
 
 /* Keyframes */
@@ -67,5 +75,20 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 375px) { /* Adjusted max-width for iPhone X */
+
+  .hello-text {
+    font-size: 6vmax; /* Further adjusted font size for iPhone X */
+    margin-top: 15%; /* Further adjusted margin for iPhone X */
+  }
+
+  .login-button,
+  .signup-button {
+    font-size: 24px; /* Further adjusted font size for iPhone X */
+    margin: 10px; /* Further adjusted margin for iPhone X */
   }
 }

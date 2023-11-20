@@ -1,70 +1,154 @@
 /* SignUp.css */
+
 .signup-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30vh;
-    background-color: #fae8ca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 20px; /* Adjusted padding for smaller screens */
+  background-color: #fae8ca;
+  max-width: 400px; /* Set a maximum width to prevent stretching on larger screens */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.signup-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.forgot-password,
+.login {
+  text-decoration: none;
+  color: #055b49;
+  font-size: 16px;
+}
+
+.forgot-password:hover,
+.login:hover {
+  text-decoration: underline;
+  color: #86b649;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #055b49;
+}
+
+.signup-form {
+  width: 100%; /* Use 100% width for better responsiveness */
+  max-width: 300px; /* Set a maximum width for the form */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signup-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-button {
+  padding: 10px 25px;
+  margin: 20px;
+  background-color: #055b49;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 20px; /* Adjusted font size for smaller screens */
+}
+
+.signup-button:hover {
+  background-color: #86b649;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.password-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.password-toggle {
+  padding: 10px 15px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.password-toggle:hover {
+  background-color: #999;
+}
+
+/* SignUp.css */
+
+/* Mobile and Tablet Styles */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 20px;
+  background-color: #fae8ca;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signup-button {
+  font-size: 20px;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .signup-container {
+    padding: 5vh 40px; /* Adjusted padding for larger screens */
+    max-width: 800px; /* Set a maximum width for desktop screens */
   }
-  
-  h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
+
   .signup-form {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    max-width: 400px; /* Adjusted maximum width for desktop screens */
   }
-  
-  .signup-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
+
   .signup-button {
-    padding: 10px 25px;
-    margin: 20px;
-    background-color: #055B49;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 30px;
+    font-size: 24px; /* Adjusted font size for desktop screens */
   }
-  
-  .signup-button:hover {
-    background-color: #86b649;
+}
+
+/* Large Desktop Styles (Up to 1080px) */
+@media (min-width: 1024px) {
+  .signup-container {
+    max-width: 1080px; /* Set a maximum width for large desktop screens */
   }
-  
-  .password-container {
-    display: flex; /* Add display:flex to align items horizontally */
-    align-items: center; /* Vertically align items to center */
-    gap: 10px; /* Adjust the gap between the password input and the toggle button */
+
+  .signup-form {
+    max-width: 600px; /* Adjusted maximum width for large desktop screens */
   }
-  
-  .password-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    flex: 1; /* Allow the password input to expand and fill available space */
+
+  .signup-button {
+    font-size: 28px; /* Adjusted font size for large desktop screens */
   }
-  
-  .password-toggle {
-    padding: 10px 15px; /* Adjust padding as needed */
-    background-color: #ccc; /* Style the toggle button */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .password-toggle:hover {
-    background-color: #999; /* Style the toggle button on hover */
-  }
-  
+}

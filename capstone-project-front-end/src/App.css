@@ -1,49 +1,80 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
+  color: #eaecef;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5vmax; /* Adjusted font size for responsiveness */
-  color: white;
+  align-items: center; /* Align items vertically in the center */
+  padding: 40px;
+  background: #fae8ca;
+  height: 2vh;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 350px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px;
+  padding-top: ; /* Add margin to separate from the menu button */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-container {
+  display: flex;
+  align-items: center; /* Align items vertically in the menu container */
+}
+
+.menu svg {
+  width: 50px; /* Adjusted width for the menu icon */
+  height: auto; /* Maintain aspect ratio */
+  color: black;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add shadow on hover */
+  border-radius: 30px;
+}
+
+.menu:hover svg {
+  color: green; /* Change color to green on hover */
 }
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
-  .App-logo {
-    height: 30vmin; /* Adjusted size for mobile */
+  .logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin to separate from the menu button */
   }
 
-  .App-header {
-    font-size: 2.2vmax; /* Adjusted font size for mobile */
+  .menu-container {
+    position: fixed;
+    left: 5px; /* Adjust the value to move the menu to the left */
+    top: 30px; /* Adjusted top position */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    z-index: 1000; /* Adjust z-index to make sure it's above other elements */
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Align items vertically in the menu container */
   }
+
+  .menu svg {
+    width: 30px; /* Adjusted width for the menu icon */
+    height: auto; /* Maintain aspect ratio */
+    color: black;
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add shadow on hover */
+    border-radius: 30px;
+    /* Add space between the logo and the menu icon */
+  }
+
+  /* Rest of your existing styles... */
 }
