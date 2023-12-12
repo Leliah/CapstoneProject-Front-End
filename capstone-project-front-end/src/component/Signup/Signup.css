@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 20px; /* Adjusted padding for smaller screens */
+  padding: 120vh 20px; /* Adjusted padding for smaller screens */
   background-color: #fae8ca;
   max-width: 400px; /* Set a maximum width to prevent stretching on larger screens */
   margin: 0 auto; /* Center the container horizontally */
@@ -21,7 +21,7 @@
 .login {
   text-decoration: none;
   color: #055b49;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .forgot-password:hover,
@@ -51,7 +51,7 @@ h1 {
 .signup-input {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
 }
 
@@ -119,13 +119,13 @@ h1 {
 }
 
 .signup-button {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /* Desktop Styles */
 @media (min-width: 768px) {
   .signup-container {
-    padding: 5vh 40px; /* Adjusted padding for larger screens */
+    padding: 15vh 500px; /* Adjusted padding for larger screens */
     max-width: 800px; /* Set a maximum width for desktop screens */
   }
 
