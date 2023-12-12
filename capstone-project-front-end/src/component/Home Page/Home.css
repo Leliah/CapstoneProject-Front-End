@@ -1,3 +1,4 @@
+/* Import the Pacifico font */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* Common Styles for hello-container */
@@ -17,23 +18,24 @@
 .hello-text {
   opacity: 0;
   animation: fadeInAndFloat 3s ease-in-out infinite;
-  font-size: 8vmax; /* Adjusted font size for responsiveness */
+  font-size: 15vmax; /* Adjusted font size for responsiveness */
   color: #055B49;
   padding: 5%;
-  margin-top: 20%;
+  margin-bottom: 20px;
+  height: 20vh;
 }
 
 /* Buttons */
 .button-container {
   text-align: center;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   align-items: center;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
 
-/* Add this to your Home.css file */
+/* Login and Signup Buttons */
 .login-button,
 .signup-button {
   padding: 10px 25px;
@@ -55,17 +57,13 @@
 
 /* Keyframes */
 @keyframes fadeInAndFloat {
-  0% {
+  0%, 100% {
     opacity: 0;
     transform: translateY(0);
   }
   50% {
     opacity: 1;
     transform: translateY(-20px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(0);
   }
 }
 
@@ -79,10 +77,9 @@
 }
 
 /* Media Query for Mobile */
-@media screen and (max-width: 375px) { /* Adjusted max-width for iPhone X */
-
+@media screen and (max-width: 375px) {
   .hello-text {
-    font-size: 6vmax; /* Further adjusted font size for iPhone X */
+    font-size: 30vmax; /* Further adjusted font size for iPhone X */
     margin-top: 15%; /* Further adjusted margin for iPhone X */
   }
 

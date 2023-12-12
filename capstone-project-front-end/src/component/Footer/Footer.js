@@ -11,7 +11,7 @@ function Footer() {
         <li className="footer-item">
           <Link to="/about">
             <GroupsIcon />
-            Meet The Team
+             Creators
           </Link>
         </li>
         <li className="footer-item">

@@ -1,58 +1,98 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.css"; // Import the CSS file
 
-
-const developers = [
-  {
-    name: "Leliah Spruill",
-    credentials: "Back-End Developer",
-    introduction: "Excels in server-side development and databases.",
-    imageUrl: "https://avatars.githubusercontent.com/u/115671548?v=4", // Replace with the actual image URL
-  },
-  {
-    name: "Paola Aracena",
-    credentials: "Back-End Developer",
-    introduction: "Excels in server-side development and databases.",
-    imageUrl: 'https://avatars.githubusercontent.com/u/115671544?v=4', // Replace with the actual image URL
-  },
-  {
-    name: "Arius Philips",
-    credentials: "Back-End Developer",
-    introduction: "I'm a Full Stack Web Developer with a passion for empower individuals.",
-    imageUrl: "https://avatars.githubusercontent.com/u/115671653?v=4", // Replace with the actual image URL
-  },
-  {
-    name: "Adrian Burke",
-    credentials: "Back-End Developer",
-    introduction: "Excels in server-side development and databases.",
-    imageUrl: "https://avatars.githubusercontent.com/u/114108495?v=4", // Replace with the actual image URL
-  },
-  // Add more developers as needed
-];
-
 function About() {
-  const [currentDeveloperIndex, setCurrentDeveloperIndex] = useState(0);
-
-  const handleNextDeveloper = () => {
-    setCurrentDeveloperIndex((prevIndex) =>
-      prevIndex === developers.length - 1 ? 0 : prevIndex + 1
-    );
+  const ourTeam = {
+    adrianBurke: {
+      name: "Adrian Burke",
+      bio: "Full Stack Developer",
+      github: "https://github.com/AdrianBurke1",
+      image: "https://lh3.googleusercontent.com/a/ACg8ocJC43pN3QyPOcYTFhy8Zq5u38J7mad26jK1olYrlIb3-A=s576-c-no",
+    },
+    ariusPhilips: {
+      name: "Arius Philips",
+      bio: "Full Stack Developer",
+      github: "https://github.com/Ari-So-Irie",
+      image: "https://avatars.githubusercontent.com/u/115671653?v=4",
+    },
+    paolaAracena: {
+      name: "Paola Aracene",
+      bio: "Full Stack Developer",
+      github: "https://github.com/PaoAracena",
+      image: "https://avatars.githubusercontent.com/u/115671544?v=4"
+    },
+    leliahSpruill: {
+      name: " Leliah Spruill",
+      bio: "Full Stack Developer",
+      github: "https://github.com/Leliah",
+      image: "https://avatars.githubusercontent.com/u/115671548?v=4"
+    }
   };
 
-  const currentDeveloper = developers[currentDeveloperIndex];
-
   return (
-    <div className="about-page">
-      <h1>Meet The Team</h1>
-      <div className="developer-info">
-        <img src={currentDeveloper.imageUrl} alt={currentDeveloper.name} />
-        <div className="developer-details">
-          <h2>{currentDeveloper.name}</h2>
-          <p>{currentDeveloper.credentials}</p>
-          <p>{currentDeveloper.introduction}</p>
+    <div className="main-content" style={{ backgroundColor: "#fae8ca" }}> {/* Apply background color to the main content */}
+      <div className="about-container">
+        <div className="about">
+          <p style={{ fontSize: 20 }}>
+          </p>
+          <h1 className="meet-the-team"> MindfulMe Creators </h1>
+          <div className="developers">
+            {/* DEV 1  */}
+            <div className="developer">
+              <img
+                src={ourTeam.ariusPhilips.image}
+                alt="Arius Philips"
+              />
+              <p>{ourTeam.ariusPhilips.bio}</p>
+              <div className="button-container">
+                <button className="button">
+                  <a href={ourTeam.ariusPhilips.github}>Arius's GitHub</a>
+                </button>
+              </div>
+            </div>
+            {/* DEV 2  */}
+            <div className="developer">
+              <img
+                src={ourTeam.leliahSpruill.image}
+                alt="Leliah Spruill"
+              />
+              <p>{ourTeam.leliahSpruill.bio}</p>
+              <div className="button-container">
+                <button className="button">
+                  <a href={ourTeam.leliahSpruill.github}>Leliah's GitHub</a>
+                </button>
+              </div>
+            </div>
+            {/* DEV 3  */}
+            <div className="developer">
+              <img
+                src={ourTeam.paolaAracena.image}
+                alt="Paola Aracena"
+              />
+              <p>{ourTeam.paolaAracena.bio}</p>
+              <div className="button-container">
+                <button className="button">
+                  <a href={ourTeam.paolaAracena.github}>Paola's GitHub</a>
+                </button>
+              </div>
+            </div>
+            {/* DEV 4 */}
+            <div className="developer">
+              <img
+                src={ourTeam.adrianBurke.image}
+                alt="Adrian Burke"
+              />
+              <p>{ourTeam.adrianBurke.bio}</p>
+              <div className="button-container">
+                <button className="button">
+                  <a href={ourTeam.adrianBurke.github}>Adrian's GitHub</a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="sidebar">{/* Sidebar content */}</div>
       </div>
-      <button onClick={handleNextDeveloper}>Next Developer</button>
     </div>
   );
 }
