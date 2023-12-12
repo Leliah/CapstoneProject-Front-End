@@ -8,6 +8,7 @@ import Navbar from "./component/Navbar/Navbar";
 import MenuIcon from "@mui/icons-material/Menu";
 import Footer from "./component/Footer/Footer";
 import logo from "./component/logo1.png"; // Update the path accordingly
+import Feed from "./component/Feed/Feed";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -46,6 +47,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/feed" element={<Feed />} />
           {/* Add more routes for other components/pages */}
         </Routes>
       </div>

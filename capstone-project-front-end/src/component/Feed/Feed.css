@@ -1,0 +1,84 @@
+/* .feed {
+  text-align: center;
+  margin: 20px;
+  background-color: #fff6e7;
+  font-size: 24px;
+  color: #055B49;
+  
+}
+
+.feedInput{
+  width: 700px;
+  height: 100px;
+}
+
+.feedSubmit{
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+} */
+
+/* Feed.css */
+
+.feed {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff6e7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #055B49;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .feedInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .feedSubmit {
+    padding: 10px 25px;
+    margin: 20px;
+    background-color: #055b49;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .feedSubmit:hover {
+    color: #fff;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #055B49;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feedli {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #055B49;
+    border: 1px solid #86b649;
+  }
+  
