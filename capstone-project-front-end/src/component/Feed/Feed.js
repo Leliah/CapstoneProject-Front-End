@@ -1,11 +1,12 @@
 // Feed.js
 
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import "./Feed.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API = process.env.REACT_APP_API_URL;
+// const API = process.env.REACT_APP_API_URL  || "http:/localhost:3005"
+// const API = "http:/localhost:3005"
 
 function Feed() {
   const [feedInput, setFeedInput] = useState("");
@@ -13,22 +14,23 @@ function Feed() {
   const [posts, setPosts] = useState([]);
   let navigate = useNavigate();
 
-  console.log("API URL:", API);
+//   console.log("API URL:", API);
 
-  //   useEffect(() => {
-  //     console.log("API URL:", API);
-  //     console.log("hello")
-  //     axios
-  //       .get(`${API}/posts`)
-  //       .then((response) => {
-  //         setPosts(response.data);
-  //         console.log("API URL!!:", API);
-  //       })
-  //       .catch((e) => {
-  //         navigate("/not-found");
-  //         console.log(e)
-  //       });
-  //   }, [navigate]);
+    useEffect(() => {
+    //   console.log("API URL:", API);
+      console.log("hello")
+      axios
+        // .get(`${API}/posts`)
+         .get(`http://localhost:3005/posts`)
+        .then((response) => {
+          setPosts(response.data);
+        //   console.log("API URL!!:", API);
+        })
+        .catch((e) => {
+          navigate("/not-found");
+          console.log(e)
+        });
+    }, [navigate]);
 
   const handleFeedChange = (e) => {
     setFeedInput(e.target.value);
@@ -67,10 +69,9 @@ function Feed() {
             <li className="feedli" key={index}>{post}</li>
           ))}
         </ul>
-        <h3>API Posts:</h3>
         <ul>
           {posts.map((post) => (
-            <li key={post.id}>
+            <li className="feedli" key={post.id}>
               {post.description} - {post.timestamp}
             </li>
           ))}
