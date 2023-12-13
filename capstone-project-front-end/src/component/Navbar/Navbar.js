@@ -51,12 +51,12 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to='/'>
+          <Link to='/roadmap'>
             <MapIcon />
           </Link>
         </li>
         <li>
-          <Link to='/'>
+          <Link to='/prompts'>
             <CalendarTodayIcon />
           </Link>
         </li>

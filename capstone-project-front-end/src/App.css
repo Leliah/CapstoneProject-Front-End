@@ -11,6 +11,7 @@ body {
 
 .App {
   overflow: hidden;
+  background-color: #fae8ca;
 }
 
 header {
@@ -85,4 +86,280 @@ header {
   }
 
   /* Rest of your existing styles... */
+}
+/* *****************************ROADMAP CSS************************* */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #fae8ca;
+}
+
+.goal-inputs,
+.scroll-box {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+
+.status {
+  background-color: black;
+  padding: 10px;
+}
+
+.starting {
+  padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: #055b49;
+  font-weight: bold;
+  color: #fffffF;
+}
+
+.starting-input {
+  height: 40px;
+  width: 170px;
+}
+
+.starting-submit {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #055b49;
+}
+
+.starting-submit:hover {
+  background-color: #86b649;
+}
+
+.starting-box {
+  background-color: #333;
+  padding: 5px;
+}
+
+.starting-box button {
+  background-color: #055b49;
+}
+
+.starting-box button:hover {
+  background-color: #86b649;
+}
+
+
+.ending {
+  padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: #055b49;
+  font-weight: bold;
+  color: #fffffF;
+}
+
+.end-input {
+  height: 40px;
+  width: 170px;;
+}
+
+.ending-submit {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #055b49;
+}
+
+.ending-submit:hover {
+  background-color: #86b649;
+}
+
+.ending-box {
+  background-color: #333;
+  padding: 5px;
+}
+
+.ending-box button {
+  background-color: #055b49;
+}
+
+.ending-box button:hover {
+  background-color: #86b649;
+}
+
+
+.additional-star {
+  padding: 11.5px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-weight: bold;
+  background-color: #055b49;
+  color: #fffffF;
+}
+
+.additional-input {
+  height: 40px;
+  width: 170px;;
+}
+
+.additional-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  color: #333;
+}
+
+.additional-box button {
+  background-color: #055b49;
+}
+
+.additional-box button:hover {
+  background-color: #86b649;
+}
+
+
+.scroll-box {
+  text-align: left;
+  padding: 5px;
+  width: 300px;
+  height: 275px;
+  overflow: scroll;
+  margin-top: 50%;
+}
+
+
+button.more-steps-btn {
+  font-size: 10px;
+  padding: 7px;
+  margin-left: 170px;
+  margin-bottom: 7px;
+  margin-top: 5px;
+  width: 133px;
+  border-radius: 12px;
+  background-color: #055b49;
+}
+
+button.more-steps-btn:hover {
+  background-color: #86b649;
+}
+
+.additional-submit {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #055b49;
+}
+
+.additional-submit:hover {
+  background-color: #86b649;
+}
+
+/* *****************************GOOGLE MAPS************************* */
+
+#map {
+  height:70vh;
+  width: 900px;
+  margin-left: 20px;
+} 
+
+
+/* Add these styles to your existing styles or create a new stylesheet */
+.fake-map {
+  position: relative;
+  width: 500px; /* Adjust the width and height based on your design */
+  height: 500px;
+  border: 1px solid #ccc; /* Optional: Add a border to simulate a map container */
+}
+
+.goal-marker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red; /* Customize the marker color */
+  border-radius: 50%; /* Create a circular marker */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* *********************************PROMPTS********************************* */
+
+#prev-prompts-btn {
+  display: flex;
+  justify-content: end;
+  margin-right: 65px;
+}
+
+#prev-prompts-btn button {
+  background-color:#86b649;
+}
+
+#prev-prompts-btn button:hover {
+  background-color:#055b49;
+}
+
+.todays-prompts {
+  background-color: #055b49;
+  padding: 10px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  margin-left: 40%;
+}
+
+.start-prompt-btn {
+  background-color: #86b649;
+}
+
+.start-prompt-btn:hover {
+  background-color:#228b22;
+}
+
+.more-prompts h3 {
+  color: #333;
+  margin-left: 10px;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 600px;
+  margin-left: 10px;
+  .daily-prompts {
+    flex: 0 0 auto;
+  }
+}
+
+.daily-prompts {
+  background-color: #055b49;
+  padding: 10px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.response .container {
+  background-color: #055b49;
+  padding: 10px;
+  border-radius: 25px;
+  width: 750px;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.prompt-crud-nav {
+  display: flex;
+  justify-content: end;
+  background-color: gray;
+  border-radius: 25px;
+  width: 750px;
+  margin-right: 992px;
+}
+
+.prompts-save-btn {
+  background-color: #86b649;
 }
