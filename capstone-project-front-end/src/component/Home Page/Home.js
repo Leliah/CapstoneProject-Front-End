@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Import the CSS file
-
+import growth from "../growth.png"
 
 function Home() {
   const [showHello, setShowHello] = useState(false);
@@ -33,14 +33,21 @@ function Home() {
   }, []);
 
   return (
-    <div className="hello-container">
-     
-      {showHello && <div className="hello-text">{languages[currentLanguageIndex]}</div>}
-      <div className="button-container">
-        <button className="login-button">Log in</button>
-        <Link to="/signup">
-          <button className="signup-button">Sign up</button>
-        </Link>
+    <div>
+      <div className="image-container">
+        <img src={growth} alt="Growth Image" />
+      </div>
+      <div 
+      className="hello-container">
+        {showHello && <div className="hello-text">{languages[currentLanguageIndex]}</div>}
+        <div className="button-container">
+          <Link to="/signup">
+            <button className="signup-button">Sign up</button>
+          </Link>
+          <Link to="/login">
+           <button className="login-button">Log in</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
