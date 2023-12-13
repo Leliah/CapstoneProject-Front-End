@@ -1,3 +1,4 @@
+/* Import the Pacifico font */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* Common Styles for hello-container */
@@ -17,23 +18,25 @@
 .hello-text {
   opacity: 0;
   animation: fadeInAndFloat 3s ease-in-out infinite;
-  font-size: 8vmax; /* Adjusted font size for responsiveness */
+  font-size: 15vmax;
   color: #055B49;
-  padding: 5%;
-  margin-top: 20%;
+  padding: 10%;
+  margin-bottom: 30px; /* Adjusted margin-bottom for fixed height */
+  height: 20vh;
 }
 
 /* Buttons */
 .button-container {
   text-align: center;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   align-items: center;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
+  margin-top: 20px; /* Adjusted margin-top for space between hello-text and button-container */
 }
 
-/* Add this to your Home.css file */
+/* Login and Signup Buttons */
 .login-button,
 .signup-button {
   padding: 10px 25px;
@@ -44,28 +47,31 @@
   border-radius: 30px;
   cursor: pointer;
   font-size: 30px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth color and shadow change */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .login-button:hover,
 .signup-button:hover {
   background-color: #86b649;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add shadow on hover */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.image-container{
+  position: absolute;
+  top: 0px;
+  left: 52%;
+  transform: translateX(-50%);
 }
 
 /* Keyframes */
 @keyframes fadeInAndFloat {
-  0% {
+  0%, 100% {
     opacity: 0;
     transform: translateY(0);
   }
   50% {
     opacity: 1;
     transform: translateY(-20px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(0);
   }
 }
 
@@ -79,16 +85,23 @@
 }
 
 /* Media Query for Mobile */
-@media screen and (max-width: 375px) { /* Adjusted max-width for iPhone X */
-
+@media screen and (max-width: 375px) {
   .hello-text {
-    font-size: 6vmax; /* Further adjusted font size for iPhone X */
-    margin-top: 15%; /* Further adjusted margin for iPhone X */
+    padding-bottom: 2px;
+    font-size: 10vmax;
+    margin-top: 5%;
+    margin-bottom: 1%; /* Adjusted margin-bottom for mobile */
   }
 
-  .login-button,
-  .signup-button {
-    font-size: 24px; /* Further adjusted font size for iPhone X */
-    margin: 10px; /* Further adjusted margin for iPhone X */
+  .login-button{
+    font-size: 14px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  .signup-button{
+    font-size: 14px;
+    margin: 10px;
+    border-radius: 20px;
   }
 }

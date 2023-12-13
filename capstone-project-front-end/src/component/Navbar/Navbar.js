@@ -1,3 +1,4 @@
+// Navbar.js
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
@@ -35,7 +36,7 @@ function Navbar() {
   return (
     <div className={`navbar ${showNav ? 'active' : ''}`}>
       <div className="menu-icon" onClick={handleNavToggle}>
-        ☰
+
       </div>
       <ul>
         <li>
