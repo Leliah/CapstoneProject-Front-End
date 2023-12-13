@@ -21,7 +21,7 @@ function Feed() {
       console.log("hello")
       axios
         // .get(`${API}/posts`)
-         .get(`http://localhost:3005/posts`)
+         .get(`http://localhost:3005/posts`) // API HARD CODED FOR NOW 
         .then((response) => {
           setPosts(response.data);
         //   console.log("API URL!!:", API);
