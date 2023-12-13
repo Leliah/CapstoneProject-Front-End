@@ -36,6 +36,7 @@ function Navbar() {
   return (
     <div className={`navbar ${showNav ? 'active' : ''}`}>
       <div className="menu-icon" onClick={handleNavToggle}>
+
       </div>
       <ul>
         <li>
@@ -75,3 +76,10 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+
+
+
+
