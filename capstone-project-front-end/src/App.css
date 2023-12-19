@@ -12,6 +12,7 @@ body {
 .App {
   overflow: hidden;
   background-color: #fae8ca;
+  height: 100vh;
 }
 
 header {
@@ -92,6 +93,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #fae8ca;
+  height: 80vh;
 }
 
 .goal-inputs,
@@ -362,4 +364,7 @@ button.more-steps-btn:hover {
 
 .prompts-save-btn {
   background-color: #86b649;
+}
+.prompts{
+  height: 80vh;
 }

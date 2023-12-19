@@ -18,11 +18,11 @@
 .hello-text {
   opacity: 0;
   animation: fadeInAndFloat 3s ease-in-out infinite;
-  font-size: 15vmax;
+  font-size: 14vmax;
   color: #055B49;
   padding: 10%;
-  margin-bottom: 30px; /* Adjusted margin-bottom for fixed height */
-  height: 20vh;
+  margin-bottom: 50px; /* Adjusted margin-bottom for fixed height */
+  height: 10vh;
 }
 
 /* Buttons */
@@ -40,7 +40,7 @@
 .login-button,
 .signup-button {
   padding: 10px 25px;
-  margin: 20px;
+  margin: 15px;
   background-color: #055b49;
   color: #fff;
   border: none;
