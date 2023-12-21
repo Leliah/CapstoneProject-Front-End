@@ -25,7 +25,7 @@ header {
   width: 350px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 10px;
-  padding-top: ; /* Add margin to separate from the menu button */
+  padding-top: 10px; /* Add margin to separate from the menu button */
 }
 
 .menu-container {
