@@ -49,7 +49,7 @@ function Navbar() {
     {/* Link to the Profile page */}
     <Link to='/profile'>
       <PersonIcon />
-      Profile
+      Vision Board
     </Link>
   </li>
   <li>
