@@ -10,8 +10,6 @@ import CottageIcon from '@mui/icons-material/Cottage';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 function Navbar({ showNav }) {
-  // ... (unchanged code)
-
   return (
     <div className={`navbar ${showNav ? 'active' : ''}`}>
       <ul>
