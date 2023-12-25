@@ -1,62 +1,42 @@
-/* Navbar background color */
+/* Navbar.css */
 .navbar {
-  background-color: #055b49;
-  padding: 10px;
+  position: fixed;
+  border-radius: 50px;
+  top: 8%;
+  left: -300px; /* Start off-screen on the left */
+  width: 500px; /* Adjust the width as needed */
+  height: 80vh;
+  background-color: #005341;
+  transition: left 20s ease; /* Apply transition effect to the left property */
+  border: 10px solid white; /* Add a white border around the navbar */
+  padding: 10px; /* Add padding to create space between the border and content */
 }
 
-.menu-icon {
-  cursor: pointer;
-  font-size: 24px;
-  margin-right: 20px;
+
+.navbar.active {
+  left: -5%; /* Slide in to view */
 }
 
-.navbar ul {
+.navbar.active {
+  transform: translateX(0); /* Slide in to view by translating from left to right */
+}
+
+/* Add your other styling for the navbar elements as needed */
+ul {
   list-style: none;
-  display: flex;
-  align-items: center;
   padding: 0;
-  margin: 0;
 }
 
-.navbar li {
-  display: flex;
-  align-items: center;
-  margin-right: 12%;
+li {
+  margin: 75px 70px;
+  border-bottom: 5px solid white; /* Add a horizontal line between list items */
 }
 
-.navbar a {
+a {
   text-decoration: none;
-  color: #ecf0f1;
-  font-size: 18px;
-  transition: color 0.3s ease-in-out;
+  color: white;
   display: flex;
   align-items: center;
 }
 
-.navbar a:hover {
-  color: #3498db;
-}
-
-.navbar a span {
-  margin-left: 8px; /* Adjust the margin to add space between icon and text */
-}
-
-/* Slide-in transition for the navbar */
-.navbar.active ul {
-  transform: translateX(0);
-}
-
-@media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar li {
-    margin: 10px 0;
-  }
-
-  .navbar.active ul {
-    transform: translateY(0);
-  }
-}
+/* Adjust styling based on your design */

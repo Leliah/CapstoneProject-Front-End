@@ -1,7 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import MenuIcon from "@mui/icons-material/Menu";
-import logo from "./path-to-your-logo.png"; // Update the path accordingly
+// Header.js
+import React from 'react';
+import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
+import logo from './path-to-your-logo.png'; // Update the path accordingly
 
 const Header = ({ showNav, setShowNav }) => {
   return (
