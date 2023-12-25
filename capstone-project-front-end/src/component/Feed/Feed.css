@@ -1,88 +1,67 @@
-/* .feed {
-  text-align: center;
-  margin: 20px;
-  background-color: #fff6e7;
-  font-size: 24px;
-  color: #055B49;
-  
-}
-
-.feedInput{
-  width: 700px;
-  height: 100px;
-}
-
-.feedSubmit{
-  padding: 20px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-} */
-
 /* Feed.css */
-
 .feed {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color:  #fae8ca;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 80vh;
-  }
-  
-  h2 {
-    color: #055B49;
-  }
-  
-  form {
-    margin-top: 20px;
-  }
-  
-  .feedInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .feedSubmit {
-    padding: 10px 25px;
-    margin: 20px;
-    background-color: #055b49;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .feedSubmit:hover {
-    color: #fff;
-    background-color: #86b649;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  }
-  
-  h3 {
-    margin-top: 20px;
-    color: #055B49;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .feedli {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    color: #055B49;
-    border: 1px solid #86b649;
-  }
-  
+  position: fixed;
+  border-radius: 20px;
+  top: 9%;
+  right: 20px; /* Start off-screen on the left */
+  width: 800px; /* Adjust the width as needed */
+  height: 800px;
+  background-color: #005341;
+  border: 2px solid white; /* Add a white border around the feed */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+/* Add your other styling for the feed elements as needed */
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 50px; /* Adjust the font size as needed */
+  width: 100%; /* Full width */
+  height: auto;
+}
+
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feed-post{
+  border-radius: 50px;
+}
+
+.feedInput {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.feedSubmit {
+  width: 40%;
+  padding: 10px;
+  background-color: white;
+  color: #005341;
+  border: none;
+  cursor: pointer;
+}
+
+h3 {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feedli {
+  color: white;
+  margin: 10px 0;
+  border-bottom: 1px solid white; /* Add a horizontal line between list items */
+  padding-bottom: 5px; /* Adjust the padding as needed */
+}
+
+.feedli:last-child {
+  border-bottom: none; /* Remove the border on the last list item */
+}
