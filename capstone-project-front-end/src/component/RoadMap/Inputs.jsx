@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import {AiOutlinePlus} from 'react-icons/ai';
-import './Roadmap.css';
 
 function Inputs({handleAddStartPoint, handleAddEndingPoint, handleAddAdditional}) {
     const [ startingPointValue, setStartingPointValue ] = useState('');
@@ -81,14 +80,11 @@ function Inputs({handleAddStartPoint, handleAddEndingPoint, handleAddAdditional}
                 className='starting-input'
                 required
                 />
-               <button 
-                    onClick={handleSubmitStart} 
+                <button onClick={handleSubmitStart} 
                 className='starting-submit'
-                style={{paddingTop: '12px', paddingBottom: '15px'}}
-                type="submit"> 
-                    SUBMIT 
-                </button>
-
+                style={{paddingTop: '12px', paddingBottom: '15px'}}  > 
+                 SUBMIT 
+                 </button>
 
                 <br/>
 
