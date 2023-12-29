@@ -1,0 +1,376 @@
+.amusement-park-map {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #005341;
+    border-radius: 20px;
+    height: 80vh;
+    width: 60vw;
+    margin-left: 600px;
+    margin-top: 10px;
+  }
+  
+  #parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: parallaxBackground 20s linear infinite;
+    background-image: url('https://cdn.gamedevmarket.net/wp-content/uploads/20191203145553/d874367282cec41be1ac5d8000899d2a.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @keyframes parallaxBackground {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    100% {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  .map-container {
+    position: relative;
+    width: 57vw;
+    height: 75vh;
+    background-color: #86b649;
+    border: 5px solid white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .attraction {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #2ecc71; /* Green background for attractions */
+    border: 2px solid #27ae60; /* Border color for attractions */
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a lifted effect */
+  }
+  
+  .starting-location {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e74c3c; /* Red background for the starting point */
+  }
+  
+  .start-marker,
+  .step-marker,
+  .destination {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e67e22; /* Orange background for markers */
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle lift */
+  }
+
+  /* Starting Point */
+
+  .starting-box {
+    margin: 10px;
+    padding: 15px;
+    background-color: #2ecc71; /* Green background */
+    border: 2px solid #27ae60; /* Border color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a lifted effect */
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .starting-box div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .start-edit-delete button {
+    margin-left: 8px;
+    padding: 4px 8px;
+    background-color: #e74c3c; /* Red background for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle lift */
+  }
+  
+  .start-edit-delete button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+
+  /* End Point */
+  
+  .ending-box {
+    margin: 10px;
+    padding: 15px;
+    background-color: #e74c3c; /* Red background */
+    border: 2px solid #c0392b; /* Border color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a lifted effect */
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .ending-box div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .start-edit-delete button {
+    margin-left: 8px;
+    padding: 4px 8px;
+    background-color: #3498db; /* Blue background for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle lift */
+  }
+  
+  .start-edit-delete button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  /* Inputs */
+  
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .navigation-inputs {
+    background-color: #ecf0f1; /* Light gray background for inputs */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a lifted effect */
+    padding: 20px;
+    width: 300px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  span {
+    color: #e74c3c; /* Red color for asterisk */
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7; /* Border color for inputs */
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #3498db; /* Blue background for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle lift */
+  }
+  
+  .more-steps-btn {
+    padding: 10px;
+    background-color: #27ae60; /* Green background for "Add Additional Steps" button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle lift */
+  }
+  
+  .more-steps-btn:hover {
+    background-color: #219653; /* Darker green on hover */
+  }
+  
+  /* WRAPPER */
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .navigation-inputs {
+    background-color: #ecf0f1; /* Light gray background for inputs */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a lifted effect */
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Vertical gap between elements */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Vertical gap between form elements */
+  }
+  
+  label {
+    font-size: 20px;
+  }
+  
+  span {
+    color: #e74c3c; /* Red color for asterisk */
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Border color for inputs */
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #3498db; /* Blue background for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle lift */
+  }
+  
+  .more-steps-btn {
+    padding: 10px;
+    background-color: #27ae60; /* Green background for "Add Additional Steps" button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle lift */
+  }
+  
+  .more-steps-btn:hover {
+    background-color: #219653; /* Darker green on hover */
+  }
+    
+  .starting,
+  .ending,
+  .additional-star {
+    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: #055b49;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .starting-input,
+  .end-input,
+  .additional-input {
+    height: 40px;
+    width: 100%; /* Occupy full width */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+  }
+  
+  .starting-submit,
+  .ending-submit,
+  .additional-submit,
+  .more-steps-btn {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #055b49;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    width: 100%; /* Occupy full width */
+  }
+  
+  .starting-submit:hover,
+  .ending-submit:hover,
+  .additional-submit:hover,
+  .more-steps-btn:hover {
+    background-color: #86b649;
+  }
+  
+  .starting-box,
+  .ending-box,
+  .additional-box {
+    background-color: #333;
+    padding: 5px;
+  }
+  
+  .starting-box button,
+  .ending-box button,
+  .additional-box button {
+    background-color: #055b49;
+    cursor: pointer;
+  }
+  
+  .starting-box button:hover,
+  .ending-box button:hover,
+  .additional-box button:hover {
+    background-color: #86b649;
+  }
+  
+  .additional-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    color: #333;
+  }
+  
+  .scroll-box {
+    text-align: left;
+    padding: 5px;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  button.more-steps-btn {
+    font-size: 10px;
+    padding: 7px;
+    border-radius: 12px;
+    background-color: #055b49;
+  }
+  
+  button.more-steps-btn:hover {
+    background-color: #86b649;
+  }
+  
+  

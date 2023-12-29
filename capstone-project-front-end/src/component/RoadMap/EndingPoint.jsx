@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Roadmap.css';
 const EndingPoint = ({object, editStartPoint, deleteGoal}) => {
 
 /**

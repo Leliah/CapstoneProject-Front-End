@@ -18,7 +18,7 @@
 }
 
 .navbar.active {
-  transform: translateX(0); /* Slide in to view by translating from left to right */
+  transform: translateX(-50); /* Slide in to view by translating from left to right */
 }
 
 /* Add your other styling for the navbar elements as needed */
