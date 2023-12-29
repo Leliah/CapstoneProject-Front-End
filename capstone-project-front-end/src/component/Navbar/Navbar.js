@@ -16,30 +16,35 @@ function Navbar({ showNav }) {
     <div className={`navbar ${showNav ? 'active' : ''}`}>
       <ul>
         <li>
-          <Link to='/'>
-            <CottageIcon />
-            Home
-          </Link>
-
-          <Link to='/roadmap'>
-            <MapIcon/>
-            Road Map
-          </Link>
-
-          <Link to='/signup'>
-            <LoginIcon/>
-            Login
-          </Link>
           <Link to='/profile'>
-            <PersonIcon/>
-            Profile
-          </Link>
-          <Link to='/prompts'>
-            <CalendarTodayIcon/>
-            Daily Prompts
+            <PersonIcon />
+            HOME
           </Link>
         </li>
-        {/* ... (other menu items) */}
+        <li>
+          <Link to='/feed'>
+            <GroupsIcon />
+            FEED
+          </Link>
+        </li>
+        <li>
+          <Link to='/prompts'>
+            <CalendarTodayIcon />
+            PROMPTS
+          </Link>
+        </li>
+        <li>
+          <Link to='/roadmap'>
+            <MapIcon />
+            ROADMAP
+          </Link>
+        </li>
+        <li>
+          <Link to='/Signup'>
+            <LoginIcon />
+            LOGIN
+          </Link>
+        </li>
       </ul>
     </div>
   );
