@@ -1,63 +1,48 @@
-/* .feed {
-  text-align: center;
-  margin: 20px;
-  background-color: #fff6e7;
-  font-size: 24px;
-  color: #055B49;
-  
-}
 
-.feedInput{
-  width: 700px;
-  height: 100px;
-}
-
-.feedSubmit{
-  padding: 20px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-} */
-
-/* Feed.css */
-
-.feed {
-    max-width: 600px;
+.journal {
+    max-width: 700px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff6e7;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    padding: 10px;
+    border: 20px 10px 20px 10px;
+    right: 0px;
+    float: right;
+    background-color: #055b49;
+}
+.profilefeed{
+    background-color: #055b49;
+    left: 0px;
+    float: left;
+    width: 350px;
+    border-radius: 10px;
+}
   
-  h2 {
-    color: #055B49;
+img {
+    border-radius: 50%;
+    max-width: 100px;
   }
-  
   form {
     margin-top: 20px;
   }
   
   .feedInput {
-    width: 100%;
-    padding: 10px;
+    width: 75%;
+    padding: 50px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 25px;
   }
   
   .feedSubmit {
     padding: 10px 25px;
     margin: 20px;
-    background-color: #055b49;
-    color: #fff;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     font-size: 20px;
+
   }
   
   .feedSubmit:hover {
@@ -66,7 +51,7 @@
   
   h3 {
     margin-top: 20px;
-    color: #055B49;
+    color: #fbfffe;
   }
   
   ul {
@@ -78,7 +63,20 @@
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    color: #055B49;
+    color: black;
     border: 1px solid #86b649;
+    border-radius: 25px;
+    background-color: white;
   }
   
+ .feeddelete{
+  /* padding: 10px 25px; */
+  /* margin: 20px; */
+  background-color: #055b49;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+ }
