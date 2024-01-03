@@ -1,67 +1,71 @@
-/* Feed.css */
-.feed {
-  position: fixed;
-  border-radius: 20px;
-  top: 9%;
-  right: 20px; /* Start off-screen on the left */
-  width: 800px; /* Adjust the width as needed */
-  height: 800px;
-  background-color: #005341;
-  border: 2px solid white; /* Add a white border around the feed */
-  padding: 20px; /* Adjust the padding as needed */
+.journal {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    border: 20px 10px 20px 10px;
+    right: 0px;
+    float: right;
+    background-color: #055b49;
 }
+.profilefeed{
+    background-color: #055b49;
+    left: 0px;
+    float: left;
+    width: 350px;
+    border-radius: 10px;
+}
+  
+.profilefeed img {
+    border-radius: 50%;
+    max-width: 100px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .feedInput {
+    width: 75%;
+    padding: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  
+  .feedSubmit {
+    padding: 10px 25px;
+    margin: 20px;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
 
-/* Add your other styling for the feed elements as needed */
-h2 {
-  color: white;
-  text-align: center;
-  font-size: 50px; /* Adjust the font size as needed */
-  width: 100%; /* Full width */
-  height: auto;
-}
-
-
-form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.feed-post{
-  border-radius: 50px;
-}
-
-.feedInput {
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.feedSubmit {
-  width: 40%;
-  padding: 10px;
-  background-color: white;
-  color: #005341;
-  border: none;
-  cursor: pointer;
-}
-
-h3 {
-  color: white;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.feedli {
-  color: white;
-  margin: 10px 0;
-  border-bottom: 1px solid white; /* Add a horizontal line between list items */
-  padding-bottom: 5px; /* Adjust the padding as needed */
-}
-
-.feedli:last-child {
-  border-bottom: none; /* Remove the border on the last list item */
-}
+  }
+  
+  .feedSubmit:hover {
+    color: #fff;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #fbfffe;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feedli {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid #86b649;
+    border-radius: 25px;
+    background-color: white;
+  }
+  
