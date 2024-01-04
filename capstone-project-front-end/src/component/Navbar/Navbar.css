@@ -3,6 +3,13 @@
   position: fixed;
   border-radius: 50px;
   top: 8%;
+  left: -300px; /* Start off-screen on the left */
+  width: 500px; /* Adjust the width as needed */
+  height: 80vh;
+  background-color: #005341;
+  transition: left 20s ease; /* Apply transition effect to the left property */
+  border: 10px solid white; /* Add a white border around the navbar */
+  padding: 10px; /* Add padding to create space between the border and content */
   left: -50vw; /* Start off-screen on the left */
   width: 500px; /* Adjust the width as needed */
   height: 80vh;
@@ -15,18 +22,36 @@
 
 
 .navbar.active {
-  left: -60px; /* Slide in to view */
+
+  left: -5%; /* Slide in to view */
 }
 
 .navbar.active {
   transform: translateX(-50); /* Slide in to view by translating from left to right */
 }
 
+/* Add your other styling for the navbar elements as needed */
+ul {
+  list-style: none;
+  padding: 0;
+
+  left: -60px; /* Slide in to view */
+}
+
+.navbar.active {
+  transform: translateX(-50); /* Slide in to view by translating from left to right */
+
+}
+
 li {
   margin: 75px 70px;
+
+  border-bottom: 5px solid white; /* Add a horizontal line between list items */
+
   border-bottom: 5px solid white; 
   font-family: 'Roboto';
   font-size: 24px;
+
 }
 
 a {

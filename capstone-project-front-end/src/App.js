@@ -31,6 +31,9 @@ function App() {
              
           <Navbar showNav={showNav} />
 
+          {/* Conditionally render the Navbar based on showNav state */}
+          {showNav && <Navbar showNav={showNav} />}
+
           <div className={`sidenav ${showNav ? "active" : ""}`}>
             {/* Add content to your sidenav if needed */}
           </div>
