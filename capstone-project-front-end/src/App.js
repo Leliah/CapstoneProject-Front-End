@@ -24,10 +24,12 @@ function App() {
         <header>
           <div className="menu">
             <MenuIcon onClick={() => setShowNav(!showNav)} />
-            <div className="logo-container">
+            <Link to="/" className="logo-container">
               <img src={logo} className="logo1" alt="logo" />
-            </div>
-          </div>
+            </Link>
+          </div>   
+             
+          <Navbar showNav={showNav} />
 
           {/* Conditionally render the Navbar based on showNav state */}
           {showNav && <Navbar showNav={showNav} />}

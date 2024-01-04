@@ -64,9 +64,15 @@ function Feed() {
   return (
     <nav className="feed">
       <div className="profilefeed">
+
         <img className="feedpic" src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
         <h2 className="profile-name">Gavin</h2>
       </div>
+
+        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        <h2 className="profile-name">Gavin</h2>
+      </div>
+      
 
       <div className="journal">
         <h2>Feed</h2>
@@ -81,19 +87,31 @@ function Feed() {
           <input className="feedSubmit" type="submit" value="Post" />
         </form>
 
+
         <div className="post">
           <ul>
             {previousPosts.map((post, index) => (
               <li className="feedli" key={index}>
                 {post}
               </li>
+
+  
+        <div className="post">
+          <ul>
+            {previousPosts.map((post, index) => (
+              <li className="feedli" key={index}>{post}</li>
+
             ))}
           </ul>
           <ul>
             {posts.map((post) => (
               <li className="feedli" key={post.id}>
+
                 {post.description} {post.timestamp}
                 <button className="feeddelete" onClick={() => handleDelete(post.id)}> Delete </button>
+
+                {post.description}  {post.timestamp}
+
               </li>
             ))}
           </ul>
@@ -101,7 +119,11 @@ function Feed() {
         </div>
       </div>
     </nav>
+
   );
+
+  );  
+
 }
 
 export default Feed;
