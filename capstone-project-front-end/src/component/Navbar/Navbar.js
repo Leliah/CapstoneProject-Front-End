@@ -12,83 +12,43 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 function Navbar({ showNav }) {
   return (
     <div className={`navbar ${showNav ? 'active' : ''}`}>
-      <ul>
-
-        <li>
-          <Link to='/profile'>
-            <PersonIcon />
-            HOME
-          </Link>
-        </li>
-        <li>
-          <Link to='/feed'>
-            <GroupsIcon />
-            FEED
-          </Link>
-        </li>
-        <li>
-          <Link to='/prompts'>
-            <CalendarTodayIcon />
-            PROMPTS
-          </Link>
-        </li>
-        <li>
-          <Link to='/roadmap'>
-            <MapIcon />
-            ROADMAP
-          </Link>
-        </li>
-        <li>
-          <Link to='/Signup'>
-            <LoginIcon />
-            LOGIN
-          </Link>
-        </li>
-      </ul>
-  <li>
-    <Link to='/'>
-      <CottageIcon />
-      Cottage
-    </Link>
-  </li>
-  <li>
-    {/* Link to the Profile page */}
+  {/* <li>
+  
     <Link to='/profile'>
-      <PersonIcon />
+      <PersonIcon className='navbar-icon'/>
       Vision Board
     </Link>
-  </li>
+  </li> */}
   <li>
     <Link to='/feed'>
-      <GroupsIcon />
+      <GroupsIcon className='navbar-icon' />
       Feed
     </Link>
   </li>
   <li>
     <Link to='/roadmap'>
-      <MapIcon />
+      <MapIcon  className='navbar-icon'/>
       Roadmap
     </Link>
   </li>
   <li>
     <Link to='/prompts'>
-      <CalendarTodayIcon />
+      <CalendarTodayIcon  className='navbar-icon'/>
       Prompts
     </Link>
   </li>
-  <li>
+  {/* <li>
     <Link to='/Signup'>
-      <LoginIcon />
+      <LoginIcon  className='navbar-icon'/>
       Signup
     </Link>
-  </li>
-  <li>
+  </li> */}
+  {/* <li>
     <Link to='/about'>
-      <GroupsIcon />
+      <GroupsIcon  className='navbar-icon'/>
       About
     </Link>
-  </li>
-</ul>
+  </li> */}
     </div>
   );
 }

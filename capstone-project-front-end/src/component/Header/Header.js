@@ -11,7 +11,8 @@ const Header = ({ showNav, setShowNav }) => {
         <MenuIcon onClick={() => setShowNav(!showNav)} />
         <div className="logo-container">
           <Link to="/">
-            <img src={logo} className="logo1" alt="logo" />
+            logo goes here
+            {/* <img src={logo} className="logo1" alt="logo" /> */}
           </Link>
         </div>
       </div>

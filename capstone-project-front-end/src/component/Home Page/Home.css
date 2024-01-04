@@ -1,5 +1,6 @@
 /* Import the Pacifico font */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
 
 .home-container {
   transition: margin-left 0.3s ease; /* Apply transition effect to margin-left property */
