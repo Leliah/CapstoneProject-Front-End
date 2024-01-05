@@ -1,59 +1,64 @@
-
-.navbar {
-  background-color: #2c3e50; /* Navbar background color */
 /* Navbar.css */
 .navbar {
-  background-color: #055b49; /* Navbar background color */
-  padding: 10px;
-}
-
-.menu-icon {
-  cursor: pointer;
-  font-size: 24px; /* Adjust the font size of the menu icon */
-  margin-right: 20px; /* Adjust margin for better spacing */
-}
-
-/* Navbar styles for larger screens */
-.navbar ul {
+  position: fixed;
+  border-radius: 50px;
+  top: 8%;
+  left: -300px; /* Start off-screen on the left */
+  width: 500px; /* Adjust the width as needed */
+  height: 80vh;
+  background-color: #005341;
+  transition: left 20s ease; /* Apply transition effect to the left property */
+  border: 10px solid white; /* Add a white border around the navbar */
+  padding: 10px; /* Add padding to create space between the border and content */
+  left: -50vw; /* Start off-screen on the left */
+  width: 500px; /* Adjust the width as needed */
+  height: 80vh;
+  background-color: #005341;
+  transition: left 2s ease; /* Apply transition effect to the left property */
+  border: 10px solid white; /* Add a white border around the navbar */
+  padding: 10px; /* Add padding to create space between the border and content */
   list-style: none;
+}
+
+
+.navbar.active {
+
+  left: -5%; /* Slide in to view */
+}
+
+.navbar.active {
+  transform: translateX(-50); /* Slide in to view by translating from left to right */
+}
+
+/* Add your other styling for the navbar elements as needed */
+ul {
+  list-style: none;
+  padding: 0;
+
+  left: -60px; /* Slide in to view */
+}
+
+.navbar.active {
+  transform: translateX(-50); /* Slide in to view by translating from left to right */
+
+}
+
+li {
+  margin: 75px 70px;
+
+  border-bottom: 5px solid white; /* Add a horizontal line between list items */
+
+  border-bottom: 5px solid white; 
+  font-family: 'Roboto';
+  font-size: 24px;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
   display: flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
 }
 
-.navbar li {
-  margin-right: 20px; /* Adjust margin for better spacing between menu items */
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #ecf0f1; /* Navbar link color */
-  font-size: 18px; /* Navbar link font size */
-  transition: color 0.3s ease-in-out;
-}
-
-.navbar a:hover {
-  color: #3498db; /* Change link color on hover */
-}
-
-/* Slide-in transition for the navbar */
-.navbar.active ul {
-  transform: translateX(0);
-}
-
-@media (max-width: 768px) {
-  /* Media Query for Mobile */
-  .navbar ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar li {
-    margin: 10px 0;
-  }
-
-  .navbar.active ul {
-    transform: translateY(0);
-  }
-}
+/* Adjust styling based on your design */
