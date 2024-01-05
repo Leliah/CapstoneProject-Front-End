@@ -18,8 +18,9 @@
 }
   
 img {
-    border-radius: 50%;
-    max-width: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   }
   form {
     margin-top: 20px;
@@ -75,7 +76,7 @@ img {
   background-color: #055b49;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 15px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;

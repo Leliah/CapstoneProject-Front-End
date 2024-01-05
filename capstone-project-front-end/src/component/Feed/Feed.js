@@ -71,7 +71,7 @@ function Feed() {
       </div>
 
       <div className="journal">
-        <h2>Feed</h2>
+        <h2>Journal</h2>
         <form onSubmit={handleFeedSubmit}>
           <input
             className="feedInput"
