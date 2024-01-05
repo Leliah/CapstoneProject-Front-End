@@ -14,6 +14,7 @@ import Prompts from "./component/Prompts/Prompts";
 import PromptsResponse from "./component/Prompts/PromptsResponse";
 import Feed from "./component/Feed/Feed";
 import Login from "./component/Login/Login";
+// import background from "./component/background.png";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -21,14 +22,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header>
+          
+        <header className="header">
           <div className="menu">
             <MenuIcon onClick={() => setShowNav(!showNav)} />
             <Link to="/" className="logo-container">
               <img src={logo} className="logo1" alt="logo" />
             </Link>
           </div>   
-             
+          {/* <img className="background" src={background} alt="bg image" /> */}
           <Navbar showNav={showNav} />
 
           {/* Conditionally render the Navbar based on showNav state */}
@@ -52,7 +54,6 @@ function App() {
           {/* Add more routes for other components/pages */}
         </Routes>
       </div>
-
       <Footer />
     </Router>
   );

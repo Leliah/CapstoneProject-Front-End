@@ -1,24 +1,23 @@
+
+
 body {
   margin: 0; /* Remove default margin */
+  /* background-color: #fae8ca;
+  background-image: url(/Users/adrianburke/Desktop/pursuit/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
+  background-size: auto; */
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 80vh; /* 100% of the viewport height */
-  margin: 0; /* Remove margin */
-  background-color: #fae8ca; /* Apply background color to the whole page */
-}
+
 
 .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%; /* Adjust the width as needed */
-  max-width: 1200px; /* Set a maximum width if needed */
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+  padding-top: 10rem;
   box-sizing: border-box; /* Include padding and border in the total width */
+  justify-content: center;
 }
 
 .about {
@@ -82,7 +81,7 @@ body {
 
 .button {
   display: inline-block;
-  background-color: #86b649;
+  background-color: #055b49;
   color: white;
   font-weight: bold;
   border: none;
@@ -97,6 +96,7 @@ body {
 .button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #86b649;
 }
 
 .button a {
@@ -111,7 +111,7 @@ body {
 .meet-the-team {
   text-align: center;
   margin-top: 20px; /* Add some top margin for space */
-  font-size: 24px; /* Increase font size */
+  font-size: 500%; /* Increase font size */
   text-transform: uppercase; /* Convert text to uppercase */
   letter-spacing: 2px; /* Add letter spacing */
   color: #055b49; /* Change text color */

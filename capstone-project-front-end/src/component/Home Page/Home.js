@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Import the CSS file
 import book from "../Book.png"
+import bg from "../bg.png"
+
+
 
 function Home({ isNavbarOpen }) {
   const [showHello, setShowHello] = useState(false);
@@ -37,7 +40,6 @@ function Home({ isNavbarOpen }) {
       <div className="image-container">
         <img src={book} alt="book Image" />
       </div>
-      <div className="hello-container">
         {showHello && <div className="hello-text">{languages[currentLanguageIndex]}</div>}
         <div className="button-container">
           <Link to="/signup">
@@ -47,7 +49,7 @@ function Home({ isNavbarOpen }) {
             <button className="login-button">Log in</button>
           </Link>
         </div>
-      </div>
+      
     </div>
   );
 }

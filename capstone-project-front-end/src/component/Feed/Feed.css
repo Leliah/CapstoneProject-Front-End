@@ -127,17 +127,18 @@ img {
   height: 150px;
   border-radius: 50%;
     margin-left: 35%;
+    padding-right: 60px;
     border: 5px solid white;
+  
 }
   
 .profilefeed img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  padding-top: 20px;
-  margin-left: 10px;
-
-  }
+  width: auto;
+  height: 30vh;
+  margin-right: 40px; /* Adjust the margin as needed */
+  padding-bottom: 2vh;
+}
+  
   form {
     margin-top: 20px;
   }
@@ -204,7 +205,10 @@ img {
   }
 
   .profile-name {
-    padding-left: 50px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 1%;
+    font-size: 60px;
   }
 
   .post{
