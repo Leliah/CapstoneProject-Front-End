@@ -66,7 +66,7 @@ function SignUp() {
         <button className="signup-button" onClick={handleSignUp}>
           Sign up
         </button>
-        {!isUser && <p>You are not a user. Please sign up.</p>}
+        {!isUser && <p className="not-user">You are not a user. Please sign up.</p>}
 
         <div className="signup-links">
           <Link

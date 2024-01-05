@@ -19,19 +19,26 @@ header {
   align-items: center; /* Align items vertically in the center */
   padding: 40px;
   background: #fae8ca;
-  height: 2vh;
+  height: 1vh;
+  padding-left: 5px;
 }
 
-.logo {
+.logo1 {
   width: 350px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
-  margin-right: 10px;
-  padding-top: ; /* Add margin to separate from the menu button */
+}
+
+.logo-container {
+  margin-right: 10px; /* Adjust margin as needed */
 }
 
 .menu-container {
   display: flex;
   align-items: center; /* Align items vertically in the menu container */
+}
+.menu {
+  display: flex;
+  align-items: center;
 }
 
 .menu svg {
@@ -41,6 +48,7 @@ header {
   transition: color 0.3s ease; /* Add transition for smooth color change */
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add shadow on hover */
   border-radius: 30px;
+  margin-left: 10px; /* Add space between the logo and the menu icon */
 }
 
 .menu:hover svg {
@@ -49,10 +57,9 @@ header {
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
-  .logo {
-    width: 100px; /* Adjust the width as needed */
+  .logo1 {
+    width: 270px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add margin to separate from the menu button */
   }
 
   .menu-container {
@@ -75,6 +82,7 @@ header {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add shadow on hover */
     border-radius: 30px;
     /* Add space between the logo and the menu icon */
+    margin-left: 10px;
   }
 
   /* Rest of your existing styles... */

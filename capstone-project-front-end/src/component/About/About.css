@@ -1,56 +1,134 @@
-/* About.css */
-
-.about-page {
-  text-align: center;
-  margin: 20px;
-  background-color: #fff6e7;
+body {
+  margin: 0; /* Remove default margin */
 }
 
-.about-page h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.developer-info {
+.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  background-color: #fff6e7;
+  justify-content: center;
+  height: 80vh; /* 100% of the viewport height */
+  margin: 0; /* Remove margin */
+  background-color: #fae8ca; /* Apply background color to the whole page */
 }
 
-.developer-info img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 1200px; /* Set a maximum width if needed */
+  box-sizing: border-box; /* Include padding and border in the total width */
 }
 
-.developer-details {
+.about {
   text-align: center;
+  font-size: 10px; /* Increase font size */
+  font-weight: bolder;
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing */
+  color: #055b49; /* Change text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
 }
 
-.developer-details h2 {
-  font-size: 20px;
-  margin-bottom: 5px;
+.developers {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.developer-details p {
-  font-size: 16px;
+.developer {
+  text-align: center;
+  margin: auto;
+  margin-top: 70px; /* Adjusted margin-top */
+}
+
+.developer img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: bounce 3.0s ease-in-out infinite alternate;
+}
+
+.developer img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.developer h3 {
+  margin-top: 10px;
+}
+
+.developer p {
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #86b649;
+  color: white;
+  font-weight: bold;
   border: none;
-  border-radius: 5px;
+  padding: 9px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 0 70px;
 }
 
-button:hover {
-  background-color: #0056b3;
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button a:hover {
+  text-decoration: underline;
+}
+
+.meet-the-team {
+  text-align: center;
+  margin-top: 20px; /* Add some top margin for space */
+  font-size: 24px; /* Increase font size */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing */
+  color: #055b49; /* Change text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+  opacity: 0; /* Start with 0 opacity */
+
+  /* Animation for fading in */
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Keyframes for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

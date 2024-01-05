@@ -1,5 +1,6 @@
+// Navbar.js
 import React, { useState, useEffect } from 'react';
-import './Navbar.css'; // Import the CSS file
+import './Navbar.css';
 import { Link } from 'react-router-dom';
 import CottageIcon from '@mui/icons-material/Cottage';
 import PersonIcon from '@mui/icons-material/Person';
@@ -10,6 +11,7 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 function Navbar() {
   const [isFullWidth, setIsFullWidth] = useState(window.innerWidth > 768);
+  const [showNav, setShowNav] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,12 +25,19 @@ function Navbar() {
     };
   }, []);
 
+  const handleNavToggle = () => {
+    setShowNav(!showNav);
+  };
+
   if (!isFullWidth) {
-    return null; // Return null to not render the Navbar in mobile version
+    return null;
   }
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${showNav ? 'active' : ''}`}>
+      <div className="menu-icon" onClick={handleNavToggle}>
+
+      </div>
       <ul>
         <li>
           <Link to='/'>
@@ -36,7 +45,8 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to='/'>
+          {/* Link to the Profile page */}
+          <Link to='/profile'>
             <PersonIcon />
           </Link>
         </li>
@@ -66,3 +76,10 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+
+
+
+
