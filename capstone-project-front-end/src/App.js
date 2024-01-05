@@ -44,8 +44,8 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/roadmap" element={<RoadMapWrapper />} />
-          <Route path="/prompts" element={<Prompts />} />
-          <Route path="/prompts/:index" element={<PromptsResponse />} />
+          <Route path="/prompts" element={<Prompts />}/>
+          <Route path="/prompts/:index" element={<PromptsResponse />}/>
           <Route path="/feed" element={<Feed />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
