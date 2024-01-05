@@ -40,6 +40,7 @@ function App() {
           <Route path="/roadmap" element={<RoadMapWrapper />} />
           <Route path="/prompts" element={<Prompts />}/>
           <Route path="/prompts/:index" element={<PromptsResponse />}/>
+         
           <Route path="/feed" element={<Feed />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
