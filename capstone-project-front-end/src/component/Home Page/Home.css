@@ -1,5 +1,22 @@
 /* Import the Pacifico font */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+
+.home-container {
+  transition: margin-left 0.3s ease; /* Apply transition effect to margin-left property */
+}
+
+.home-container.shifted {
+  margin-left: 250px; /* Adjust the margin as needed to shift to the right */
+}
+
+.home-container {
+  transition: margin-left 0.3s ease; /* Apply transition effect to margin-left property */
+}
+
+.home-container.shifted {
+  margin-left: 250px; /* Adjust the margin as needed to shift to the right */
+}
 
 /* Common Styles for hello-container */
 .hello-container {
@@ -14,32 +31,31 @@
   margin: 0;
 }
 
-/* Hello Text */
+/* Hello Text DONE*/
 .hello-text {
   opacity: 0;
-  animation: fadeInAndFloat 3s ease-in-out infinite;
-  font-size: 14vmax;
+  animation: fadeInAndFloat 7.5s ease-in-out infinite;
+  font-size: 5vmax;
   color: #055B49;
-  padding: 10%;
-  margin-bottom: 50px; /* Adjusted margin-bottom for fixed height */
-  height: 10vh;
+  padding: 1%;
+  padding-top: 1%;
+  height: 15vh;
 }
 
 /* Buttons */
-.button-container {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
-  margin-top: 20px; /* Adjusted margin-top for space between hello-text and button-container */
+.button-contaier {
+  margin-bottom: 4%;
+
 }
+
+.button-contaier a {
+ 
+}
+
 
 /* Login and Signup Buttons */
 .login-button,
 .signup-button {
-  padding: 10px 25px;
   margin: 15px;
   background-color: #055b49;
   color: #fff;
@@ -56,12 +72,32 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-.image-container{
+.image-container {
   position: absolute;
-  top: 0px;
-  left: 52%;
-  transform: translateX(-50%);
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 200%;
+  max-height: 300px;
+}
+
+
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 200%;
+  max-height: 300px;
+}
+
+
 
 /* Keyframes */
 @keyframes fadeInAndFloat {
@@ -84,24 +120,3 @@
   }
 }
 
-/* Media Query for Mobile */
-@media screen and (max-width: 375px) {
-  .hello-text {
-    padding-bottom: 2px;
-    font-size: 10vmax;
-    margin-top: 5%;
-    margin-bottom: 1%; /* Adjusted margin-bottom for mobile */
-  }
-
-  .login-button{
-    font-size: 14px;
-    margin: 10px;
-    border-radius: 20px;
-  }
-
-  .signup-button{
-    font-size: 14px;
-    margin: 10px;
-    border-radius: 20px;
-  }
-}

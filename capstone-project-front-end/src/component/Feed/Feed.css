@@ -1,88 +1,216 @@
-/* .feed {
-  text-align: center;
+
+
+.journal {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+  border: 20px 10px 20px 10px;
+  right: 0px;
+  float: right;
+  background-color: #055b49;
+}
+.profilefeed{
+  background-color: #055b49;
+  left: 0px;
+  float: left;
+  width: 350px;
+  border-radius: 10px;
+  margin-left: 35%;
+  border: 5px solid white;
+}
+.journal {
+  border: 5px solid white;
+  height: 80vh;
+}
+.feedpic{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-left: 20px;
+margin-top: 20px;
+border: 5px solid white;
+}
+form {
+  margin-top: 20px;
+}
+
+.feedInput {
+  width: 75%;
+  padding: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+.feedSubmit {
+  padding: 10px 25px;
   margin: 20px;
-  background-color: #fff6e7;
-  font-size: 24px;
-  color: #055B49;
-  
-}
-
-.feedInput{
-  width: 700px;
-  height: 100px;
-}
-
-.feedSubmit{
-  padding: 20px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #f6f9f8;
+  color: #0e0d0d;
   border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.feedSubmit:hover {
+  color: #86b649;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.profile-name {
+  margin-left: 60px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #fbfffe;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feedli {
+  margin-bottom: 10px;
+  padding: 10px;
   border-radius: 5px;
-} */
+  color: black;
+  border: 1px solid #86b649;
+  border-radius: 25px;
+  background-color: white;
+  margin-top: 30px;
+}
 
-/* Feed.css */
+.feeddelete{
+/* padding: 10px 25px; */
+/* margin: 20px; */
+background-color: #055b49;
+color: #fff;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+font-size: 15px;
+transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-.feed {
-    max-width: 600px;
+.post {
+  margin-bottom: 20px;
+}
+
+
+.journal {
+    max-width: 700px;
     margin: 0 auto;
-    padding: 20px;
-    background-color:  #fae8ca;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 80vh;
-  }
+    padding: 10px;
+    border: 20px 10px 20px 10px;
+    right: 0px;
+    float: right;
+    background-color: #055b49;
+
+}
+.profilefeed{
+    background-color: #055b49;
+    left: 0px;
+    float: left;
+    width: 350px;
+    border-radius: 10px;
+
+}
   
-  h2 {
-    color: #055B49;
-  }
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+    margin-left: 35%;
+    border: 5px solid white;
+}
   
+.profilefeed img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding-top: 20px;
+  margin-left: 10px;
+
+  }
   form {
     margin-top: 20px;
   }
   
   .feedInput {
-    width: 100%;
-    padding: 10px;
+    width: 75%;
+    padding: 50px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 25px;
   }
   
   .feedSubmit {
     padding: 10px 25px;
     margin: 20px;
-    background-color: #055b49;
-    color: #fff;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     font-size: 20px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
   }
   
   .feedSubmit:hover {
     color: #fff;
-    background-color: #86b649;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   }
   
   h3 {
     margin-top: 20px;
-    color: #055B49;
+    color: #fbfffe;
   }
   
   ul {
     list-style: none;
-    padding: 0;
+    padding: 1px;
   }
   
   .feedli {
-    margin-bottom: 10px;
+    margin-bottom: 10%;
     padding: 10px;
     border-radius: 5px;
-    color: #055B49;
+    color: black;
     border: 1px solid #86b649;
+    border-radius: 25px;
+    background-color: white;
+
   }
   
+ .feeddelete{
+  /* padding: 10px 25px; */
+  /* margin: 20px; */
+  background-color: #055b49;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+ }
+
+    margin-top: 2%;
+    padding-top: 10%;
+  }
+
+  .profile-name {
+    padding-left: 50px;
+  }
+
+  .post{
+    margin-top: 2%;
+    padding-top: 10%;
+  }
+  
+
+

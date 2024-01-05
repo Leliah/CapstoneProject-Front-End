@@ -7,13 +7,13 @@ import AboutPage from "./component/About/About";
 import Navbar from "./component/Navbar/Navbar";
 import MenuIcon from "@mui/icons-material/Menu";
 import Footer from "./component/Footer/Footer";
-import Profile from "./component/Profile/Profile"; // Import the Profile component
-import logo from "./component/logo1.png"; // Update the path accordingly
+import Profile from "./component/Profile/Profile";
+import logo from "./component/logo1.png";
 import RoadMapWrapper from "./component/RoadMap/Wrapper";
 import Prompts from "./component/Prompts/Prompts";
 import PromptsResponse from "./component/Prompts/PromptsResponse";
 import Feed from "./component/Feed/Feed";
-import Login from "./component/Login/Login"
+import Login from "./component/Login/Login";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -24,15 +24,21 @@ function App() {
         <header>
           <div className="menu">
             <MenuIcon onClick={() => setShowNav(!showNav)} />
-            <div className="logo-container">
+            <Link to="/" className="logo-container">
               <img src={logo} className="logo1" alt="logo" />
-            </div>
-          </div>
+            </Link>
+          </div>   
+             
+          <Navbar showNav={showNav} />
+
+          {/* Conditionally render the Navbar based on showNav state */}
+          {showNav && <Navbar showNav={showNav} />}
 
           <div className={`sidenav ${showNav ? "active" : ""}`}>
+            {/* Add content to your sidenav if needed */}
           </div>
         </header>
-        <Navbar show={showNav} />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />

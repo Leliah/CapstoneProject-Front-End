@@ -255,32 +255,34 @@ button.more-steps-btn:hover {
 /* *****************************GOOGLE MAPS************************* */
 
 #map {
-  height:70vh;
+  height:60vh;
   width: 900px;
-  margin-left: 20px;
-} 
+  margin-left: 10px;
+}  
 
 
 /* Add these styles to your existing styles or create a new stylesheet */
-.fake-map {
+ .fake-map {
   position: relative;
-  width: 500px; /* Adjust the width and height based on your design */
+  width: 500px; 
   height: 500px;
-  border: 1px solid #ccc; /* Optional: Add a border to simulate a map container */
-}
+  border: 1px solid #ccc; 
+ }
 
 .goal-marker {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: red; /* Customize the marker color */
-  border-radius: 50%; /* Create a circular marker */
+  background-color: red; 
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: bold;
 }
+
+
 
 /* *********************************PROMPTS********************************* */
 
