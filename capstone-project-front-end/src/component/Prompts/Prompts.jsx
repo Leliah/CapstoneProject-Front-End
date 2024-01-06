@@ -33,6 +33,15 @@ function Prompts() {
         .catch((e) => console.error("catch", e));
     }, [])
     
+    //PREVIOUS BTN
+    function prevPromptBtn() {
+        if(currentIndex > 0){
+            setCurrentIndex(currentIndex - 1)
+            setTodaysPrompt(prompts[currentIndex - 1].title);
+        }
+    }
+
+    //NEXT BTN
     function nextPromptBtn() {
         if(currentIndex < prompts.length -1){
             setCurrentIndex(currentIndex + 1);
@@ -57,6 +66,7 @@ function Prompts() {
         <div className='todays-prompts'>
             <h3>Answer Today's Daily Prompt:</h3>
             <p className='prompt-title'>{todaysPrompt}</p>
+            <button className='prev-prompt-btn' onClick={prevPromptBtn}>Previous</button>
             <button className='start-prompt-btn'
             onClick={handleStartResponse}>✎</button>
             <button className='next-prompt-btn' onClick={nextPromptBtn}>Next</button>
