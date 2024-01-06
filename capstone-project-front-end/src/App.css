@@ -307,6 +307,10 @@ button.more-steps-btn:hover {
   margin-left: 40%;
 }
 
+.todays-prompts h3 {
+ color: #fffffF;
+}
+
 .start-prompt-btn {
   background-color: #86b649;
 }
