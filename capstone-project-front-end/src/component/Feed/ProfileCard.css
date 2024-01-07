@@ -1,0 +1,14 @@
+.profilefeed{
+    background-color: #055b49;
+    left: 0px;
+    float: left;
+    width: 350px;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 50%;
+    height: auto;
+    width: 200px;
+    right: 100px;
+  }
