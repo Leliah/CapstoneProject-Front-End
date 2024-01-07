@@ -14,6 +14,7 @@ import Prompts from "./component/Prompts/Prompts";
 import PromptsResponse from "./component/Prompts/PromptsResponse";
 import Feed from "./component/Feed/Feed";
 import Login from "./component/Login/Login";
+import PromptsWorkedOn from "./component/Prompts/PromptsWorkedOn";
 // import background from "./component/background.png";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/roadmap" element={<RoadMapWrapper />} />
           <Route path="/prompts" element={<Prompts />} />
           <Route path="/prompts/:index" element={<PromptsResponse />} />
+          <Route path="/prompts/my-prompts" element={<PromptsWorkedOn />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />

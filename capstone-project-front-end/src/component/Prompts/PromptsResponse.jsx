@@ -35,7 +35,7 @@ const handleSubmit = (event) => {
 const updatePrompt = (updateResponse) => {
   console.log('Updated Prompt:', updateResponse);
 
-  let responseValue = responseRef.current.value
+  //let responseValue = responseRef.current.value
   axios
     .put(`http://localhost:3009/prompts/${index}`, updateResponse)
     .then((response) => {
@@ -45,6 +45,7 @@ const updatePrompt = (updateResponse) => {
     })
     .catch((e) => console.error("catch", e));
 
+    alert('Your response has been saved!')
     responseRef.current.value = ''
 };
 
