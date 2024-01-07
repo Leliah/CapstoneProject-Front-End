@@ -101,6 +101,7 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 20px;
 }
 
+
 .journal {
     max-width: 700px;
     margin: 0 auto;
@@ -110,8 +111,7 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease;
     right: 0px;
     float: right;
     background-color: #055b49;
-    border: 5px solid white;
-    height: 85vh;
+
 }
 .profilefeed{
     background-color: #055b49;
@@ -119,17 +119,25 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease;
     float: left;
     width: 350px;
     border-radius: 10px;
-    margin-left: 35%;
-    border: 5px solid white;
+
 }
   
-.profilefeed img {
+img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  padding-top: 20px;
-  margin-left: 10px;
-  }
+    margin-left: 35%;
+    padding-right: 60px;
+    border: 5px solid white;
+  
+}
+  
+.profilefeed img {
+  width: auto;
+  height: 30vh;
+  margin-right: 40px; /* Adjust the margin as needed */
+  padding-bottom: 2vh;
+}
   
   form {
     margin-top: 20px;
@@ -137,7 +145,7 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease;
   
   .feedInput {
     width: 75%;
-    padding: 30px;
+    padding: 50px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 25px;
@@ -152,6 +160,7 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease;
     border-radius: 25px;
     cursor: pointer;
     font-size: 20px;
+
   }
   
   .feedSubmit:hover {
@@ -176,12 +185,30 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #86b649;
     border-radius: 25px;
     background-color: white;
+
+  }
+  
+ .feeddelete{
+  /* padding: 10px 25px; */
+  /* margin: 20px; */
+  background-color: #055b49;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+ }
+
     margin-top: 2%;
     padding-top: 10%;
   }
 
   .profile-name {
-    padding-left: 50px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 1%;
+    font-size: 60px;
   }
 
   .post{
@@ -189,4 +216,5 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease;
     padding-top: 10%;
   }
   
+
 

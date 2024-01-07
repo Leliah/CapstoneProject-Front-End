@@ -1,21 +1,23 @@
 /* Import the Pacifico font */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;1,300&display=swap');
-
+body {
+  font-family: 'Pacifico', cursive;
+  background-color: #fae8ca;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
 
 .home-container {
-  transition: margin-left 0.3s ease; /* Apply transition effect to margin-left property */
+  transition: margin-left 0.3s ease; 
+  justify-content: center;
+  
 }
 
 .home-container.shifted {
-  margin-left: 250px; /* Adjust the margin as needed to shift to the right */
-}
-
-.home-container {
-  transition: margin-left 0.3s ease; /* Apply transition effect to margin-left property */
-}
-
-.home-container.shifted {
-  margin-left: 250px; /* Adjust the margin as needed to shift to the right */
+  margin-right: 250%; 
 }
 
 /* Common Styles for hello-container */
@@ -37,24 +39,19 @@
   animation: fadeInAndFloat 7.5s ease-in-out infinite;
   font-size: 5vmax;
   color: #055B49;
-  padding: 1%;
-  padding-top: 1%;
-  height: 15vh;
-}
-
-/* Buttons */
-.button-contaier {
-  margin-bottom: 4%;
-
-}
-
-.button-contaier a {
+  padding-top: 10%;
+  height: 60vh;
+  align-items: center;
  
 }
 
+/* Buttons */
+/* .button-contaier {
+  padding-bottom: 50%;
+} */
 
 /* Login and Signup Buttons */
-.login-button,
+/* .login-button,
 .signup-button {
   margin: 15px;
   background-color: #055b49;
@@ -64,7 +61,7 @@
   cursor: pointer;
   font-size: 30px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
 .login-button:hover,
 .signup-button:hover {
@@ -74,7 +71,7 @@
 
 .image-container {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -97,6 +94,9 @@
   max-height: 300px;
 }
 
+.bg-image{
+  margin-right: 50%;
+}
 
 
 /* Keyframes */
