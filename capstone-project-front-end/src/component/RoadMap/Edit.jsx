@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {AiOutlinePlus} from 'react-icons/ai';
+// import {AiOutlinePlus} from 'react-icons/ai';
 
 function Edit({editStartPoint, object}) {
     const [ startingPointValue, setStartingPointValue ] = useState('');

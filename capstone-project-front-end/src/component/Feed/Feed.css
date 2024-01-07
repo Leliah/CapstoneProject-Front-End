@@ -1,4 +1,60 @@
-/* .feed {
+
+.feed {
+  display: flex;
+  
+}
+.profilefeed {
+  background-color: #055b49;
+  border-radius: 10px;
+  width: 350px;
+  margin-bottom: 20px;
+  max-height: 200px;
+  margin-left: 20px;
+}
+.promptsfeed {
+    background-color: #055b49;
+    border-radius: 10px;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex: 0;
+}
+
+.promptslink {
+  font-size: 55px;
+  text-align: center;
+}
+
+.journal {
+  background-color: #055b49;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 1700px;
+  max-height: 700px;
+  overflow: auto;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+form {
+  max-height: 700px;
+  margin-top: 20px;
+ 
+}
+ .feed {
   text-align: center;
   margin: 20px;
   background-color: #fff6e7;
@@ -12,17 +68,20 @@
   height: 100px;
 }
 
-.feedSubmit{
-  padding: 20px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-} */
 
-/* Feed.css */
+.feedSubmit {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 20%;
+    box-sizing: border-box;
+
+
 
 .feed {
     max-width: 600px;
@@ -41,21 +100,25 @@
   border-radius: 25px;
   cursor: pointer;
   font-size: 20px;
-
+}
+.feedSubmit:hover {
+    color: #fff;
+}
+.feedSubmitdaily {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 .feedSubmit:hover {
-  color: #86b649;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-}
-
-.profile-name {
-  margin-left: 60px;
-}
-
-h3 {
-  margin-top: 20px;
-  color: #fbfffe;
+    color: #fff;
 }
 
 ul {
@@ -71,20 +134,8 @@ ul {
   border: 1px solid #86b649;
   border-radius: 25px;
   background-color: white;
-  margin-top: 30px;
 }
 
-.feeddelete{
-/* padding: 10px 25px; */
-/* margin: 20px; */
-background-color: #055b49;
-color: #fff;
-border: none;
-border-radius: 25px;
-cursor: pointer;
-font-size: 15px;
-transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
 
 .post {
   margin-bottom: 20px;
@@ -180,8 +231,6 @@ img {
   }
   
  .feeddelete{
-  /* padding: 10px 25px; */
-  /* margin: 20px; */
   background-color: #055b49;
   color: #fff;
   border: none;
@@ -189,9 +238,7 @@ img {
   cursor: pointer;
   font-size: 15px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 2%;
-    padding-top: 10%;
-  }
+}
 
   .profile-name {
     padding-left: 100px;
