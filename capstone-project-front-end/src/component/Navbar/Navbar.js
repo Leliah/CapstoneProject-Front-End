@@ -9,77 +9,28 @@ import LoginIcon from '@mui/icons-material/Login';
 import GroupsIcon from '@mui/icons-material/Groups';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
-function Navbar() {
-  const [isFullWidth, setIsFullWidth] = useState(window.innerWidth > 768);
-  const [showNav, setShowNav] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsFullWidth(window.innerWidth > 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const handleNavToggle = () => {
-    setShowNav(!showNav);
-  };
-
-  if (!isFullWidth) {
-    return null;
-  }
-
+function Navbar({ showNav }) {
   return (
     <div className={`navbar ${showNav ? 'active' : ''}`}>
-      <div className="menu-icon" onClick={handleNavToggle}>
-
-      </div>
-      <ul>
-        <li>
-          <Link to='/'>
-            <CottageIcon />
-          </Link>
-        </li>
-        <li>
-          {/* Link to the Profile page */}
-          <Link to='/profile'>
-            <PersonIcon />
-          </Link>
-        </li>
-        <li>
-          <Link to='/roadmap'>
-            <MapIcon />
-          </Link>
-        </li>
-        <li>
-          <Link to='/prompts'>
-            <CalendarTodayIcon />
-          </Link>
-        </li>
-        <li>
-          <Link to='/Signup'>
-            <LoginIcon />
-          </Link>
-        </li>
-        <li>
-          <Link to='/about'>
-            <GroupsIcon />
-          </Link>
-        </li>
-      </ul>
+  <li>
+    <Link to='/feed'>
+      Feed
+    </Link>
+  </li>
+  <li>
+    <Link to='/roadmap'>
+      Roadmap
+    </Link>
+  </li>
+  <li>
+    <Link to='/prompts'>
+      Prompts
+    </Link>
+  </li>
     </div>
   );
 }
 
 export default Navbar;
-
-
-
-
-
 
 

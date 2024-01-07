@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Import the CSS file
 import growth from "../growth.png"
+import book from "../Book.png"
+import bg from "../bg.png"
+
+
 
 function Home() {
   const [showHello, setShowHello] = useState(false);
@@ -37,7 +41,8 @@ function Home() {
       <div className="image-container">
         <img src={growth} alt="Growth Image" />
       </div>
-      <div 
+      {/* IMG CONTAINER CLOSING */}
+      <div
       className="hello-container">
         {showHello && <div className="hello-text">{languages[currentLanguageIndex]}</div>}
         <div className="button-container">
@@ -48,8 +53,8 @@ function Home() {
            <button className="login-button">Log in</button>
           </Link>
         </div>
-      </div>
     </div>
+   </div> 
   );
 }
 

@@ -30,7 +30,6 @@ function About() {
   };
 
   return (
-    <div className="main-content" style={{ backgroundColor: "#fae8ca" }}> {/* Apply background color to the main content */}
       <div className="about-container">
         <div className="about">
           <p style={{ fontSize: 20 }}>
@@ -93,7 +92,6 @@ function About() {
         </div>
         <div className="sidebar">{/* Sidebar content */}</div>
       </div>
-    </div>
   );
 }
 

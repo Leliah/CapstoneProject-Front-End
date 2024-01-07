@@ -7,11 +7,21 @@ body {
   color: #eaecef;
   overscroll-behavior-y: none;
   overflow-x: hidden;
+  /* background-image:url(/Users/adrianburke/Desktop/pursuit/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
+  background-size: cover; */
+}
+ 
+.header{
+  justify-content: left;
+  width: 50%;
 }
 
 .App {
   overflow: hidden;
   background-color: #fae8ca;
+  height: 100vh;
+  background-image:url(/Users/adrianburke/Desktop/pursuit/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
+  background-size: cover;
 }
 
 header {
@@ -31,6 +41,7 @@ header {
 .logo-container {
   margin-right: 10px; /* Adjust margin as needed */
 }
+
 
 .menu-container {
   display: flex;

@@ -13,6 +13,8 @@ import RoadMapWrapper from "./component/RoadMap/Wrapper";
 import Prompts from "./component/Prompts/Prompts";
 import PromptsResponse from "./component/Prompts/PromptsResponse";
 import Feed from "./component/Feed/Feed";
+import Login from "./component/Login/Login";
+// import background from "./component/background.png";
 import Login from "./component/Login/Login"
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header>
+          
+        <header className="header">
           <div className="menu">
             <MenuIcon onClick={() => setShowNav(!showNav)} />
             <div className="logo-container">
@@ -47,7 +50,6 @@ function App() {
           {/* Add more routes for other components/pages */}
         </Routes>
       </div>
-
       <Footer />
     </Router>
   );
