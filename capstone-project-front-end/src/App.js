@@ -14,8 +14,8 @@ import Prompts from "./component/Prompts/Prompts";
 import PromptsResponse from "./component/Prompts/PromptsResponse";
 import Feed from "./component/Feed/Feed";
 import Login from "./component/Login/Login";
-// import background from "./component/background.png";
-import Login from "./component/Login/Login"
+
+
 
 function App() {
   const [showNav, setShowNav] = useState(false);
