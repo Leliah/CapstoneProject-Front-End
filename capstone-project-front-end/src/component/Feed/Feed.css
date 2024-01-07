@@ -1,72 +1,124 @@
 
+.feed {
+  display: flex;
+  
+}
+.profilefeed {
+  background-color: #055b49;
+  border-radius: 10px;
+  width: 350px;
+  margin-bottom: 20px;
+  max-height: 200px;
+  margin-left: 20px;
+}
+.promptsfeed {
+    background-color: #055b49;
+    border-radius: 10px;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex: 0;
+}
+
+.promptslink {
+  font-size: 55px;
+  text-align: center;
+}
 
 .journal {
-  max-width: 700px;
-  margin: 0 auto;
+  background-color: #055b49;
   border-radius: 10px;
   padding: 10px;
-  border: 20px 10px 20px 10px;
-  right: 0px;
-  float: right;
-  background-color: #055b49;
-}
-.profilefeed{
-  background-color: #055b49;
-  left: 0px;
-  float: left;
-  width: 350px;
-  border-radius: 10px;
-  margin-left: 35%;
-  border: 5px solid white;
-}
-.journal {
-  border: 5px solid white;
-  height: 80vh;
-}
-.feedpic{
-width: 150px;
-height: 150px;
-border-radius: 50%;
-margin-left: 20px;
-margin-top: 20px;
-border: 5px solid white;
-}
-form {
-  margin-top: 20px;
+  max-width: 1700px;
+  max-height: 700px;
+  overflow: auto;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
-.feedInput {
-  width: 75%;
-  padding: 50px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
+
+form {
+  max-height: 700px;
+  margin-top: 20px;
+ 
+}
+ .feed {
+  text-align: center;
+  margin: 20px;
+  background-color: #fff6e7;
+  font-size: 24px;
+  color: #055B49;
+  
+}
+
+.feedInput{
+  width: 700px;
+  height: 100px;
+}
+
 
 .feedSubmit {
-  padding: 10px 25px;
-  margin: 20px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+
+.feed {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff6e7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #055B49;
   background-color: #f6f9f8;
   color: #0e0d0d;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   font-size: 20px;
-
+  }
+.feedSubmit:hover {
+    color: #fff;
+}
+.feedSubmitdaily {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 .feedSubmit:hover {
-  color: #86b649;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-}
-
-.profile-name {
-  margin-left: 60px;
-}
-
-h3 {
-  margin-top: 20px;
-  color: #fbfffe;
+    color: #fff;
 }
 
 ul {
@@ -82,20 +134,8 @@ ul {
   border: 1px solid #86b649;
   border-radius: 25px;
   background-color: white;
-  margin-top: 30px;
 }
 
-.feeddelete{
-/* padding: 10px 25px; */
-/* margin: 20px; */
-background-color: #055b49;
-color: #fff;
-border: none;
-border-radius: 25px;
-cursor: pointer;
-font-size: 15px;
-transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
 
 .post {
   margin-bottom: 20px;
@@ -127,34 +167,37 @@ img {
   height: 150px;
   border-radius: 50%;
     margin-left: 35%;
+    padding-right: 60px;
     border: 5px solid white;
+  
 }
   
 .profilefeed img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  padding-top: 20px;
-  margin-left: 10px;
-
-  }
+  width: auto;
+  height: 30vh;
+  margin-right: 40px; /* Adjust the margin as needed */
+  padding-bottom: 2vh;
+}
+  
   form {
     margin-top: 20px;
   }
   
   .feedInput {
+    width: 100%;
+    padding: 10px;
     width: 75%;
     padding: 50px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 25px;
+    border-radius: 5px;
   }
   
   .feedSubmit {
     padding: 10px 25px;
     margin: 20px;
-    background-color: #f6f9f8;
-    color: #0e0d0d;
+    background-color: #055b49;
+    color: #fff;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -168,19 +211,19 @@ img {
   
   h3 {
     margin-top: 20px;
-    color: #fbfffe;
+    color: #055B49;
   }
   
   ul {
     list-style: none;
-    padding: 1px;
+    padding: 0;
   }
   
   .feedli {
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    color: black;
+    color: #055B49;
     border: 1px solid #86b649;
     border-radius: 25px;
     background-color: white;
@@ -188,8 +231,6 @@ img {
   }
   
  .feeddelete{
-  /* padding: 10px 25px; */
-  /* margin: 20px; */
   background-color: #055b49;
   color: #fff;
   border: none;
@@ -197,14 +238,13 @@ img {
   cursor: pointer;
   font-size: 15px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
- }
-
-    margin-top: 2%;
-    padding-top: 10%;
-  }
+}
 
   .profile-name {
-    padding-left: 50px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 1%;
+    font-size: 60px;
   }
 
   .post{

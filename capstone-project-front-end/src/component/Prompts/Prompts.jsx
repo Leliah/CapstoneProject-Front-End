@@ -10,53 +10,48 @@ function Prompts() {
     let { index } = useParams();
     let navigate = useNavigate();
     const [prompts, setPrompts] = useState([]);
-    const [randomPrompts, setRandomPrompts] = useState();
+    const [currentIndex, setCurrentIndex] = useState(1);
+    const [todaysPrompt, setTodaysPrompt] = useState();
 
     useEffect(() => {
         axios
         .get(`http://localhost:3009/prompts`)
         .then((response) => {
-            setPrompts(response.data);
-            //MAKING SURE PROMPTS ARR ISN'T EMPTY
-             if(response.data.length > 0){
-            setRandomPrompts(dailyPrompt());
+            //PROMPTS THAT ARE NOT MARKED AS COMPLETED
+            let notCompletedPrompts = response.data.filter((element) => !element.is_completed);
+
+            //IF THERE ARE ANY PROMPTS THAT MEANT THAT CRITERIA, SET IT AS TODAYS PROMPT
+            if(notCompletedPrompts.length > 0){
+                setTodaysPrompt(notCompletedPrompts[0].title)
             } else {
-                console.log('need more prompts!!!')
+                console.log('you completed them');
             }
+
+            //SETTING DATA TO PROMPTS VARIABLE
+            setPrompts(response.data);
         })
         .catch((e) => console.error("catch", e));
-    }, [dailyPrompt()])
-
-
-    //RANDOMIZED DAILY PROMPTS
-    function dailyPrompt() {
-        //CHECKING IF PROMPT IS NOT COMPLETED YET, IF NOT, WE WANT TO DISPLAY
-        let notCompletedYet = prompts.map((element) => {
-            if(element.is_completed === false){
-                return true
-            } else {
-                return false
-            }
-        })
-
-        //IF PROMPTS ARE AVAILABLE AND ARE NOT COMPLETED: RANDOMIZE!
-        if (prompts.length > 0 && notCompletedYet) {
-        let promptPosition = Math.floor(Math.random() * prompts.length);
-        let randomPrompt = prompts[promptPosition].title;
-        return randomPrompt
-        } else {
-            console.log('No prompts avail')
+    }, [])
+    
+    //PREVIOUS BTN
+    function prevPromptBtn() {
+        if(currentIndex > 0){
+            setCurrentIndex(currentIndex - 1)
+            setTodaysPrompt(prompts[currentIndex - 1].title);
         }
     }
 
+    //NEXT BTN
     function nextPromptBtn() {
-        let nextPrompt = dailyPrompt();
-        setRandomPrompts((prevPrompt) => (nextPrompt !== prevPrompt ? nextPrompt : dailyPrompt()));
+        if(currentIndex < prompts.length -1){
+            setCurrentIndex(currentIndex + 1);
+            setTodaysPrompt(prompts[currentIndex].title);
+        }
     }
 
     function handleStartResponse () {
         prompts.map((element) => {
-            if(randomPrompts === element.title){
+            if(todaysPrompt === element.title){
                 navigate(`/prompts/${element.id}`)
             }
         })
@@ -70,7 +65,8 @@ function Prompts() {
 
         <div className='todays-prompts'>
             <h3>Answer Today's Daily Prompt:</h3>
-            <p className='prompt-title'>{randomPrompts}</p>
+            <p className='prompt-title'>{todaysPrompt}</p>
+            <button className='prev-prompt-btn' onClick={prevPromptBtn}>Previous</button>
             <button className='start-prompt-btn'
             onClick={handleStartResponse}>✎</button>
             <button className='next-prompt-btn' onClick={nextPromptBtn}>Next</button>

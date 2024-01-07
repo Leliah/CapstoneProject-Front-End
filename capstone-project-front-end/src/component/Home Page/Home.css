@@ -1,21 +1,24 @@
 /* Import the Pacifico font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;1,300&display=swap');
-
+body {
+  font-family: 'Pacifico', cursive;
+  background-color: #fae8ca;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
 
 .home-container {
-  transition: margin-left 0.3s ease; /* Apply transition effect to margin-left property */
+  transition: margin-left 0.3s ease; 
+  justify-content: center;
+  
 }
 
 .home-container.shifted {
-  margin-left: 250px; /* Adjust the margin as needed to shift to the right */
-}
-
-.home-container {
-  transition: margin-left 0.3s ease; /* Apply transition effect to margin-left property */
-}
-
-.home-container.shifted {
-  margin-left: 250px; /* Adjust the margin as needed to shift to the right */
+  margin-right: 250%; 
 }
 
 /* Common Styles for hello-container */
@@ -31,32 +34,42 @@
   margin: 0;
 }
 
-/* Hello Text DONE*/
+/* Hello Text */
 .hello-text {
   opacity: 0;
-  animation: fadeInAndFloat 7.5s ease-in-out infinite;
-  font-size: 5vmax;
+  animation: fadeInAndFloat 3s ease-in-out infinite;
+  font-size: 15vmax;
   color: #055B49;
-  padding: 1%;
-  padding-top: 1%;
-  height: 15vh;
+  padding: 10%;
+  margin-bottom: 30px; /* Adjusted margin-bottom for fixed height */
+  height: 20vh;
 }
 
 /* Buttons */
-.button-contaier {
-  margin-bottom: 4%;
-
-}
-
-.button-contaier a {
+.button-container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  margin-top: 20px; /* Adjusted margin-top for space between hello-text and button-container */
+  padding-top: 10%;
+  height: 60vh;
+  align-items: center;
  
 }
 
+/* Buttons */
+/* .button-contaier {
+  padding-bottom: 50%;
+} */
 
 /* Login and Signup Buttons */
-.login-button,
+/* .login-button,
 .signup-button {
-  margin: 15px;
+  padding: 10px 25px;
+  margin: 20px;
   background-color: #055b49;
   color: #fff;
   border: none;
@@ -64,7 +77,7 @@
   cursor: pointer;
   font-size: 30px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
 .login-button:hover,
 .signup-button:hover {
@@ -72,9 +85,12 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-.image-container {
+.image-container{
   position: absolute;
-  top: 35%;
+  top: 0px;
+  left: 52%;
+  transform: translateX(-50%);
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -88,7 +104,7 @@
 }
 
 
-}
+
 
 .image-container img {
   width: 100%;
@@ -97,6 +113,9 @@
   max-height: 300px;
 }
 
+.bg-image{
+  margin-right: 50%;
+}
 
 
 /* Keyframes */
@@ -120,3 +139,24 @@
   }
 }
 
+/* Media Query for Mobile */
+@media screen and (max-width: 375px) {
+  .hello-text {
+    padding-bottom: 2px;
+    font-size: 10vmax;
+    margin-top: 5%;
+    margin-bottom: 1%; /* Adjusted margin-bottom for mobile */
+  }
+
+  .login-button{
+    font-size: 14px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  .signup-button{
+    font-size: 14px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+}
