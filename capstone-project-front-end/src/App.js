@@ -7,13 +7,14 @@ import AboutPage from "./component/About/About";
 import Navbar from "./component/Navbar/Navbar";
 import MenuIcon from "@mui/icons-material/Menu";
 import Footer from "./component/Footer/Footer";
-import Profile from "./component/Profile/Profile"; // Import the Profile component
-import logo from "./component/logo1.png"; // Update the path accordingly
+import Profile from "./component/Profile/Profile";
+import logo from "./component/logo1.png";
 import RoadMapWrapper from "./component/RoadMap/Wrapper";
 import Prompts from "./component/Prompts/Prompts";
 import PromptsResponse from "./component/Prompts/PromptsResponse";
 import Feed from "./component/Feed/Feed";
-import Login from "./component/Login/Login"
+import Login from "./component/Login/Login";
+// import background from "./component/background.png";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -21,18 +22,25 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header>
+          
+        <header className="header">
           <div className="menu">
             <MenuIcon onClick={() => setShowNav(!showNav)} />
-            <div className="logo-container">
+            <Link to="/" className="logo-container">
               <img src={logo} className="logo1" alt="logo" />
-            </div>
-          </div>
+            </Link>
+          </div>   
+          {/* <img className="background" src={background} alt="bg image" /> */}
+          <Navbar showNav={showNav} />
+
+          {/* Conditionally render the Navbar based on showNav state */}
+          {showNav && <Navbar showNav={showNav} />}
 
           <div className={`sidenav ${showNav ? "active" : ""}`}>
+            {/* Add content to your sidenav if needed */}
           </div>
         </header>
-        <Navbar show={showNav} />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
@@ -40,14 +48,12 @@ function App() {
           <Route path="/roadmap" element={<RoadMapWrapper />} />
           <Route path="/prompts" element={<Prompts />}/>
           <Route path="/prompts/:index" element={<PromptsResponse />}/>
-         
           <Route path="/feed" element={<Feed />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           {/* Add more routes for other components/pages */}
         </Routes>
       </div>
-
       <Footer />
     </Router>
   );
