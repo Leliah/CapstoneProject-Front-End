@@ -1,12 +1,12 @@
 // Navbar.js
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import CottageIcon from '@mui/icons-material/Cottage';
+import PersonIcon from '@mui/icons-material/Person';
 import MapIcon from '@mui/icons-material/Map';
 import LoginIcon from '@mui/icons-material/Login';
-import React, { useState, useEffect } from 'react';
-import PersonIcon from '@mui/icons-material/Person';
 import GroupsIcon from '@mui/icons-material/Groups';
-import CottageIcon from '@mui/icons-material/Cottage';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 function Navbar({ showNav }) {
@@ -30,7 +30,6 @@ function Navbar({ showNav }) {
     </div>
   );
 }
-
 
 export default Navbar;
 
