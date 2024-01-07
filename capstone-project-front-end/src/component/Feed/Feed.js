@@ -13,7 +13,7 @@ function Feed() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/posts`)
+      .get(`http://localhost:3009/posts`)
       .then((response) => {
         setPosts(response.data);
       })
@@ -29,7 +29,7 @@ function Feed() {
   const handleFeedSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:3005/posts`, { description: feedInput })
+      .post(`http://localhost:3009/posts`, { description: feedInput })
       .then((response) => {});
 
     const currentDate = new Date();
@@ -42,7 +42,7 @@ function Feed() {
 
   const handleDelete = (postId) => {
     axios
-      .delete(`http://localhost:3005/posts/${postId}`)
+      .delete(`http://localhost:3009/posts/${postId}`)
       .then(() => {
         setPosts((prevPosts) => prevPosts.filter((post) => post.id !== postId));
       })
