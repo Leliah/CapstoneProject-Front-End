@@ -80,7 +80,7 @@ form {
     font-size: 20px;
     width: 20%;
     box-sizing: border-box;
-
+}
 
 
 .feed {
@@ -100,7 +100,7 @@ form {
   border-radius: 25px;
   cursor: pointer;
   font-size: 20px;
-}
+  }
 .feedSubmit:hover {
     color: #fff;
 }

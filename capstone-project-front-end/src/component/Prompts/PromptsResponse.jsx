@@ -1,12 +1,16 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 const API = process.env.REACT_APP_API_URL;
 
 function PromptsResponse() {
   let { index } = useParams();
   let navigate = useNavigate();
+  let responseRef = useRef()
   const [prompts, setPrompts] = useState({
+    category: '',
+    prompt: '',
+    title: '',
     response: '',
     is_completed: false,
     completion_date: ''
@@ -30,6 +34,8 @@ const handleSubmit = (event) => {
 
 const updatePrompt = (updateResponse) => {
   console.log('Updated Prompt:', updateResponse);
+
+  let responseValue = responseRef.current.value
   axios
     .put(`http://localhost:3009/prompts/${index}`, updateResponse)
     .then((response) => {
@@ -38,6 +44,8 @@ const updatePrompt = (updateResponse) => {
       // navigate(`/prompt/${index}`);
     })
     .catch((e) => console.error("catch", e));
+
+    responseRef.current.value = ''
 };
 
   return (
@@ -54,7 +62,7 @@ const updatePrompt = (updateResponse) => {
                 </p>
                 <h3>{prompts.title}</h3>
                 <p>Task: {prompts.prompt}</p>
-                <textarea rows="4" cols="50" onChange={handleTextChange} id="response" value={prompts.response} type="text">
+                <textarea rows="4" cols="50" ref={responseRef} onChange={handleTextChange} id="response" value={prompts.response} type="text">
                     
                 </textarea> 
                 <br></br>
