@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Import the CSS file
+import growth from "../growth.png"
 import book from "../Book.png"
+import bg from "../bg.png"
 
-function Home({ isNavbarOpen }) {
+
+
+function Home() {
   const [showHello, setShowHello] = useState(false);
-  const languages = ['Start Your Journey'];
+  const languages = ['Hello', 'Bonjour', 'Hola', 'مرحبًا', 'Merhaba', '你好'];
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
   useEffect(() => {
     // Use a setTimeout to show the greeting after a delay (e.g., 2 seconds)
     const timer = setTimeout(() => {
       setShowHello(true);
-    }, 0);
+    }, 2000);
 
     return () => {
       clearTimeout(timer);
@@ -33,22 +37,24 @@ function Home({ isNavbarOpen }) {
   }, []);
 
   return (
-    <div className={`home-container ${isNavbarOpen ? 'shifted' : ''}`}>
+    <div>
       <div className="image-container">
-        <img src={book} alt="book Image" />
+        <img src={growth} alt="Growth Image" />
       </div>
-      <div className="hello-container">
+      {/* IMG CONTAINER CLOSING */}
+      <div
+      className="hello-container">
         {showHello && <div className="hello-text">{languages[currentLanguageIndex]}</div>}
         <div className="button-container">
           <Link to="/signup">
             <button className="signup-button">Sign up</button>
           </Link>
           <Link to="/login">
-            <button className="login-button">Log in</button>
+           <button className="login-button">Log in</button>
           </Link>
         </div>
-      </div>
     </div>
+   </div> 
   );
 }
 
