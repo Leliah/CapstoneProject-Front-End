@@ -27,13 +27,13 @@ function Feed() {
   const handleFeedSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${API}/posts`, { description: feedInput })
-      .then((response) => {
-        setPosts((prevPosts) => [...prevPosts, response.data]);
-      })
-      .catch((error) => {
-        console.error("Error submitting post:", error);
-      });
+    .post(`${API}/posts`, { description: feedInput })
+    .then((response) => {
+      setPosts((prevPosts) => [...prevPosts, response.data]);
+    })
+    .catch((error) => {
+      console.error("Error submitting post:", error);
+    });
 
     setFeedInput("");
   };

@@ -43,4 +43,3 @@ function Navbar({ showNav, setShowNav }) {
 }
 
 export default Navbar;
-

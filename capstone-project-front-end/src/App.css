@@ -39,8 +39,10 @@ header {
 .logo1 {
   width: 350px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
-  margin-right: 10px;
-  padding-top: 10px; /* Add margin to separate from the menu button */
+}
+
+.logo-container {
+  margin-right: 10px; /* Adjust margin as needed */
 }
 
 .menu-container {

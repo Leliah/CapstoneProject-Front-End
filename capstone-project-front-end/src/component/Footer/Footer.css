@@ -1,13 +1,16 @@
-/* Add this CSS to make the footer fixed at the bottom */
+/* Footer.css */
 .footer {
   background-color: #005341;
   color: #fff;
-  padding: 5px; /* Adjust the padding as needed */
+  padding: 20px;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer ul {
@@ -15,7 +18,6 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-around;
 }
 
 .footer-item {
@@ -25,12 +27,18 @@
 .footer-item a {
   text-decoration: none;
   color: #fff;
+  margin: 0 20px;
+  font-size: 14px;
   display: flex;
   align-items: center;
 }
 
+.footer-icon {
+  margin-right: 5px;
+}
+
 .footer-item a:hover {
-  text-decoration: none; 
+  text-decoration: underline;
   border-radius: 10px;
 }
 
