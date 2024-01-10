@@ -15,10 +15,12 @@ import PromptsResponse from "./component/Prompts/PromptsResponse";
 import Feed from "./component/Feed/Feed";
 import Login from "./component/Login/Login";
 import PromptsWorkedOn from "./component/Prompts/PromptsWorkedOn";
+import FlowerParts from "./component/Flower/FlowerParts";
 // import background from "./component/background.png";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
+  
 
   return (
     <Router>

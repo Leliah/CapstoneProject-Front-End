@@ -4,6 +4,7 @@ import AdditionalSteps from './AdditionalSteps';
 import Roadmap from './Roadmap';
 import { useState, useEffect } from 'react'
 import Inputs from './Inputs';
+import FlowerParts from '../Flower/FlowerParts';
 //GENERATES UNIQUE IDs
 import { v4 as uuidv4} from 'uuid';
 import Edit from './Edit';
@@ -16,6 +17,7 @@ function RoadMapWrapper() {
   const [ startingLocation, setStartingLocation] = useState([]);
   const [ destination, setDestination] = useState([]);
   const [ stepsInBetween, setStepsInBetween] = useState([]);
+  const [flowerGrowth, setFlowerGrowth] = useState(0);
 
 
   /**
@@ -111,6 +113,7 @@ function RoadMapWrapper() {
     handleAddStartPoint={handleAddStartPoint} 
     handleAddEndingPoint={handleAddEndingPoint}
     handleAddAdditional={handleAddAdditional}
+    setFlowerGrowth={setFlowerGrowth} 
     />
     </div>
     <div className='scroll-box'>
@@ -141,10 +144,11 @@ function RoadMapWrapper() {
     }
     </div>
     <div className='roadmap'> 
-    <Roadmap 
+    {/* <Roadmap 
       startingLocation={startingLocation}
       stepsInBetween={stepsInBetween}
-      destination={destination}/>
+      destination={destination}/> */}
+      <FlowerParts flowerGrowth={flowerGrowth} />
     </div>
     </div>
   )

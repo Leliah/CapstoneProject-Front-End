@@ -1,0 +1,51 @@
+.worked-on-container {
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+}
+
+.worked-on-prev {
+    font-size: 60px;
+    color: #055b49;
+    margin-top: 175px;
+}
+
+.worked-on-next {
+    font-size: 60px;
+    color: #055b49;
+    margin-top: 175px;
+
+}
+
+.indi-worked-on {
+    display: grid;
+    justify-content: center;
+    background-color: #055b49;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 1500px;
+    margin-bottom: 10px;
+    height: 500px;
+}
+
+.indi-worked-on h3 {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.saved-prompt-response {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+    background-color: #FAF9F6;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 1000px;
+}
+
+.worked-on-prompts-edit-btn {
+    display: flex;
+    justify-content: end;
+}
