@@ -2,8 +2,6 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import PromptsResponse from "./PromptsResponse";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
-
 const API = process.env.REACT_APP_API_URL;
 
 function Prompts() {
@@ -12,10 +10,10 @@ function Prompts() {
     const [prompts, setPrompts] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(1);
     const [todaysPrompt, setTodaysPrompt] = useState();
-
+    console.log(API)
     useEffect(() => {
         axios
-        .get(`http://localhost:3009/prompts`)
+        .get(`${API}/prompts`)
         .then((response) => {
             //PROMPTS THAT ARE NOT MARKED AS COMPLETED
             let notCompletedPrompts = response.data.filter((element) => !element.is_completed);
@@ -32,7 +30,7 @@ function Prompts() {
         })
         .catch((e) => console.error("catch", e));
     }, [])
-    
+    console.log(`${API}/prompts`)
     //PREVIOUS BTN
     function prevPromptBtn() {
         if(currentIndex > 0){
@@ -57,14 +55,15 @@ function Prompts() {
         })
     }
 
+    
   return (
     <div className='prompts'>
         <div id="prev-prompts-btn">
-            <button>View Previous Prompts </button>
+            <button className="prev-prompts-button">View Previous Prompts </button>
         </div>
 
         <div className='todays-prompts'>
-            <h3>Answer Today's Daily Prompt:</h3>
+            <h3 >Answer Today's Daily Prompt:</h3>
             <p className='prompt-title'>{todaysPrompt}</p>
             <button className='prev-prompt-btn' onClick={prevPromptBtn}>Previous</button>
             <button className='start-prompt-btn'
@@ -81,7 +80,7 @@ function Prompts() {
                     return(
                         <div key={element.id} className="daily-prompts">
                         <h4>{element.title}</h4>
-                        <Link to={`/prompts/${element.id}`}><button className='start-prompt-btn' >Start</button></Link>
+                        <Link to={`/prompts/${element.id}`}><button className='start-promptne-btn' >Start</button></Link>
                     </div>
                     )
                 })}

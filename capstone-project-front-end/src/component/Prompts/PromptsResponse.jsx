@@ -1,12 +1,16 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 const API = process.env.REACT_APP_API_URL;
 
 function PromptsResponse() {
   let { index } = useParams();
   let navigate = useNavigate();
+  let responseRef = useRef()
   const [prompts, setPrompts] = useState({
+    category: '',
+    prompt: '',
+    title: '',
     response: '',
     is_completed: false,
     completion_date: ''
@@ -18,7 +22,7 @@ function PromptsResponse() {
 
   useEffect(() => {
     axios
-    .get(`http://localhost:3009/prompts/${index}`)
+    .get(`${API}/prompts/${index}`)
     .then((response) => setPrompts(response.data))
     .catch((e) => console.error("catch", e));
 }, [])
@@ -30,14 +34,19 @@ const handleSubmit = (event) => {
 
 const updatePrompt = (updateResponse) => {
   console.log('Updated Prompt:', updateResponse);
+
+  //let responseValue = responseRef.current.value
   axios
-    .put(`http://localhost:3009/prompts/${index}`, updateResponse)
+    .put(`${API}/prompts/${index}`, updateResponse)
     .then((response) => {
       console.log('Response from server:', response.data);
       console.log('saved!')
       // navigate(`/prompt/${index}`);
     })
     .catch((e) => console.error("catch", e));
+
+    alert('Your response has been saved!')
+    responseRef.current.value = ''
 };
 
   return (
@@ -45,8 +54,8 @@ const updatePrompt = (updateResponse) => {
 
         <div className='container'>
         <div className='prompt-crud-nav'>
-        <button>✎</button>
-        <button>X</button>
+        {/* <button>✎</button>
+        <button>X</button> */}
       </div>
             <form onSubmit={handleSubmit}>
                 <p>
@@ -54,7 +63,7 @@ const updatePrompt = (updateResponse) => {
                 </p>
                 <h3>{prompts.title}</h3>
                 <p>Task: {prompts.prompt}</p>
-                <textarea rows="4" cols="50" onChange={handleTextChange} id="response" value={prompts.response} type="text">
+                <textarea rows="4" cols="50" ref={responseRef} onChange={handleTextChange} id="response" value={prompts.response} type="text">
                     
                 </textarea> 
                 <br></br>

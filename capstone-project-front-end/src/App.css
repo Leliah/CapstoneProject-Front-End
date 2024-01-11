@@ -1,26 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Crimson+Text:ital@1&family=La+Belle+Aurore&family=Laila:wght@300;400&family=Noticia+Text&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Satisfy&family=Tilt+Prism&display=swap");
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Pacifico', cursive;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Noticia Text", serif;
   color: #eaecef;
-  overscroll-behavior-y: none;
+  /* overscroll-behavior-y: none; */
   overflow-x: hidden;
   /* background-image:url(/Users/adrianburke/Desktop/pursuit/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
   background-size: cover; */
 }
- 
-.header{
+
+.header {
   justify-content: left;
   width: 50%;
 }
 
 .App {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #fae8ca;
   height: 100vh;
-  background-image:url(/Users/leliah/Documents/PursuitMod5/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
+  background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
   background-size: cover;
 }
 
@@ -41,7 +41,6 @@ header {
 .logo-container {
   margin-right: 10px; /* Adjust margin as needed */
 }
-
 
 .menu-container {
   display: flex;
@@ -84,8 +83,7 @@ header {
     display: flex;
     align-items: center; /* Align items vertically in the menu container */
   }
-
-  .menu svg {
+ .menu svg {
     width: 30px; /* Adjusted width for the menu icon */
     height: auto; /* Maintain aspect ratio */
     color: black;
@@ -103,6 +101,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #fae8ca;
+  height: 80vh;
 }
 
 .goal-inputs,
@@ -110,7 +109,6 @@ header {
   grid-row: 1;
   grid-column: 1;
 }
-
 
 .status {
   background-color: black;
@@ -125,7 +123,7 @@ header {
   border-bottom-left-radius: 50px;
   background-color: #055b49;
   font-weight: bold;
-  color: #fffffF;
+  color: #ffffff;
 }
 
 .starting-input {
@@ -156,7 +154,6 @@ header {
   background-color: #86b649;
 }
 
-
 .ending {
   padding: 10px;
   padding-top: 12px;
@@ -165,12 +162,12 @@ header {
   border-bottom-left-radius: 50px;
   background-color: #055b49;
   font-weight: bold;
-  color: #fffffF;
+  color: #ffffff;
 }
 
 .end-input {
   height: 40px;
-  width: 170px;;
+  width: 170px;
 }
 
 .ending-submit {
@@ -196,7 +193,6 @@ header {
   background-color: #86b649;
 }
 
-
 .additional-star {
   padding: 11.5px;
   padding-top: 12px;
@@ -205,12 +201,12 @@ header {
   border-bottom-left-radius: 50px;
   font-weight: bold;
   background-color: #055b49;
-  color: #fffffF;
+  color: #ffffff;
 }
 
 .additional-input {
   height: 40px;
-  width: 170px;;
+  width: 170px;
 }
 
 .additional-box {
@@ -227,7 +223,6 @@ header {
   background-color: #86b649;
 }
 
-
 .scroll-box {
   text-align: left;
   padding: 5px;
@@ -236,7 +231,6 @@ header {
   overflow: scroll;
   margin-top: 50%;
 }
-
 
 button.more-steps-btn {
   font-size: 10px;
@@ -266,26 +260,25 @@ button.more-steps-btn:hover {
 /* *****************************GOOGLE MAPS************************* */
 
 #map {
-  height:70vh;
+  height: 60vh;
   width: 900px;
-  margin-left: 20px;
-} 
-
+  margin-left: 10px;
+}
 
 /* Add these styles to your existing styles or create a new stylesheet */
 .fake-map {
   position: relative;
-  width: 500px; /* Adjust the width and height based on your design */
+  width: 500px;
   height: 500px;
-  border: 1px solid #ccc; /* Optional: Add a border to simulate a map container */
+  border: 1px solid #ccc;
 }
 
 .goal-marker {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: red; /* Customize the marker color */
-  border-radius: 50%; /* Create a circular marker */
+  background-color: red;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,58 +287,106 @@ button.more-steps-btn:hover {
 }
 
 /* *********************************PROMPTS********************************* */
-
 #prev-prompts-btn {
   display: flex;
   justify-content: end;
   margin-right: 65px;
+  
+}
+.prev-prompts-button{
+  background-color: #86b649;
+  border-radius: 25px;
+  width: 170px;
+  height: 31px;
+}
+.prev-prompts-button:hover{
+  background-color: #055b49;
+  cursor: pointer;
+}
+/* button{
+  border-radius: 25px;
+  width: 90px;
+  height: 30px;} */
+  .prev-prompt-btn {
+  background-color: #86b649;
+  border-radius: 25px;
+  width: 90px;
+  height: 31px;
 }
 
-#prev-prompts-btn button {
-  background-color:#86b649;
+.prev-prompts-btn:hover {
+  background-color: #055b49;
+  cursor: pointer;
 }
-
-#prev-prompts-btn button:hover {
-  background-color:#055b49;
+.next-prompt-btn {
+  background-color: #86b649;
+  border-radius: 25px;
+  width: 90px;
+  height: 31px;
+}
+.next-prompt-btn:hover {
+  background-color: #055b49;
+  cursor: pointer;
+}
+/* .start-promptnext-btn{
+  background-color: #86b649;
+  border-radius: 25px;
+  width: 50%;
+  height: 31px;
+  align-items: center;
+} */
+.scrolling-wrapper-flexbox button {
+  background-color: #86b649;
+  border-radius: 25px;
+  width: 50%;
+  height: 31px;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 20px;
 }
 
 .todays-prompts {
   background-color: #055b49;
   padding: 10px;
   border-radius: 15px;
-  width: 250px;
+  width: 700px;
   text-align: center;
-  margin-left: 40%;
-}
-
-.todays-prompts h3 {
- color: #fffffF;
+  margin-left: 30%;
+  height: 260px;
+  font-size: 30px;
 }
 
 .start-prompt-btn {
   background-color: #86b649;
+  border-radius: 25px;
+  width: 90px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .start-prompt-btn:hover {
-  background-color:#228b22;
+  background-color: #228b22;
 }
 
 .more-prompts h3 {
   color: #333;
   margin-left: 10px;
+  padding-top: 37px;
 }
 
 .scrolling-wrapper-flexbox {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow-x: auto;
-  width: 600px;
-  margin-left: 10px;
-  .daily-prompts {
-    flex: 0 0 auto;
-  }
+  width: 98.5%;
+  margin-left: 25px;
 }
 
+
+.daily-prompts {
+  flex: 0 0 auto;
+}
 .daily-prompts {
   background-color: #055b49;
   padding: 10px;
@@ -353,13 +394,21 @@ button.more-steps-btn:hover {
   width: 250px;
   text-align: center;
   margin-left: 10px;
+  margin-right: 10px;
+  height: 200px;
+  padding-top: 97px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .response .container {
   background-color: #055b49;
+  font-family: 'Noticia Text', serif;
   padding: 10px;
   border-radius: 25px;
-  width: 750px;
+  width: 1050px;
+  height: 500px;
+  font-size: 35px;
   text-align: center;
   margin-left: 20%;
   margin-top: 20px;
@@ -368,13 +417,25 @@ button.more-steps-btn:hover {
 
 .prompt-crud-nav {
   display: flex;
-  justify-content: end;
-  background-color: gray;
+  /* justify-content: end; */
   border-radius: 25px;
   width: 750px;
-  margin-right: 992px;
+  margin-left: 992px;
 }
 
 .prompts-save-btn {
   background-color: #86b649;
+  border-radius: 25px;
+  width: 90px;
+  height: 31px;
 }
+.prompts {
+  height: 80vh;
+  font-family: "Noticia Text", serif;
+}
+
+#response{
+  width: 80%;
+  height: 60%;
+}
+
