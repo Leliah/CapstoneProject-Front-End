@@ -59,7 +59,13 @@ function Prompts() {
   return (
     <div className='prompts'>
         <div id="prev-prompts-btn">
+
             <button className="prev-prompts-button">View Previous Prompts </button>
+
+            <Link to="/prompts/my-prompts">
+            <button>View Your Prompts </button>
+            </Link>
+
         </div>
 
         <div className='todays-prompts'>

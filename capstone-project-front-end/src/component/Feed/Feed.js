@@ -35,6 +35,14 @@ function Feed() {
         console.error("Error submitting post:", error);
       });
 
+      .post(`http://localhost:3009/posts`, { description: feedInput })
+      .then((response) => {});
+
+    const currentDate = new Date();
+    const dateTime = currentDate.toLocaleString();
+    const newPost = `${feedInput} - ${dateTime}`;
+
+
     setFeedInput("");
   };
 

@@ -31,12 +31,105 @@
       flex: 0;
   }
   
+
   .promptslink {
     font-size: 55px;
     text-align: center;
   }
   
-  .journal {
+
+
+.feedInput{
+  width: 700px;
+  height: 100px;
+}
+
+
+.feedSubmit {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+
+.feed {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff6e7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #055B49;
+  background-color: #f6f9f8;
+  color: #0e0d0d;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  }
+.feedSubmit:hover {
+    color: #fff;
+}
+.feedSubmitdaily {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f6f9f8;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.feedSubmit:hover {
+    color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feedli {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid #86b649;
+  border-radius: 25px;
+  background-color: white;
+}
+
+
+.post {
+  margin-bottom: 20px;
+}
+
+
+.journal {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    border: 20px 10px 20px 10px;
+    right: 0px;
+    float: right;
+    background-color: #055b49;
+
+}
+.profilefeed{
     background-color: #055b49;
     border-radius: 10px;
     padding:10px;
