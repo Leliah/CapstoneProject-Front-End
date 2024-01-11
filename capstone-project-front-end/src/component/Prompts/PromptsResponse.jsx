@@ -22,7 +22,7 @@ function PromptsResponse() {
 
   useEffect(() => {
     axios
-    .get(`http://localhost:3009/prompts/${index}`)
+    .get(`${API}/prompts/${index}`)
     .then((response) => setPrompts(response.data))
     .catch((e) => console.error("catch", e));
 }, [])
@@ -37,7 +37,7 @@ const updatePrompt = (updateResponse) => {
 
   //let responseValue = responseRef.current.value
   axios
-    .put(`http://localhost:3009/prompts/${index}`, updateResponse)
+    .put(`${API}/prompts/${index}`, updateResponse)
     .then((response) => {
       console.log('Response from server:', response.data);
       console.log('saved!')
@@ -54,8 +54,8 @@ const updatePrompt = (updateResponse) => {
 
         <div className='container'>
         <div className='prompt-crud-nav'>
-        <button>✎</button>
-        <button>X</button>
+        {/* <button>✎</button>
+        <button>X</button> */}
       </div>
             <form onSubmit={handleSubmit}>
                 <p>

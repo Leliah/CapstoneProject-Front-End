@@ -33,5 +33,3 @@ function Navbar({ showNav }) {
 
 
 export default Navbar;
-
-
