@@ -59,11 +59,11 @@ const updatePrompt = (updateResponse) => {
       </div>
             <form onSubmit={handleSubmit}>
                 <p>
-                <label htmlFor='prompts-response' style={{color: 'black'}}> Reflect Here: </label>
+                {/* <label htmlFor='prompts-response' style={{color: 'black'}}> Reflect Here: </label> */}
                 </p>
-                <h3>{prompts.title}</h3>
-                <p>Task: {prompts.prompt}</p>
-                <textarea rows="4" cols="50" ref={responseRef} onChange={handleTextChange} id="response" value={prompts.response} type="text">
+                <h3 className="title">{prompts.title}</h3>
+                <p> {prompts.prompt}</p>
+                <textarea rows="4" cols="50" ref={responseRef} onChange={handleTextChange} id="response" value={prompts.response}  type="text">
                     
                 </textarea> 
                 <br></br>

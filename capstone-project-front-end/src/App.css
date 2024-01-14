@@ -340,7 +340,7 @@ button.more-steps-btn:hover {
   height: 31px;
   align-items: center;
   margin-left: 25%;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .todays-prompts {
@@ -350,7 +350,7 @@ button.more-steps-btn:hover {
   width: 700px;
   text-align: center;
   margin-left: 30%;
-  height: 260px;
+  height: 290px;
   font-size: 30px;
 }
 
@@ -359,7 +359,6 @@ button.more-steps-btn:hover {
   border-radius: 25px;
   width: 90px;
   height: 30px;
-  font-weight: bold;
   font-size: 15px;
 }
 
@@ -394,8 +393,8 @@ button.more-steps-btn:hover {
   margin-left: 10px;
   margin-right: 10px;
   height: 200px;
-  padding-top: 97px;
-  font-size: 16px;
+  padding-top: 50px;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 
@@ -437,3 +436,6 @@ button.more-steps-btn:hover {
   height: 60%;
 }
 
+.title{
+  text-decoration: underline;
+}
