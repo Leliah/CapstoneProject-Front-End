@@ -40,8 +40,7 @@ const updatePrompt = (updateResponse) => {
     .put(`${API}/prompts/${index}`, updateResponse)
     .then((response) => {
       console.log('Response from server:', response.data);
-      console.log('saved!')
-      // navigate(`/prompt/${index}`);
+      navigate(`/prompts/my-prompts`);
     })
     .catch((e) => console.error("catch", e));
 

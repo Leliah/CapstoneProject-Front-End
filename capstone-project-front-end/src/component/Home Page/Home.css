@@ -1,4 +1,4 @@
-/* Import the Pacifico font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;1,300&display=swap');
 
 body {
@@ -9,11 +9,14 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
 }
 
 .home-container {
   transition: margin-left 0.3s ease; 
   justify-content: center;
+  /* position: absolute; */
+ 
 }
 
 .home-container.shifted {
@@ -33,13 +36,15 @@ body {
   margin: 0;
 }
 
-/* Hello Text DONE*/
+/* Hello Text */
 .hello-text {
   opacity: 0;
-  animation: fadeInAndFloat 7.5s ease-in-out infinite;
+  animation: fadeInAndFloat 3s ease-in-out infinite;
   font-size: 5vmax;
   color: #055B49;
-  padding-top: 20%;
+  top: 500px;
+  position: absolute;
+  left: 530px;
 }
 
 /* Buttons */
@@ -49,9 +54,10 @@ body {
   flex-direction: row; /* Make sure it's a row */
   justify-content: center; /* Center the buttons horizontally */
   align-items: center; /* Center the buttons vertically */
-  gap: 15px; /* Adjust the gap between buttons as needed */
-  margin-top: 20px; /* Adjust the margin as needed */
-  padding-left: 39%;
+  gap: 40px; /* Adjust the gap between buttons as needed */
+  top: 630px; /* Adjust the margin as needed */
+  left: 699px;
+  position: absolute;
 }
 
 
@@ -74,8 +80,15 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-.image-container {
+
+
+
+
+.image-container{
   position: absolute;
+  /* top: 0px;
+  left: 52%; */
+  /* transform: translateX(-50%); */
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -111,5 +124,27 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 375px) {
+  .hello-text {
+    padding-bottom: 2px;
+    font-size: 10vmax;
+    margin-top: 5%;
+    margin-bottom: 1%; /* Adjusted margin-bottom for mobile */
+  }
+
+  .login-button{
+    font-size: 14px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  .signup-button{
+    font-size: 14px;
+    margin: 10px;
+    border-radius: 20px;
   }
 }

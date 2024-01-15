@@ -15,37 +15,32 @@ function Prompts() {
     axios
       .get(`${API}/prompts`)
       .then((response) => {
-        // Filter prompts that are not marked as completed
         let notCompletedPrompts = response.data.filter((element) => !element.is_completed);
-
-        // Set today's prompt based on the current index
         if (notCompletedPrompts.length > 0) {
           setTodaysPrompt(notCompletedPrompts[currentIndex]);
         } else {
           console.log('you completed them');
         }
 
-        // Set all prompts to the state
         setPrompts(response.data);
       })
       .catch((e) => console.error("catch", e));
   }, [currentIndex]);
 
-  // Function to handle going to the next prompt
   function nextPromptBtn() {
     if (currentIndex < prompts.length - 1) {
       setCurrentIndex(currentIndex + 1);
     }
   }
 
-  // Function to handle going to the previous prompt
+
   function prevPromptBtn() {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
     }
   }
 
-  // Function to handle starting the response for today's prompt
+  
   function handleStartResponse() {
     if (todaysPrompt) {
       navigate(`/prompts/${todaysPrompt.id}`);
@@ -54,9 +49,9 @@ function Prompts() {
 
   return (
     <div className='prompts'>
-      <div id="prev-prompts-btn">
+      {/* <div id="prev-prompts-btn">
         <button className="prev-prompts-button">View Answered Prompts </button>
-      </div>
+      </div> */}
       
       <div className='todays-prompts'>
         <h3 >Answer Today's Daily Prompt:</h3>
@@ -68,7 +63,10 @@ function Prompts() {
       </div>
 
       <div className='more-prompts'>
-        <h3>View More Prompts</h3>
+        <Link to="/prompts/my-prompts">
+            <button className="prev-prompts-button"> View Your Prompts </button>
+            </Link>
+
         <div className="scrolling-wrapper-flexbox">
           {prompts.map((element) => (
             <div key={element.id} className="daily-prompts">
