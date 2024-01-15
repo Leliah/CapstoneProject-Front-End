@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* Import the Pacifico font */
+=======
+>>>>>>> 14d6a48 (updated prompts response page)
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;1,300&display=swap');
 
@@ -10,6 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
 }
 
 .home-container {
@@ -44,7 +48,11 @@ body {
   color: #055B49;
   top: 500px;
   position: absolute;
+<<<<<<< HEAD
   right: 25%;
+=======
+  left: 530px;
+>>>>>>> 14d6a48 (updated prompts response page)
 }
 
 /* Buttons */
@@ -56,7 +64,11 @@ body {
   align-items: center; /* Center the buttons vertically */
   gap: 40px; /* Adjust the gap between buttons as needed */
   top: 630px; /* Adjust the margin as needed */
+<<<<<<< HEAD
   left: 740px;
+=======
+  left: 699px;
+>>>>>>> 14d6a48 (updated prompts response page)
   position: absolute;
 }
 
@@ -162,5 +174,9 @@ body {
     margin: 10px;
     border-radius: 20px;
   }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 14d6a48 (updated prompts response page)

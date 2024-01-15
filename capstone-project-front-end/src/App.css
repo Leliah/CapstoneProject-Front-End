@@ -410,7 +410,7 @@ button.more-steps-btn:hover {
   font-family: 'Noticia Text', serif;
   padding: 10px;
   border-radius: 25px;
-  width: 1050px;
+  width: 1070px;
   height: 500px;
   font-size: 35px;
   text-align: center;
@@ -435,10 +435,13 @@ button.more-steps-btn:hover {
 #response{
   width: 900px;
   height: 160px;
+<<<<<<< HEAD
 }
 
 .title{
   text-decoration: underline;
+=======
+>>>>>>> 14d6a48 (updated prompts response page)
 }
 
 .title{
