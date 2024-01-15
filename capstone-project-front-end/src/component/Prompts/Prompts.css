@@ -37,6 +37,7 @@
 
   .more-prompts {
     margin-top: 40px;
+<<<<<<< HEAD
     /* background-color: antiquewhite; */
     background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
     background-size: cover;
@@ -46,6 +47,8 @@
   .more-prompts h1 {
     font-size: 3em;
     margin-bottom: 40px;
+=======
+>>>>>>> 338f66a (changes to prompt page)
   }
 
   .scrolling-wrapper-flexbox {
@@ -91,7 +94,10 @@
     justify-content: space-between;
   }
   
+<<<<<<< HEAD
 .elementpro{
     padding-top: 0px;
     padding-bottom: 15px;
 }
+=======
+>>>>>>> 338f66a (changes to prompt page)
