@@ -20,19 +20,28 @@ import PromptsWorkedOn from "./component/Prompts/PromptsWorkedOn"
 function App() {
   const [showNav, setShowNav] = useState(false);
 
+
+  const toggleNavBar = (e) => {
+    e.stopPropagation();
+    setShowNav(!showNav)
+  }
+
+  const closeNavBar = () => {
+    setShowNav(false);
+  }
+
   return (
     <Router>
       <div className="App">
-          
         <header className="header">
           <div className="menu">
-            <MenuIcon onClick={() => setShowNav(!showNav)} />
+            <MenuIcon onClick={(e) => toggleNavBar(e)} />
             <Link to="/" className="logo-container">
               <img src={logo} className="logo1" alt="logo" />
             </Link>
           </div>   
-          {/* <img className="background" src={background} alt="bg image" /> */}
-          <Navbar showNav={showNav} />
+        {/* <img className="background" src={background} alt="bg image" /> */}
+          <Navbar showNav={showNav} setShowNav={setShowNav} />
 
           <div className={`sidenav ${showNav ? "active" : ""}`}>
             {/* Add content to your sidenav if needed */}
@@ -52,6 +61,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           {/* Add more routes for other components/pages */}
         </Routes>
+      
       </div>
       <Footer />
     </Router>

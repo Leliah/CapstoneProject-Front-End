@@ -9,21 +9,21 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import CottageIcon from '@mui/icons-material/Cottage';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
-function Navbar({ showNav }) {
+function Navbar({ showNav, setShowNav }) {
   return (
     <div className={`navbar ${showNav ? 'active' : ''}`}>
   <li>
-    <Link to='/feed'>
+    <Link to='/feed' onClick={() => setShowNav(false)} >
       Feed
     </Link>
   </li>
   <li>
-    <Link to='/roadmap'>
+    <Link to='/roadmap' onClick={() => setShowNav(false)}>
       Roadmap
     </Link>
   </li>
   <li>
-    <Link to='/prompts'>
+    <Link to='/prompts' onClick={() => setShowNav(false)}>
       Prompts
     </Link>
   </li>
