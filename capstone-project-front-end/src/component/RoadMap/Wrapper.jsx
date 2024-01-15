@@ -106,47 +106,46 @@ function RoadMapWrapper() {
   return (
     <div className='wrapper'>
       <div className='goal-inputs'>
+        <Inputs 
+        handleAddStartPoint={handleAddStartPoint} 
+        handleAddEndingPoint={handleAddEndingPoint}
+        handleAddAdditional={handleAddAdditional}
+        />
+      </div>
+      <div className='scroll-box'>
 
-    <Inputs 
-    handleAddStartPoint={handleAddStartPoint} 
-    handleAddEndingPoint={handleAddEndingPoint}
-    handleAddAdditional={handleAddAdditional}
-    />
-    </div>
-    <div className='scroll-box'>
+        {
+          startingLocation.map((element, index) => (
+            element.isEditing ? 
+            (<Edit />) :
+            (<StartingPoint 
+            object={element} 
+            key={index}
+            deleteGoal={deleteGoal}
+            editStartPoint={() => editStartPoint(element.id)}
+            />)
+          ))
+        }
 
-    {
-      startingLocation.map((element, index) => (
-        element.isEditing ? 
-        (<Edit />) :
-        (<StartingPoint 
-        object={element} 
-        key={index}
-        deleteGoal={deleteGoal}
-        editStartPoint={() => editStartPoint(element.id)}
-        />)
-      ))
-    }
+        {
+          stepsInBetween.map((element, index) => (
+            <AdditionalSteps object={element} key={index} />
+          ))
+        }
 
-    {
-      stepsInBetween.map((element, index) => (
-        <AdditionalSteps object={element} key={index} />
-      ))
-    }
-
-    {
-      destination.map((element, index) => (
-        <EndingPoint object={element} key={index}/>
-      ))
-    }
-    </div>
+        {
+          destination.map((element, index) => (
+            <EndingPoint object={element} key={index}/>
+          ))
+        }
+      </div>
     <div className='roadmap'> 
-    <Roadmap 
+    {/* <Roadmap 
       startingLocation={startingLocation}
       stepsInBetween={stepsInBetween}
-      destination={destination}/>
-    </div>
-    </div>
+      destination={destination}/> */}
+    </div> 
+  </div>
   )
 }
 
