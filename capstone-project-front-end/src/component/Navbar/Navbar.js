@@ -17,7 +17,11 @@ function Navbar({ showNav, setShowNav }) {
       Feed
     </Link>
   </li>
+<<<<<<< HEAD
   {/* <li>
+=======
+  <li>
+>>>>>>> f6d426e (close navbar on menu select)
     <Link to='/roadmap' onClick={() => setShowNav(false)}>
       Roadmap
     </Link>
@@ -28,8 +32,13 @@ function Navbar({ showNav, setShowNav }) {
     </Link>
   </li>
   <li>
+<<<<<<< HEAD
     <Link to='/prompts/my-prompts' onClick={() => setShowNav(false)}>
       Entries
+=======
+    <Link to='/prompts' onClick={() => setShowNav(false)}>
+      Prompts
+>>>>>>> f6d426e (close navbar on menu select)
     </Link>
   </li>
     </div>
