@@ -338,70 +338,7 @@ button.more-steps-btn:hover {
   height: 31px;
   align-items: center;
 } */
-.scrolling-wrapper-flexbox button {
-  background-color: #86b649;
-  border-radius: 25px;
-  width: 50%;
-  height: 31px;
-  align-items: center;
-  margin-left: 25%;
-  margin-top: 18px;
-}
 
-.todays-prompts {
-  background-color: #055b49;
-  padding: 10px;
-  border-radius: 15px;
-  width: 700px;
-  text-align: center;
-  margin-left: 30%;
-  height: 290px;
-  font-size: 30px;
-}
-
-.start-prompt-btn {
-  background-color: #86b649;
-  border-radius: 25px;
-  width: 90px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.start-prompt-btn:hover {
-  background-color: #228b22;
-}
-
-.more-prompts h3 {
-  color: #333;
-  margin-left: 10px;
-  padding-top: 37px;
-}
-
-.scrolling-wrapper-flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  overflow-x: auto;
-  width: 98.5%;
-  margin-left: 25px;
-}
-
-
-.daily-prompts {
-  flex: 0 0 auto;
-}
-.daily-prompts {
-  background-color: #055b49;
-  padding: 10px;
-  border-radius: 15px;
-  width: 250px;
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 200px;
-  padding-top: 50px;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
 
 .response .container {
   background-color: #055b49;
