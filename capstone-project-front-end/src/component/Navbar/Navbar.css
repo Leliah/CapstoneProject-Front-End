@@ -10,9 +10,15 @@
   left: -50vw; /* Start off-screen on the left */
   width: 23%; /* Adjust the width as needed */
   height: 75vh;
+<<<<<<< HEAD
   background-color: #055b49;
   transition: left 1s ease; /* Apply transition effect to the left property */
   /* border: 10px solid white; Add a white border around the navbar */
+=======
+  background-color: #005341;
+  transition: left .5s ease; 
+  border: 10px solid white; /* Add a white border around the navbar */
+>>>>>>> f6d426e (close navbar on menu select)
   padding: 10px; /* Add padding to create space between the border and content */
   padding-right: 0;
   list-style: none;
