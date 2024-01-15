@@ -2,6 +2,9 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import PromptsResponse from "./PromptsResponse";
 import { useState, useEffect } from "react";
 import axios from "axios";
+
+import './Prompts.css';
+
 const API = process.env.REACT_APP_API_URL;
 
 function Prompts() {
@@ -27,18 +30,17 @@ function Prompts() {
       .catch((e) => console.error("catch", e));
   }, [currentIndex]);
 
-  function nextPromptBtn() {
-    if (currentIndex < prompts.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  }
+  // function nextPromptBtn() {
+  //   if (currentIndex < prompts.length - 1) {
+  //     setCurrentIndex(currentIndex + 1);
+  //   }
+  // }
 
-
-  function prevPromptBtn() {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  }
+  // function prevPromptBtn() {
+  //   if (currentIndex > 0) {
+  //     setCurrentIndex(currentIndex - 1);
+  //   }
+  // }
 
   
   function handleStartResponse() {
@@ -54,7 +56,7 @@ function Prompts() {
       </div> */}
       
       <div className='todays-prompts'>
-        <h3 >Answer Today's Daily Prompt:</h3>
+        <h3 >Today's Daily Prompt:</h3>
         <h4>{todaysPrompt?.prompt}</h4>
         
         {/* <button className='prev-prompt-btn' onClick={prevPromptBtn}>Previous</button> */}
@@ -62,16 +64,16 @@ function Prompts() {
         {/* <button className='next-prompt-btn' onClick={nextPromptBtn}>Next</button> */}
       </div>
 
-      <div className='more-prompts'>
-        <Link to="/prompts/my-prompts">
-            <button className="prev-prompts-button"> View Your Prompts </button>
-            </Link>
+      <Link to="/prompts/my-prompts">
+        <button className="prev-prompts-button"> View Your Prompts </button>
+      </Link>
 
+      <div className='more-prompts'>
         <div className="scrolling-wrapper-flexbox">
           {prompts.map((element) => (
             <div key={element.id} className="daily-prompts">
-              <h4 className="title">{element.title}</h4>
-              <h4>{element.prompt}</h4>
+              <h3>{element.title}</h3>
+              <p>{element.prompt}</p>
               <Link to={`/prompts/${element.id}`}>
                 <button className='start-promptne-btn' >Start</button>
               </Link>
