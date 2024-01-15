@@ -298,6 +298,8 @@ button.more-steps-btn:hover {
   border-radius: 25px;
   width: 170px;
   height: 31px;
+  margin-left: 89%;
+  margin-bottom: 20px
 }
 .prev-prompts-button:hover{
   background-color: #055b49;
@@ -405,7 +407,7 @@ button.more-steps-btn:hover {
   font-family: 'Noticia Text', serif;
   padding: 10px;
   border-radius: 25px;
-  width: 1050px;
+  width: 1070px;
   height: 500px;
   font-size: 35px;
   text-align: center;
@@ -434,8 +436,8 @@ button.more-steps-btn:hover {
 }
 
 #response{
-  width: 80%;
-  height: 60%;
+  width: 900px;
+  height: 160px;
 }
 
 .title{
