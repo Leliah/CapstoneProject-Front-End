@@ -30,6 +30,7 @@ function Prompts() {
       .catch((e) => console.error("catch", e));
   }, [currentIndex]);
 
+<<<<<<< HEAD
   // function nextPromptBtn() {
   //   if (currentIndex < prompts.length - 1) {
   //     setCurrentIndex(currentIndex + 1);
@@ -41,6 +42,20 @@ function Prompts() {
   //     setCurrentIndex(currentIndex - 1);
   //   }
   // }
+=======
+  function nextPromptBtn() {
+    if (currentIndex < prompts.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  }
+
+
+  function prevPromptBtn() {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  }
+>>>>>>> 14d6a48 (updated prompts response page)
 
   
   function handleStartResponse() {
@@ -69,7 +84,14 @@ function Prompts() {
       </Link> */}
 
       <div className='more-prompts'>
+<<<<<<< HEAD
         <h1>More Prompts</h1>
+=======
+        <Link to="/prompts/my-prompts">
+            <button className="prev-prompts-button"> View Your Prompts </button>
+            </Link>
+
+>>>>>>> 14d6a48 (updated prompts response page)
         <div className="scrolling-wrapper-flexbox">
           {prompts.map((element) => (
             <div key={element.id} className="daily-prompts">

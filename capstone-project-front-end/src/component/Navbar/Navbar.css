@@ -16,7 +16,11 @@
   padding: 10px; /* Add padding to create space between the border and content */
   padding-right: 0;
   list-style: none;
+<<<<<<< HEAD
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Increased box shadow for depth */
+=======
+  cursor: pointer;
+>>>>>>> 14d6a48 (updated prompts response page)
 }
 
 

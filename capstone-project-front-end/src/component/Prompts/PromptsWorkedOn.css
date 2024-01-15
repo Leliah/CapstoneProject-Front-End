@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .worked-on {
     font-size: 3em;
 }
@@ -7,6 +8,12 @@
     justify-content: center;
     padding: 50px;
     margin-bottom: 100px;
+=======
+.worked-on-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+>>>>>>> 14d6a48 (updated prompts response page)
 }
 
 h1 {
@@ -14,10 +21,25 @@ h1 {
    margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 
 .worked-on-next, .worked-on-prev {
     font-size: 60px;
     color: white;
+=======
+.worked-on-prev {
+    font-size: 60px;
+    color: #055b49;
+    margin-top: 175px;
+    cursor: pointer;
+}
+
+
+.worked-on-next {
+    font-size: 60px;
+    color: #055b49;
+    margin-top: 175px;
+>>>>>>> 14d6a48 (updated prompts response page)
     cursor: pointer;
 }
 
@@ -29,7 +51,11 @@ h1 {
     border-radius: 20px;
     width: 1200px;
     margin-bottom: 10px;
+<<<<<<< HEAD
     padding: 20px;
+=======
+    height: 500px;
+>>>>>>> 14d6a48 (updated prompts response page)
 }
 
 .indi-worked-on h3 {
@@ -37,6 +63,7 @@ h1 {
     font-family: 'Noticia Text', serif;
     margin-bottom: 0;
     font-size: 30px;
+<<<<<<< HEAD
     width: 80%;
     margin: 0 auto;
 }
@@ -47,6 +74,8 @@ h1 {
 
 .indi-worked-on .last-edited {
     text-align: right;
+=======
+>>>>>>> 14d6a48 (updated prompts response page)
 }
 
 .saved-prompt-response {
@@ -56,8 +85,12 @@ h1 {
     background-color: #FAF9F6;
     border: 2px solid white;
     border-radius: 10px;
+<<<<<<< HEAD
     padding: 10px;
     min-height: 300px;
+=======
+    width: 1000px;
+>>>>>>> 14d6a48 (updated prompts response page)
 }
 
 .worked-on-prompts-edit-btn {
@@ -65,6 +98,7 @@ h1 {
     justify-content: end;
 }
 
+<<<<<<< HEAD
 .previous-prompt-buttons {
     display: flex;
     gap: 20px;
@@ -93,6 +127,19 @@ h1 {
     background-color: #228b22;
   }
 
+=======
+.button{
+    background-color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 10%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+}
+
+>>>>>>> 14d6a48 (updated prompts response page)
 
 
 

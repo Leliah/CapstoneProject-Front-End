@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Link, useNavigate, useParams  } from "react-router-dom";
+=======
+import { Link, useNavigate, useParams } from "react-router-dom";
+>>>>>>> 14d6a48 (updated prompts response page)
 import PromptsResponse from "./PromptsResponse";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -8,10 +12,13 @@ const API = process.env.REACT_APP_API_URL;
 function PromptsWorkedOn() {
     const [promptsWithResponses, setPromptsWithResponses] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
+<<<<<<< HEAD
     const navigate = useNavigate();
   let { index } = useParams();
 
     
+=======
+>>>>>>> 14d6a48 (updated prompts response page)
 
     useEffect(() => {
         axios
@@ -45,6 +52,7 @@ function PromptsWorkedOn() {
             setCurrentIndex(currentIndex + 1);
         }
     }
+<<<<<<< HEAD
    // DELETE BTN
    const handleDelete = () => {
     axios
@@ -81,6 +89,28 @@ function PromptsWorkedOn() {
                     </div>
                 </div>
             }
+=======
+  return (
+    <div>
+        <h1 className="worked-on">Prompts You've Worked On:</h1>
+        <div className="worked-on-container">
+            <div className="worked-on-prev" onClick={prevPromptBtn}> 
+            ◀
+            </div>
+            { currentPrompt &&
+                    <div className="indi-worked-on" key={currentPrompt.id}>
+                        <h3>{currentPrompt.title}</h3>
+                        <h3>Your Response:</h3>
+                        <p className="saved-prompt-response"> {currentPrompt.response}
+                        <p>Last Edited: {currentPrompt.completion_date}</p></p>
+
+                        <Link className="worked-on-prompts-edit-btn" to={`/prompts/${currentPrompt.id}`}><button className="button">Edit</button></Link>
+                    </div>
+            }
+            <div className="worked-on-next" onClick={nextPromptBtn}> 
+            ▶
+            </div>
+>>>>>>> 14d6a48 (updated prompts response page)
         </div>
     </div>
   )
