@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b060c1c (improve previous prompts page)
 .worked-on {
     font-size: 3em;
 }
 
+<<<<<<< HEAD
 .worked-on-container {
     display: flex;
     justify-content: center;
@@ -14,6 +18,13 @@
     justify-content: center;
     padding: 100px;
 >>>>>>> 14d6a48 (updated prompts response page)
+=======
+.worked-on-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 100px;
+>>>>>>> b060c1c (improve previous prompts page)
 }
 
 h1 {
@@ -21,6 +32,7 @@ h1 {
    margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 .worked-on-next, .worked-on-prev {
@@ -33,13 +45,18 @@ h1 {
     margin-top: 175px;
     cursor: pointer;
 }
+=======
+>>>>>>> b060c1c (improve previous prompts page)
 
-
-.worked-on-next {
+.worked-on-next, .worked-on-prev {
     font-size: 60px;
+<<<<<<< HEAD
     color: #055b49;
     margin-top: 175px;
 >>>>>>> 14d6a48 (updated prompts response page)
+=======
+    color: white;
+>>>>>>> b060c1c (improve previous prompts page)
     cursor: pointer;
 }
 
@@ -52,10 +69,14 @@ h1 {
     width: 1200px;
     margin-bottom: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 20px;
 =======
     height: 500px;
 >>>>>>> 14d6a48 (updated prompts response page)
+=======
+    padding: 20px;
+>>>>>>> b060c1c (improve previous prompts page)
 }
 
 .indi-worked-on h3 {
@@ -64,6 +85,9 @@ h1 {
     margin-bottom: 0;
     font-size: 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b060c1c (improve previous prompts page)
     width: 80%;
     margin: 0 auto;
 }
@@ -74,8 +98,11 @@ h1 {
 
 .indi-worked-on .last-edited {
     text-align: right;
+<<<<<<< HEAD
 =======
 >>>>>>> 14d6a48 (updated prompts response page)
+=======
+>>>>>>> b060c1c (improve previous prompts page)
 }
 
 .saved-prompt-response {
@@ -86,11 +113,15 @@ h1 {
     border: 2px solid white;
     border-radius: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 10px;
     min-height: 300px;
 =======
     width: 1000px;
 >>>>>>> 14d6a48 (updated prompts response page)
+=======
+    padding: 10px;
+>>>>>>> b060c1c (improve previous prompts page)
 }
 
 .worked-on-prompts-edit-btn {
@@ -99,10 +130,14 @@ h1 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b060c1c (improve previous prompts page)
 .previous-prompt-buttons {
     display: flex;
     gap: 20px;
     justify-content: right;
+<<<<<<< HEAD
     align-items: center;
     margin-right: 58px;
 }
@@ -140,6 +175,27 @@ h1 {
 }
 
 >>>>>>> 14d6a48 (updated prompts response page)
+=======
+    margin-right: 58px;
+}
+
+.previous-prompt-buttons button {
+    background-color: #86b649;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.previous-prompt-button button:hover {
+    background-color: #228b22;
+  }
+
+>>>>>>> b060c1c (improve previous prompts page)
 
 
 

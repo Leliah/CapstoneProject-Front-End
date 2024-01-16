@@ -18,10 +18,14 @@ function Navbar({ showNav, setShowNav }) {
     </Link>
   </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
   {/* <li>
 =======
   <li>
 >>>>>>> f6d426e (close navbar on menu select)
+=======
+  {/* <li>
+>>>>>>> b060c1c (improve previous prompts page)
     <Link to='/roadmap' onClick={() => setShowNav(false)}>
       Roadmap
     </Link>
@@ -33,12 +37,17 @@ function Navbar({ showNav, setShowNav }) {
   </li>
   <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Link to='/prompts/my-prompts' onClick={() => setShowNav(false)}>
       Entries
 =======
     <Link to='/prompts' onClick={() => setShowNav(false)}>
       Prompts
 >>>>>>> f6d426e (close navbar on menu select)
+=======
+    <Link to='/prompts/my-prompts' onClick={() => setShowNav(false)}>
+      Entries
+>>>>>>> b060c1c (improve previous prompts page)
     </Link>
   </li>
     </div>

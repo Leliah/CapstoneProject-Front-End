@@ -362,6 +362,19 @@ button.more-steps-btn:hover {
   margin-left: 992px;
 }
 
+<<<<<<< HEAD
+=======
+.prompts-save-btn {
+  background-color: #86b649;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+}
+>>>>>>> b060c1c (improve previous prompts page)
 .prompts {
   height: 80vh;
   font-family: "Noticia Text", serif;
@@ -382,3 +395,4 @@ button.more-steps-btn:hover {
 .title{
   text-decoration: underline;
 }
+
