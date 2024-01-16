@@ -116,12 +116,15 @@ h1 {
 <<<<<<< HEAD
     padding: 10px;
     min-height: 300px;
+<<<<<<< HEAD
 =======
     width: 1000px;
 >>>>>>> 14d6a48 (updated prompts response page)
 =======
     padding: 10px;
 >>>>>>> b060c1c (improve previous prompts page)
+=======
+>>>>>>> f497819 (normalize styling for text fields)
 }
 
 .worked-on-prompts-edit-btn {
@@ -137,6 +140,7 @@ h1 {
     display: flex;
     gap: 20px;
     justify-content: right;
+<<<<<<< HEAD
 <<<<<<< HEAD
     align-items: center;
     margin-right: 58px;
@@ -176,7 +180,14 @@ h1 {
 
 >>>>>>> 14d6a48 (updated prompts response page)
 =======
+=======
+    align-items: center;
+>>>>>>> f497819 (normalize styling for text fields)
     margin-right: 58px;
+}
+
+.worked-on-text {
+    flex-grow: 1;
 }
 
 .previous-prompt-buttons button {
