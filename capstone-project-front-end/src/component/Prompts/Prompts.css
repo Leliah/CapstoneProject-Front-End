@@ -38,17 +38,24 @@
   .more-prompts {
     margin-top: 40px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     /* background-color: antiquewhite; */
     background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
     background-size: cover;
     background-attachment: fixed;
+=======
+    background-color: antiquewhite;
+>>>>>>> f497819 (normalize styling for text fields)
   }
 
   .more-prompts h1 {
     font-size: 3em;
     margin-bottom: 40px;
+<<<<<<< HEAD
 =======
 >>>>>>> 338f66a (changes to prompt page)
+=======
+>>>>>>> f497819 (normalize styling for text fields)
   }
 
   .scrolling-wrapper-flexbox {

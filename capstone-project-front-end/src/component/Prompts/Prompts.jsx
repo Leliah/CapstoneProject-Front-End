@@ -99,6 +99,7 @@ function Prompts() {
 
       <div className='more-prompts'>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <h1>More Prompts</h1>
 =======
         <Link to="/prompts/my-prompts">
@@ -116,6 +117,9 @@ function Prompts() {
 
       <div className='more-prompts'>
 >>>>>>> 338f66a (changes to prompt page)
+=======
+        <h1>More Prompts</h1>
+>>>>>>> f497819 (normalize styling for text fields)
         <div className="scrolling-wrapper-flexbox">
           {prompts.map((element) => (
             <div key={element.id} className="daily-prompts">
