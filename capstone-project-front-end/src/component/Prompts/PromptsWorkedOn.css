@@ -1,7 +1,12 @@
+.worked-on {
+    font-size: 3em;
+}
+
 .worked-on-container {
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding: 50px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -9,18 +14,10 @@ h1 {
    margin-bottom: 0;
 }
 
-.worked-on-prev {
-    font-size: 60px;
-    color: #055b49;
-    margin-top: 175px;
-    cursor: pointer;
-}
 
-
-.worked-on-next {
+.worked-on-next, .worked-on-prev {
     font-size: 60px;
-    color: #055b49;
-    margin-top: 175px;
+    color: white;
     cursor: pointer;
 }
 
@@ -32,7 +29,7 @@ h1 {
     border-radius: 20px;
     width: 1200px;
     margin-bottom: 10px;
-    height: 500px;
+    padding: 20px;
 }
 
 .indi-worked-on h3 {
@@ -40,6 +37,16 @@ h1 {
     font-family: 'Noticia Text', serif;
     margin-bottom: 0;
     font-size: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.indi-worked-on p {
+    text-align: left;
+}
+
+.indi-worked-on .last-edited {
+    text-align: right;
 }
 
 .saved-prompt-response {
@@ -49,7 +56,7 @@ h1 {
     background-color: #FAF9F6;
     border: 2px solid white;
     border-radius: 10px;
-    width: 1000px;
+    padding: 10px;
 }
 
 .worked-on-prompts-edit-btn {
@@ -57,16 +64,28 @@ h1 {
     justify-content: end;
 }
 
-.button{
-    background-color: #fff;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 20px;
-    width: 10%;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    color: black;
+.previous-prompt-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    margin-right: 58px;
 }
+
+.previous-prompt-buttons button {
+    background-color: #86b649;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.previous-prompt-button button:hover {
+    background-color: #228b22;
+  }
 
 
 

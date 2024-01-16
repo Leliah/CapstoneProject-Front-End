@@ -17,14 +17,19 @@ function Navbar({ showNav, setShowNav }) {
       Feed
     </Link>
   </li>
-  <li>
+  {/* <li>
     <Link to='/roadmap' onClick={() => setShowNav(false)}>
       Roadmap
     </Link>
-  </li>
+  </li> */}
   <li>
     <Link to='/prompts' onClick={() => setShowNav(false)}>
       Prompts
+    </Link>
+  </li>
+  <li>
+    <Link to='/prompts/my-prompts' onClick={() => setShowNav(false)}>
+      Entries
     </Link>
   </li>
     </div>
