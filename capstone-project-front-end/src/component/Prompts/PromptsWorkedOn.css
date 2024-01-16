@@ -57,6 +57,7 @@ h1 {
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
+    min-height: 300px;
 }
 
 .worked-on-prompts-edit-btn {
@@ -68,7 +69,12 @@ h1 {
     display: flex;
     gap: 20px;
     justify-content: right;
+    align-items: center;
     margin-right: 58px;
+}
+
+.worked-on-text {
+    flex-grow: 1;
 }
 
 .previous-prompt-buttons button {

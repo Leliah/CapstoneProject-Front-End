@@ -3,13 +3,12 @@
 
 body {
   font-family: 'Pacifico', cursive;
-  background-color: #fae8ca;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
+  /* background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png); */
 }
 
 .home-container {

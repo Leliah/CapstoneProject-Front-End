@@ -1,0 +1,53 @@
+.response h1 {
+    font-size: 3em;
+    color:#055b49;
+}
+
+.response-container  {
+    background-color: #055b49;
+    font-family: 'Noticia Text', serif;
+    padding: 10px;
+    border-radius: 25px;
+    width: 1200px;
+    font-size: 35px;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 20px;
+  }
+
+  .response h3 { 
+    color: #ffffff;
+    font-family: 'Noticia Text', serif;
+    margin-bottom: 0;
+    font-size: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.prompts-response-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    margin-right: 135px;
+}
+
+.prompts-save-btn {
+    background-color: #86b649;
+    color: white;
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+  }
+
+  .response form textarea {
+  width: 100%;
+  font-size: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  }

@@ -1,6 +1,9 @@
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
+
+import './PromptsResponse.css';
+
 const API = process.env.REACT_APP_API_URL;
 
 function PromptsResponse() {
@@ -33,7 +36,6 @@ const handleSubmit = (event) => {
 };
 
 const updatePrompt = (updateResponse) => {
-  console.log('Updated Prompt:', updateResponse);
 
   //let responseValue = responseRef.current.value
   axios
@@ -44,31 +46,21 @@ const updatePrompt = (updateResponse) => {
     })
     .catch((e) => console.error("catch", e));
 
-    alert('Your response has been saved!')
     responseRef.current.value = ''
 };
 
   return (
     <div className='response'>
-
-        <div className='container'>
-        <div className='prompt-crud-nav'>
-        {/* <button>✎</button>
-        <button>X</button> */}
-      </div>
-            <form onSubmit={handleSubmit}>
-                <p>
-                {/* <label htmlFor='prompts-response' style={{color: 'black'}}> Reflect Here: </label> */}
-                </p>
-                <h3 className="title">{prompts.title}</h3>
-                <p> {prompts.prompt}</p>
-                <textarea rows="4" cols="50" ref={responseRef} onChange={handleTextChange} id="response" value={prompts.response}  type="text">
-                    
-                </textarea> 
-                <br></br>
-                <button className='prompts-save-btn'>Save</button>
-            </form>
-        </div>
+      <h1>Edit Entry</h1>
+      <div className="response-container">
+          <h3>{prompts.prompt}</h3>
+          <form onSubmit={handleSubmit}>
+            <textarea rows="4" cols="50" ref={responseRef} onChange={handleTextChange} id="response" value={prompts.response}  type="text" /> 
+            <div className="prompts-response-buttons">
+              <button className='prompts-save-btn'>Save</button>
+            </div>
+          </form>
+          </div>
     </div>
   )
 }
