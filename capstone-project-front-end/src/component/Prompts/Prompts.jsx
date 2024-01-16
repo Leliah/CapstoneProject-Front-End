@@ -69,6 +69,7 @@ function Prompts() {
       </Link> */}
 
       <div className='more-prompts'>
+        <h1>More Prompts</h1>
         <div className="scrolling-wrapper-flexbox">
           {prompts.map((element) => (
             <div key={element.id} className="daily-prompts">

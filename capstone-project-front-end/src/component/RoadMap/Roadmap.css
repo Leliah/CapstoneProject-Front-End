@@ -21,9 +21,9 @@
     height: 100%;
     z-index: -1;
     animation: parallaxBackground 20s linear infinite;
-    background-image: url('https://cdn.gamedevmarket.net/wp-content/uploads/20191203145553/d874367282cec41be1ac5d8000899d2a.png');
+    background-image: url('https://cdn.gamedevmarket.net/wp-content/uploads/20191203145553/d874367282cec41be1ac5d8000899d2a.png'); */
     background-size: cover;
-    background-position: center;
+    /* /* background-position: center; */
   }
   
   @keyframes parallaxBackground {

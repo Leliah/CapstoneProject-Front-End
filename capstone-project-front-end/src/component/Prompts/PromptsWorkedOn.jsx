@@ -65,16 +65,15 @@ function PromptsWorkedOn() {
             { currentPrompt &&
                 <div className="indi-worked-on" key={currentPrompt.id}>
                     <h3>{currentPrompt.prompt}</h3>
-                    {/* <h3>Your Response:</h3> */}
                     <div style={{"display" : "flex", "alignItems" : "center"}}>
                         <div className="worked-on-prev" onClick={prevPromptBtn}>◀</div>
-                        <div>
-                            <p className="saved-prompt-response"> {currentPrompt.response}
-                            <p className="last-edited">Last Edited: {currentPrompt.completion_date}</p></p>
+                        <div className="worked-on-text">
+                            <p className="saved-prompt-response"> {currentPrompt.response}</p>
                         </div>
                         <div className="worked-on-next" onClick={nextPromptBtn}>▶</div>
                     </div>
                     <div className="previous-prompt-buttons">
+                        <p className="last-edited">Last Edited: {currentPrompt.completion_date}</p>
                         <button key={currentPrompt.id} onClick={handleDelete}>Delete</button>
                         <Link to={`/prompts/${currentPrompt.id}`}>
                             <button>Edit</button>

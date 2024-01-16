@@ -37,6 +37,12 @@
 
   .more-prompts {
     margin-top: 40px;
+    background-color: antiquewhite;
+  }
+
+  .more-prompts h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
   }
 
   .scrolling-wrapper-flexbox {
