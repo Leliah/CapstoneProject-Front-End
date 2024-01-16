@@ -92,6 +92,7 @@ function Prompts() {
       </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* <Link to="/prompts/my-prompts">
         <button className="prev-prompts-button"> View Your Prompts </button>
       </Link> */}
@@ -107,8 +108,11 @@ function Prompts() {
 >>>>>>> 14d6a48 (updated prompts response page)
 =======
       <Link to="/prompts/my-prompts">
+=======
+      {/* <Link to="/prompts/my-prompts">
+>>>>>>> b060c1c (improve previous prompts page)
         <button className="prev-prompts-button"> View Your Prompts </button>
-      </Link>
+      </Link> */}
 
       <div className='more-prompts'>
 >>>>>>> 338f66a (changes to prompt page)
@@ -117,10 +121,14 @@ function Prompts() {
             <div key={element.id} className="daily-prompts">
               <h3>{element.title}</h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p className="elementpro">{element.prompt}</p>
 =======
               <p>{element.prompt}</p>
 >>>>>>> 338f66a (changes to prompt page)
+=======
+              <p className="elementpro">{element.prompt}</p>
+>>>>>>> b060c1c (improve previous prompts page)
               <Link to={`/prompts/${element.id}`}>
                 <button className='start-promptne-btn' >Start</button>
               </Link>
