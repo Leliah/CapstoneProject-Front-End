@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams  } from "react-router-dom";
 import PromptsResponse from "./PromptsResponse";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -8,6 +8,10 @@ const API = process.env.REACT_APP_API_URL;
 function PromptsWorkedOn() {
     const [promptsWithResponses, setPromptsWithResponses] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const navigate = useNavigate();
+  let { index } = useParams();
+
+    
 
     useEffect(() => {
         axios
@@ -41,26 +45,43 @@ function PromptsWorkedOn() {
             setCurrentIndex(currentIndex + 1);
         }
     }
+   // DELETE BTN
+   const handleDelete = () => {
+    axios
+      .delete(`${API}/prompts/${currentPrompt.id}`)
+      .then(() => {
+        console.log('deleted!')
+        navigate("/prompts");
+      })
+      .catch((error) => {
+        console.error("Error deleting post:", error);
+      });
+  };
+
   return (
     <div>
-        <h1 className="worked-on">Prompts You've Worked On:</h1>
+        <h1 className="worked-on">Previous Prompts:</h1>
         <div className="worked-on-container">
-            <div className="worked-on-prev" onClick={prevPromptBtn}> 
-            ◀
-            </div>
             { currentPrompt &&
-                    <div className="indi-worked-on" key={currentPrompt.id}>
-                        <h3>{currentPrompt.title}</h3>
-                        <h3>Your Response:</h3>
-                        <p className="saved-prompt-response"> {currentPrompt.response}
-                        <p>Last Edited: {currentPrompt.completion_date}</p></p>
-
-                        <Link className="worked-on-prompts-edit-btn" to={`/prompts/${currentPrompt.id}`}><button className="button">Edit</button></Link>
+                <div className="indi-worked-on" key={currentPrompt.id}>
+                    <h3>{currentPrompt.prompt}</h3>
+                    {/* <h3>Your Response:</h3> */}
+                    <div style={{"display" : "flex", "alignItems" : "center"}}>
+                        <div className="worked-on-prev" onClick={prevPromptBtn}>◀</div>
+                        <div>
+                            <p className="saved-prompt-response"> {currentPrompt.response}
+                            <p className="last-edited">Last Edited: {currentPrompt.completion_date}</p></p>
+                        </div>
+                        <div className="worked-on-next" onClick={nextPromptBtn}>▶</div>
                     </div>
+                    <div className="previous-prompt-buttons">
+                        <button key={currentPrompt.id} onClick={handleDelete}>Delete</button>
+                        <Link to={`/prompts/${currentPrompt.id}`}>
+                            <button>Edit</button>
+                        </Link>
+                    </div>
+                </div>
             }
-            <div className="worked-on-next" onClick={nextPromptBtn}> 
-            ▶
-            </div>
         </div>
     </div>
   )

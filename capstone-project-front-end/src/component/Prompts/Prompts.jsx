@@ -64,16 +64,16 @@ function Prompts() {
         {/* <button className='next-prompt-btn' onClick={nextPromptBtn}>Next</button> */}
       </div>
 
-      <Link to="/prompts/my-prompts">
+      {/* <Link to="/prompts/my-prompts">
         <button className="prev-prompts-button"> View Your Prompts </button>
-      </Link>
+      </Link> */}
 
       <div className='more-prompts'>
         <div className="scrolling-wrapper-flexbox">
           {prompts.map((element) => (
             <div key={element.id} className="daily-prompts">
               <h3>{element.title}</h3>
-              <p>{element.prompt}</p>
+              <p className="elementpro">{element.prompt}</p>
               <Link to={`/prompts/${element.id}`}>
                 <button className='start-promptne-btn' >Start</button>
               </Link>
