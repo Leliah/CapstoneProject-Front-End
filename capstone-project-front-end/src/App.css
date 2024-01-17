@@ -21,7 +21,7 @@ body {
   /* overflow: hidden; */
   background-color: #fae8ca;
   height: 100vh;
-  background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
+  background-image: url(./component/background.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat;
