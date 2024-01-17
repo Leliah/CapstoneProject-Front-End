@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* Import the Pacifico font */
-=======
->>>>>>> 14d6a48 (updated prompts response page)
-=======
-/* Import the Pacifico font */
->>>>>>> 4d8036f (final changes)
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;1,300&display=swap');
 
@@ -51,15 +44,7 @@ body {
   color: #055B49;
   top: 500px;
   position: absolute;
-<<<<<<< HEAD
-<<<<<<< HEAD
   right: 25%;
-=======
-  left: 530px;
->>>>>>> 14d6a48 (updated prompts response page)
-=======
-  right: 25%;
->>>>>>> 4d8036f (final changes)
 }
 
 /* Buttons */
@@ -71,15 +56,7 @@ body {
   align-items: center; /* Center the buttons vertically */
   gap: 40px; /* Adjust the gap between buttons as needed */
   top: 630px; /* Adjust the margin as needed */
-<<<<<<< HEAD
-<<<<<<< HEAD
   left: 740px;
-=======
-  left: 699px;
->>>>>>> 14d6a48 (updated prompts response page)
-=======
-  left: 740px;
->>>>>>> 4d8036f (final changes)
   position: absolute;
 }
 
@@ -185,14 +162,5 @@ body {
     margin: 10px;
     border-radius: 20px;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> 14d6a48 (updated prompts response page)
-=======
-}
-
->>>>>>> 4d8036f (final changes)

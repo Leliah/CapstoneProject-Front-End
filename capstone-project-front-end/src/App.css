@@ -347,9 +347,6 @@ button.more-steps-btn:hover {
   margin-left: 992px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 .prompts-save-btn {
   background-color: #86b649;
   color: white;
@@ -360,9 +357,7 @@ button.more-steps-btn:hover {
   border: none;
   cursor: pointer;
 }
->>>>>>> b060c1c (improve previous prompts page)
-=======
->>>>>>> f497819 (normalize styling for text fields)
+
 .prompts {
   height: 80vh;
   font-family: "Noticia Text", serif;
@@ -371,13 +366,7 @@ button.more-steps-btn:hover {
 #response{
   width: 900px;
   height: 160px;
-<<<<<<< HEAD
-}
 
-.title{
-  text-decoration: underline;
-=======
->>>>>>> 14d6a48 (updated prompts response page)
 }
 
 .title{

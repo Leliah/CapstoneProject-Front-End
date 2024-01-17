@@ -30,44 +30,17 @@ function Prompts() {
       .catch((e) => console.error("catch", e));
   }, [currentIndex]);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 338f66a (changes to prompt page)
   // function nextPromptBtn() {
   //   if (currentIndex < prompts.length - 1) {
   //     setCurrentIndex(currentIndex + 1);
   //   }
   // }
-<<<<<<< HEAD
 
   // function prevPromptBtn() {
   //   if (currentIndex > 0) {
   //     setCurrentIndex(currentIndex - 1);
   //   }
   // }
-=======
-  function nextPromptBtn() {
-    if (currentIndex < prompts.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  }
-
-
-  function prevPromptBtn() {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  }
->>>>>>> 14d6a48 (updated prompts response page)
-=======
-
-  // function prevPromptBtn() {
-  //   if (currentIndex > 0) {
-  //     setCurrentIndex(currentIndex - 1);
-  //   }
-  // }
->>>>>>> 338f66a (changes to prompt page)
 
   
   function handleStartResponse() {
@@ -91,48 +64,17 @@ function Prompts() {
         {/* <button className='next-prompt-btn' onClick={nextPromptBtn}>Next</button> */}
       </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       {/* <Link to="/prompts/my-prompts">
         <button className="prev-prompts-button"> View Your Prompts </button>
       </Link> */}
 
       <div className='more-prompts'>
-<<<<<<< HEAD
-<<<<<<< HEAD
         <h1>More Prompts</h1>
-=======
-        <Link to="/prompts/my-prompts">
-            <button className="prev-prompts-button"> View Your Prompts </button>
-            </Link>
-
->>>>>>> 14d6a48 (updated prompts response page)
-=======
-      <Link to="/prompts/my-prompts">
-=======
-      {/* <Link to="/prompts/my-prompts">
->>>>>>> b060c1c (improve previous prompts page)
-        <button className="prev-prompts-button"> View Your Prompts </button>
-      </Link> */}
-
-      <div className='more-prompts'>
->>>>>>> 338f66a (changes to prompt page)
-=======
-        <h1>More Prompts</h1>
->>>>>>> f497819 (normalize styling for text fields)
         <div className="scrolling-wrapper-flexbox">
           {prompts.map((element) => (
             <div key={element.id} className="daily-prompts">
               <h3>{element.title}</h3>
-<<<<<<< HEAD
-<<<<<<< HEAD
               <p className="elementpro">{element.prompt}</p>
-=======
-              <p>{element.prompt}</p>
->>>>>>> 338f66a (changes to prompt page)
-=======
-              <p className="elementpro">{element.prompt}</p>
->>>>>>> b060c1c (improve previous prompts page)
               <Link to={`/prompts/${element.id}`}>
                 <button className='start-promptne-btn' >Start</button>
               </Link>

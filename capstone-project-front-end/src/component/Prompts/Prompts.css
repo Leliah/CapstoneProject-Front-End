@@ -37,31 +37,16 @@
 
   .more-prompts {
     margin-top: 40px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4d8036f (final changes)
     /* background-color: antiquewhite; */
     background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
     background-size: cover;
     background-attachment: fixed;
-<<<<<<< HEAD
-=======
-    background-color: antiquewhite;
->>>>>>> f497819 (normalize styling for text fields)
-=======
->>>>>>> 4d8036f (final changes)
+
   }
 
   .more-prompts h1 {
     font-size: 3em;
     margin-bottom: 40px;
-<<<<<<< HEAD
-=======
->>>>>>> 338f66a (changes to prompt page)
-=======
->>>>>>> f497819 (normalize styling for text fields)
   }
 
   .scrolling-wrapper-flexbox {
@@ -106,18 +91,8 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .elementpro{
     padding-top: 0px;
     padding-bottom: 15px;
 }
-=======
->>>>>>> 338f66a (changes to prompt page)
-=======
-.elementpro{
-    padding-top: 0px;
-    padding-bottom: 15px;
-}
->>>>>>> b060c1c (improve previous prompts page)
