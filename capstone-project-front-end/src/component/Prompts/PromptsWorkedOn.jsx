@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { Link, useNavigate, useParams  } from "react-router-dom";
-=======
-import { Link, useNavigate, useParams } from "react-router-dom";
->>>>>>> 14d6a48 (updated prompts response page)
-=======
-import { Link, useNavigate, useParams  } from "react-router-dom";
->>>>>>> b060c1c (improve previous prompts page)
 import PromptsResponse from "./PromptsResponse";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -16,19 +8,10 @@ const API = process.env.REACT_APP_API_URL;
 function PromptsWorkedOn() {
     const [promptsWithResponses, setPromptsWithResponses] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b060c1c (improve previous prompts page)
     const navigate = useNavigate();
   let { index } = useParams();
 
     
-<<<<<<< HEAD
-=======
->>>>>>> 14d6a48 (updated prompts response page)
-=======
->>>>>>> b060c1c (improve previous prompts page)
 
     useEffect(() => {
         axios
@@ -62,10 +45,6 @@ function PromptsWorkedOn() {
             setCurrentIndex(currentIndex + 1);
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b060c1c (improve previous prompts page)
    // DELETE BTN
    const handleDelete = () => {
     axios
@@ -79,7 +58,6 @@ function PromptsWorkedOn() {
       });
   };
 
-<<<<<<< HEAD
   return (
     <div>
         <h1 className="worked-on">Previous Prompts:</h1>
@@ -103,51 +81,9 @@ function PromptsWorkedOn() {
                     </div>
                 </div>
             }
-=======
-=======
->>>>>>> b060c1c (improve previous prompts page)
-  return (
-    <div>
-        <h1 className="worked-on">Previous Prompts:</h1>
-        <div className="worked-on-container">
-            { currentPrompt &&
-                <div className="indi-worked-on" key={currentPrompt.id}>
-                    <h3>{currentPrompt.prompt}</h3>
-                    <div style={{"display" : "flex", "alignItems" : "center"}}>
-                        <div className="worked-on-prev" onClick={prevPromptBtn}>◀</div>
-                        <div className="worked-on-text">
-                            <p className="saved-prompt-response"> {currentPrompt.response}</p>
-                        </div>
-                        <div className="worked-on-next" onClick={nextPromptBtn}>▶</div>
-                    </div>
-                    <div className="previous-prompt-buttons">
-                        <p className="last-edited">Last Edited: {currentPrompt.completion_date}</p>
-                        <button key={currentPrompt.id} onClick={handleDelete}>Delete</button>
-                        <Link to={`/prompts/${currentPrompt.id}`}>
-                            <button>Edit</button>
-                        </Link>
-                    </div>
-                </div>
-            }
-<<<<<<< HEAD
-            <div className="worked-on-next" onClick={nextPromptBtn}> 
-            ▶
-            </div>
->>>>>>> 14d6a48 (updated prompts response page)
-=======
->>>>>>> b060c1c (improve previous prompts page)
         </div>
     </div>
   )
 }
 
 export default PromptsWorkedOn
-
-
-
-
-
-
-
-
-
