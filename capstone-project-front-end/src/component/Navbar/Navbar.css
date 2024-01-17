@@ -11,6 +11,7 @@
   width: 23%; /* Adjust the width as needed */
   height: 75vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #055b49;
   transition: left 1s ease; /* Apply transition effect to the left property */
   /* border: 10px solid white; Add a white border around the navbar */
@@ -27,6 +28,15 @@
 =======
   cursor: pointer;
 >>>>>>> 14d6a48 (updated prompts response page)
+=======
+  background-color: #055b49;
+  transition: left 1s ease; /* Apply transition effect to the left property */
+  /* border: 10px solid white; Add a white border around the navbar */
+  padding: 10px; /* Add padding to create space between the border and content */
+  padding-right: 0;
+  list-style: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Increased box shadow for depth */
+>>>>>>> 4d8036f (final changes)
 }
 
 
