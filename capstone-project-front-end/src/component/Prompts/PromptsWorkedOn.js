@@ -14,12 +14,14 @@ function PromptsWorkedOn() {
     
 
     useEffect(() => {
+        console.log("useEffect function")
         axios
         .get(`${API}/prompts`)
         .then((response) => {
             //PROMPTS THAT HAVE A RESPONSE
             let workedOnPrompts = response.data.filter((element) => element.response.length > 0);
               console.log(workedOnPrompts)
+              console.log(response.data)
             //IF THERE ARE ANY PROMPTS THAT MEANT THAT CRITERIA, ADD TO ARRAY
             if(workedOnPrompts.length > 0){
                 setPromptsWithResponses(workedOnPrompts)

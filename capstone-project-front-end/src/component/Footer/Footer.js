@@ -16,13 +16,7 @@ function Footer() {
         <li className="footer-item">
           <Link to="/contact">
             <GroupsIcon className="footer-icon" />
-            Contact Us
-          </Link>
-        </li>
-        <li className="footer-item">
-          <Link to="/privacy">
-            <GroupsIcon className="footer-icon" />
-            Privacy Policy
+            How It Works
           </Link>
         </li>
       </ul>

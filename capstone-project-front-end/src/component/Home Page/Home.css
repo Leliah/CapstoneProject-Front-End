@@ -42,9 +42,9 @@ body {
   animation: fadeInAndFloat 3s ease-in-out infinite;
   font-size: 5vmax;
   color: #055B49;
-  top: 500px;
+  top: 450px;
   position: absolute;
-  right: 25%;
+  right: 380px;
 }
 
 /* Buttons */
@@ -62,13 +62,13 @@ body {
 
 
 /* Login and Signup Buttons */
-.signup-button {
+.signup-button-home {
   background-color: #055b49;
   color: #fff;
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px 20px; /* Adjust padding as needed */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   margin-left: 90%;
@@ -81,22 +81,37 @@ body {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 27px;
+    font-size: 23px;
     padding: 8px 30px; /* Adjust padding as needed */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     margin-left: 80%;
     margin-top: -100px;
   }
 
-.login-button:hover,
-.signup-button:hover,
+  .start-journey{
+    padding: 10px 25px;
+    margin: -110px;
+    margin-top: -140px;
+    margin-left: -160px;
+    background-color: #055b49;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+.start-journey:hover,
+.signup-button-home:hover,
 .login-2:hover{
   background-color: #86b649;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-
-
+.login-button{
+  margin:100px;
+}
 
 
 .image-container{
@@ -142,25 +157,5 @@ body {
   }
 }
 
-/* Media Query for Mobile */
-@media screen and (max-width: 375px) {
-  .hello-text {
-    padding-bottom: 2px;
-    font-size: 10vmax;
-    margin-top: 5%;
-    margin-bottom: 1%; /* Adjusted margin-bottom for mobile */
-  }
 
-  .login-button{
-    font-size: 14px;
-    margin: 10px;
-    border-radius: 20px;
-  }
-
-  .signup-button{
-    font-size: 14px;
-    margin: 10px;
-    border-radius: 20px;
-  }
-}
 

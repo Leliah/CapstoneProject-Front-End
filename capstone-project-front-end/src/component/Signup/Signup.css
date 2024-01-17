@@ -65,7 +65,7 @@ h1 {
 
 
 
-.signup-button:hover {
+.signup--button:hover {
   background-color: #86b649;
 }
 
@@ -117,22 +117,8 @@ h1 {
   gap: 10px;
 }
 
-.signup-button {
+.signup--button {
   font-size: 30px;
 }
 
-/* Desktop Styles */
-@media (min-width: 768px) {
-  .signup-container {
-    padding: 15vh 1rem; /* Adjusted padding for larger screens */
-    max-width: 800px; /* Set a maximum width for desktop screens */
-  }
 
-  .signup-form {
-    max-width: 400px; /* Adjusted maximum width for desktop screens */
-  }
-
-  .signup-button {
-    font-size: 24px; /* Adjusted font size for desktop screens */
-  }
-}

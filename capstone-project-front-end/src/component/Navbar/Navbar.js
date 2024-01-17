@@ -17,17 +17,6 @@ function Navbar({ showNav, setShowNav }) {
           Feed
         </Link>
       </li>
-      {/* <li>
-=======
-  <li>
->>>>>>> f6d426e (close navbar on menu select)
-=======
-  {/* <li>
->>>>>>> b060c1c (improve previous prompts page)
-    <Link to='/roadmap' onClick={() => setShowNav(false)}>
-      Roadmap
-    </Link>
-  </li> */}
       <li>
         <Link to="/prompts" onClick={() => setShowNav(false)}>
           Prompts

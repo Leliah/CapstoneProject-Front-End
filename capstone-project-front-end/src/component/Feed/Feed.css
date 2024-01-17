@@ -100,7 +100,7 @@
     padding:10px;
     max-width: 1800px;
     max-height: 700px;
-    overflow: auto;
+    overflow: scroll;
     flex: 1;
     align-items: center;
     justify-content: center;

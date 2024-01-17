@@ -63,7 +63,7 @@ function SignUp() {
             {showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
           </button>
         </div>
-        <button className="signup-button" onClick={handleSignUp}>
+        <button className="signup--button" onClick={handleSignUp}>
           Sign up
         </button>
         {!isUser && <p className="not-user">You are not a user. Please sign up.</p>}

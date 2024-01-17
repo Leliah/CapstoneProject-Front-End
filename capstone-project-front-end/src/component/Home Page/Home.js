@@ -43,12 +43,12 @@ function Home({ isNavbarOpen }) {
         {showHello && <div className="hello-text">{languages[currentLanguageIndex]}</div>}
         <div className="button-container">
           <Link to="/prompts">
-            <button className="login-button">Start Your Journey</button>
+            <button className="start-journey">Start Your Journey</button>
           </Link>
         </div>
         <div>
         <Link to="/signup">
-            <button className="signup-button">sign up</button>
+            <button className="signup-button-home">sign up</button>
           </Link>
         </div>
         <div>

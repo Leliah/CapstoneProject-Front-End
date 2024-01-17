@@ -43,7 +43,7 @@ function About() {
                 alt="Arius Philips"
               />
               <p>{ourTeam.ariusPhilips.bio}</p>
-              <div className="button-container">
+              <div className="button-container-about">
                 <button className="button">
                   <a href={ourTeam.ariusPhilips.github}>Arius's GitHub</a>
                 </button>
@@ -56,7 +56,7 @@ function About() {
                 alt="Leliah Spruill"
               />
               <p>{ourTeam.leliahSpruill.bio}</p>
-              <div className="button-container">
+              <div className="button-container-about">
                 <button className="button">
                   <a href={ourTeam.leliahSpruill.github}>Leliah's GitHub</a>
                 </button>
@@ -69,7 +69,7 @@ function About() {
                 alt="Paola Aracena"
               />
               <p>{ourTeam.paolaAracena.bio}</p>
-              <div className="button-container">
+              <div className="button-container-about">
                 <button className="button">
                   <a href={ourTeam.paolaAracena.github}>Paola's GitHub</a>
                 </button>
@@ -82,7 +82,7 @@ function About() {
                 alt="Adrian Burke"
               />
               <p>{ourTeam.adrianBurke.bio}</p>
-              <div className="button-container">
+              <div className="button-container-about">
                 <button className="button">
                   <a href={ourTeam.adrianBurke.github}>Adrian's GitHub</a>
                 </button>

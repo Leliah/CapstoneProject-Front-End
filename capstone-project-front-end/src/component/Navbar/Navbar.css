@@ -6,9 +6,9 @@
   font-family: 'Noticia Text', serif;
   position: fixed;
   border-radius: 0px 10px 10px 0px;
-  top: 107px;
+  top: 88px;
   left: -50vw; /* Start off-screen on the left */
-  width: 23%; /* Adjust the width as needed */
+  width: 20%; /* Adjust the width as needed */
   height: 75vh;
   background-color: #055b49;
   transition: left 1s ease; /* Apply transition effect to the left property */
@@ -24,7 +24,7 @@
 
 
 .navbar.active {
-  left: 1px; /* Slide in to view */
+  left: -20px; /* Slide in to view */
   
 }
 

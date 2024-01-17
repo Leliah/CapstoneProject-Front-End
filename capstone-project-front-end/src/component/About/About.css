@@ -2,9 +2,9 @@
 
 body {
   margin: 0; /* Remove default margin */
-  /* background-color: #fae8ca;
-  background-image: url(/Users/adrianburke/Desktop/pursuit/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
-  background-size: auto; */
+  background-color: #fae8ca;
+  background-size: auto; 
+  overflow: hidden;
 }
 
 
@@ -18,7 +18,7 @@ body {
   padding-top: 10rem;
   box-sizing: border-box; /* Include padding and border in the total width */
   justify-content: center;
-}
+ }
 
 .about {
   text-align: center;
@@ -32,13 +32,11 @@ body {
 
 .developers {
   display: flex;
-  justify-content: flex-end;
 }
 
 .developer {
   text-align: center;
-  margin: auto;
-  margin-top: 70px; /* Adjusted margin-top */
+  margin: 20px; /* Adjusted margin-top */
 }
 
 .developer img {
@@ -74,7 +72,7 @@ body {
   padding-top: 30px;
 }
 
-.button-container {
+.button-container-about {
   display: flex;
   justify-content: flex-start;
   margin-left: 10px;
