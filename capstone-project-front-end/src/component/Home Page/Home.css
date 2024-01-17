@@ -1,14 +1,15 @@
+/* Import the Pacifico font */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;1,300&display=swap');
 
 body {
   font-family: 'Pacifico', cursive;
+  background-color: #fae8ca;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  /* background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png); */
 }
 
 .home-container {
@@ -43,7 +44,7 @@ body {
   color: #055B49;
   top: 500px;
   position: absolute;
-  left: 530px;
+  right: 25%;
 }
 
 /* Buttons */
@@ -55,13 +56,12 @@ body {
   align-items: center; /* Center the buttons vertically */
   gap: 40px; /* Adjust the gap between buttons as needed */
   top: 630px; /* Adjust the margin as needed */
-  left: 699px;
+  left: 740px;
   position: absolute;
 }
 
 
 /* Login and Signup Buttons */
-.login-button,
 .signup-button {
   background-color: #055b49;
   color: #fff;
@@ -71,10 +71,26 @@ body {
   font-size: 30px;
   padding: 10px 20px; /* Adjust padding as needed */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 90%;
+  margin-top: -100px;
 }
 
+.login-2{
+    background-color: #055b49;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 27px;
+    padding: 8px 30px; /* Adjust padding as needed */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 80%;
+    margin-top: -100px;
+  }
+
 .login-button:hover,
-.signup-button:hover {
+.signup-button:hover,
+.login-2:hover{
   background-color: #86b649;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
@@ -147,3 +163,4 @@ body {
     border-radius: 20px;
   }
 }
+
