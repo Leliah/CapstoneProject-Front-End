@@ -85,24 +85,25 @@ function Feed() {
         </form>
 
         <div className="post">
-          <ul>
-            {posts
-              .slice(0)
-              .reverse()
-              .map((post) => (
-                <li className="feedli" key={post.id}>
-                  {post.description} {post.timestamp}
-                  <button
-                    className="feeddelete"
-                    onClick={() => handleDelete(post.id)}
-                  >
-                    {" "}
-                    Delete{" "}
-                  </button>
-                </li>
-              ))}
-          </ul>
-          <input className="feedSubmit" type="submit" value="View All Post" />
+        <ul>
+      {posts
+        .slice(0)
+        .reverse()
+        .map((post) => (
+          <div key={post.id} className="feedContainer">
+            <li className="feedli">
+               <p>{post.description}</p>
+                <p>{post.timestamp}</p>
+            </li>
+            <button
+              className="feeddelete"
+              onClick={() => handleDelete(post.id)}>
+              Delete
+            </button>
+          </div>
+        ))}
+    </ul>
+          {/* <input className="feedSubmit" type="submit" value="View All Post" /> */}
         </div>
       </div>
     </nav>

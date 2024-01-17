@@ -37,7 +37,10 @@
 
   .more-prompts {
     margin-top: 40px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-image: url(/Users/angelina/Capstone/CapstoneProject-Front-End/capstone-project-front-end/src/component/background.png);
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .more-prompts h1 {

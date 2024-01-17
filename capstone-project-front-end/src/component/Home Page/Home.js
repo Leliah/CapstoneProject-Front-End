@@ -8,7 +8,7 @@ import bg from "../bg.png"
 
 function Home({ isNavbarOpen }) {
   const [showHello, setShowHello] = useState(false);
-  const languages = ['Start Your Journey'];
+  const languages = ['Disconnect the virtual', 'Plug into the present'];
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function Home({ isNavbarOpen }) {
       setCurrentLanguageIndex((prevIndex) =>
         prevIndex === languages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Change language every 5 seconds
+    }, 2500); // Change language every 5 seconds
 
     return () => {
       clearInterval(interval);
@@ -42,13 +42,22 @@ function Home({ isNavbarOpen }) {
       </div>
         {showHello && <div className="hello-text">{languages[currentLanguageIndex]}</div>}
         <div className="button-container">
-          <Link to="/signup">
-            <button className="signup-button">Sign up</button>
-          </Link>
-          <Link to="/login">
-            <button className="login-button">Log in</button>
+          <Link to="/prompts">
+            <button className="login-button">Start Your Journey</button>
           </Link>
         </div>
+        <div>
+        <Link to="/signup">
+            <button className="signup-button">sign up</button>
+          </Link>
+        </div>
+        <div>
+        <Link to="/login">
+            <button className="login-2">login</button>
+          </Link>
+        </div>
+        
+        
       
     </div>
   );

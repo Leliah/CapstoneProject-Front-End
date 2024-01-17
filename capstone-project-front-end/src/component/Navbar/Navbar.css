@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Crimson+Text:ital@1&family=La+Belle+Aurore&family=Laila:wght@300;400&family=Noticia+Text&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Satisfy&family=Tilt+Prism&display=swap');
+
+
 /* Navbar.css */
 .navbar {
+  font-family: 'Noticia Text', serif;
   position: fixed;
-  border-radius: 50px;
-  top: 10%;
+  border-radius: 0px 10px 10px 0px;
+  top: 107px;
   left: -50vw; /* Start off-screen on the left */
-  width: 20%; /* Adjust the width as needed */
+  width: 23%; /* Adjust the width as needed */
   height: 75vh;
-  background-color: #005341;
-  transition: left .5s ease; 
-  border: 10px solid white; /* Add a white border around the navbar */
+  background-color: #055b49;
+  transition: left 1s ease; /* Apply transition effect to the left property */
+  /* border: 10px solid white; Add a white border around the navbar */
   padding: 10px; /* Add padding to create space between the border and content */
+  padding-right: 0;
   list-style: none;
-  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Increased box shadow for depth */
 }
 
 
 .navbar.active {
-  left: -60px; /* Slide in to view */
+  left: 1px; /* Slide in to view */
   
 }
 
@@ -25,10 +30,11 @@
 }
 
 
-li {
-  margin: 75px 70px;
-  border-bottom: 5px solid white; 
-  font-family: 'Roboto';
+.navbar li {
+  margin-left: 100px 100px; /* Increase the margin for longer length */
+  margin-top: 30%;
+  padding-left: 10px;
+  border-bottom: 5px solid white; /* Increase the width of the border */
   font-size: 50px;
 }
 
@@ -38,3 +44,12 @@ a {
   display: flex;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+

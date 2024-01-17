@@ -1,5 +1,8 @@
 /* SignUp.css */
-
+body{
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
+}
 .signup-container {
   display: flex;
   flex-direction: column;
@@ -60,16 +63,7 @@ h1 {
   font-size: 16px;
 }
 
-.signup-button {
-  padding: 10px 25px;
-  margin: 20px;
-  background-color: #055b49;
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 20px; /* Adjusted font size for smaller screens */
-}
+
 
 .signup-button:hover {
   background-color: #86b649;
@@ -109,7 +103,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 20px;
+  padding: 10% 10%;
   background-color: #fae8ca;
   max-width: 400px;
   margin: 0 auto;
@@ -130,7 +124,7 @@ h1 {
 /* Desktop Styles */
 @media (min-width: 768px) {
   .signup-container {
-    padding: 15vh 500px; /* Adjusted padding for larger screens */
+    padding: 15vh 1rem; /* Adjusted padding for larger screens */
     max-width: 800px; /* Set a maximum width for desktop screens */
   }
 
@@ -140,20 +134,5 @@ h1 {
 
   .signup-button {
     font-size: 24px; /* Adjusted font size for desktop screens */
-  }
-}
-
-/* Large Desktop Styles (Up to 1080px) */
-@media (min-width: 1024px) {
-  .signup-container {
-    max-width: 1080px; /* Set a maximum width for large desktop screens */
-  }
-
-  .signup-form {
-    max-width: 600px; /* Adjusted maximum width for large desktop screens */
-  }
-
-  .signup-button {
-    font-size: 28px; /* Adjusted font size for large desktop screens */
   }
 }
