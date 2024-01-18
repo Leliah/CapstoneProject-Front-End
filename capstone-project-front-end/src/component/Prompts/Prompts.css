@@ -93,3 +93,16 @@
     padding-top: 0px;
     padding-bottom: 15px;
 }
+
+
+.category-radio-btns label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #055b49;
+  font-weight: bold;
+  font-size: larger;
+  padding-right: 20px;
+}
+
+.category-radio-btns input {
+  margin-bottom: 20px;
+}
