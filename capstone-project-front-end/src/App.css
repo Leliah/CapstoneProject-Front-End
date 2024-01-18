@@ -349,7 +349,7 @@ button.more-steps-btn:hover {
   margin-left: 992px;
 }
 
-.prompts-save-btn {
+/* .prompts-save-btn {
   background-color: #86b649;
   color: white;
   border-radius: 8px;
@@ -358,7 +358,7 @@ button.more-steps-btn:hover {
   font-size: 1.2em;
   border: none;
   cursor: pointer;
-}
+} */
 
 .prompts {
   height: 80vh;
