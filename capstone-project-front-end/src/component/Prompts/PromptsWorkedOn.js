@@ -24,7 +24,8 @@ function PromptsWorkedOn() {
               console.log(response.data)
             //IF THERE ARE ANY PROMPTS THAT MEANT THAT CRITERIA, ADD TO ARRAY
             if(workedOnPrompts.length > 0){
-                setPromptsWithResponses(workedOnPrompts)
+                let reversedFinishedPrompts = workedOnPrompts.reverse()
+                setPromptsWithResponses(reversedFinishedPrompts)
             } else {
                 console.log('you have not responded to any prompts yet');
             }
