@@ -1,4 +1,6 @@
-
+body {
+  overflow-y: scroll;
+}
 .todays-prompts {
     background-color: #055b49;
     padding: 20px;

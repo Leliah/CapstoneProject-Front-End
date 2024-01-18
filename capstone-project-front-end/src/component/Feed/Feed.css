@@ -133,25 +133,19 @@
   }
   
   .feedSubmit {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #86b649;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 30px;
-      width: 20%;
-      box-sizing: border-box;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      color: white;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #fff;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 30px;
-      width: 20%;
-      box-sizing: border-box;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #86b649;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 30px;
+    width: 10%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    height: 10%;
+    margin-left: 10px;
+   
   }
   .feedSubmit:hover {
     background-color: #86b649;
